@@ -28,7 +28,7 @@ DEFAULT_PORT = 8765
 MAX_PORT_TRIES = 50
 
 ALLOWED_STATIC = frozenset({
-    "/jobs_viewer.html",
+    "/index.html",
     "/favicon.ico",
     "/claremont_jobs_latest.json",
     "/claremont_jobs_delta.json",
@@ -72,7 +72,7 @@ class JobsRequestHandler(SimpleHTTPRequestHandler):
         path = urlparse(self.path).path
         if path == "/" or path == "":
             self.send_response(302)
-            self.send_header("Location", "/jobs_viewer.html")
+            self.send_header("Location", "/index.html")
             self.end_headers()
             return
         if path not in ALLOWED_STATIC:

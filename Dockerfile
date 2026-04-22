@@ -6,7 +6,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY claremont_job_tracker.py serve_jobs.py jobs_viewer.html favicon.ico ./
+COPY claremont_job_tracker.py serve_jobs.py index.html favicon.ico ./
 
 # Railway (and most PaaS) inject PORT at runtime. Fall back to 8765 locally.
 EXPOSE 8765
