@@ -31,7 +31,7 @@ from zoneinfo import ZoneInfo
 from typing import Any, Iterator
 from urllib.parse import urlparse
 
-_DEBUG = os.environ.get("LYSS_DEBUG", "").strip() == "1"
+_DEBUG = os.environ.get("CLAREMONT_COLLEGE_JOBS_TRACKER_DEBUG", "").strip() == "1"
 
 import requests
 
