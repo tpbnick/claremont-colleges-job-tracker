@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-22T15:46:15-07:00",
-  "total": 117,
+  "scraped_at": "2026-04-22T16:17:17-07:00",
+  "total": 118,
   "jobs": [
     {
       "title": "Human Resources Business Partner",
@@ -265,10 +265,10 @@
     },
     {
       "title": "Research Technician",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/SCR-Department-of-Natural-Sciences/Research-Technician_REQ-8059-1",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Research-Technician_REQ-8059-1",
       "site_id": "SCR_Career_Staff",
       "site": "Scripps College",
-      "location": "SCR-Department of Natural Sciences",
+      "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
       "posted_on": "Posted Today"
     },
@@ -433,6 +433,15 @@
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Assistant Director, Career Services",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Assistant-Director--Career-Services_REQ-8063",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Pre-Health Director",
