@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-04-22T13:47:12-07:00",
-  "current_scraped_at": "2026-04-22T14:17:23-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-04-22T14:17:23-07:00",
+  "current_scraped_at": "2026-04-22T14:46:53-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Research Technician",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/SCR-Department-of-Natural-Sciences/Research-Technician_REQ-8059-1",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "SCR-Department of Natural Sciences",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
