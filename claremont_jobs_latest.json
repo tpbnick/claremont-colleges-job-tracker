@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-21T15:48:24-07:00",
-  "total": 116,
+  "scraped_at": "2026-04-21T22:17:47-07:00",
+  "total": 117,
   "jobs": [
     {
       "title": "Human Resources Business Partner",
@@ -631,6 +631,15 @@
       "location": "Kingston Hall",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Financial Aid Office Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Financial-Aid-Office-Assistant_REQ-8066",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "McConnell Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Cashier/Server",
