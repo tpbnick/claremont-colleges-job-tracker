@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Claremont Colleges — job listings</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.45;
+      color-scheme: light;
+      --page-bg: #f4f4f5;
+      --text: #1a1a1a;
+      --text-muted: #666;
+      --text-soft: #444;
+      --surface: #ffffff;
+      --border: #d4d4d8;
+      --border-input: #ccc;
+      --shadow: rgba(0, 0, 0, 0.06);
+      --shadow-strong: rgba(0, 0, 0, 0.08);
+      --tracker-heading: #334155;
+      --tracker-tile-border: #eef0f3;
+      --tracker-tile-bg: #fafbfc;
+      --step-pending-border: #d1d5db;
+      --step-pending-bg: #fafafa;
+      --step-running-bg: #ffffff;
+      --step-meta: #64748b;
+      --banner-bg: #e8ecf8;
+      --banner-border: #c7d2fe;
+      --hint-text: #555;
+      --hint-border: #ddd;
+      --hint-code-bg: #eee;
+      --caption-bg: #e8e8ec;
+      --caption-border: #ccc;
+      --th-bg: #fafafa;
+      --td-border: #e5e5e5;
+      --row-hover: #f8f9ff;
+      --link: #1c4ed8;
+      --error: #b91c1c;
+    }
+    html[data-theme="dark"] {
+      color-scheme: dark;
+      --page-bg: #0f1117;
+      --text: #e8eaef;
+      --text-muted: #9ca3af;
+      --text-soft: #b8bcc4;
+      --surface: #1a1d26;
+      --border: #2d3340;
+      --border-input: #3d4554;
+      --shadow: rgba(0, 0, 0, 0.35);
+      --shadow-strong: rgba(0, 0, 0, 0.45);
+      --tracker-heading: #cbd5e1;
+      --tracker-tile-border: #2d3340;
+      --tracker-tile-bg: #14171f;
+      --step-pending-border: #4b5563;
+      --step-pending-bg: #1f232d;
+      --step-running-bg: #1a1d26;
+      --step-meta: #94a3b8;
+      --banner-bg: #1e2436;
+      --banner-border: #3b4c7a;
+      --hint-text: #b8bcc4;
+      --hint-border: #3d4554;
+      --hint-code-bg: #2a2f3d;
+      --caption-bg: #232834;
+      --caption-border: #3d4554;
+      --th-bg: #1f232d;
+      --td-border: #2d3340;
+      --row-hover: #222836;
+      --link: #7ca8ff;
+      --error: #f87171;
+    }
+    body {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.25rem 1rem 2rem;
+      color: var(--text);
+      background: var(--page-bg);
+    }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin: 0 0 0.5rem;
+      color: var(--text);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+      align-items: center;
+      margin: 0.75rem 0 1rem;
+    }
+    #refreshBtn {
+      padding: 0.45rem 1rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: 1px solid #1c4ed8;
+      border-radius: 6px;
+      background: #2563eb;
+      color: #fff;
+      cursor: pointer;
+    }
+    #refreshBtn:hover:not(:disabled) {
+      background: #1d4ed8;
+    }
+    #refreshBtn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+    #refreshStatus {
+      font-size: 0.88rem;
+      color: var(--text-soft);
+    }
+    #refreshStatus.error {
+      color: var(--error);
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin: 1rem 0 1.25rem;
+    }
+    .toolbar label[for="search"] {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+    #search {
+      flex: 1 1 220px;
+      min-width: 180px;
+      padding: 0.5rem 0.65rem;
+      border: 1px solid var(--border-input);
+      border-radius: 6px;
+      font-size: 1rem;
+      background: var(--surface);
+      color: var(--text);
+    }
+    #search:focus {
+      outline: 2px solid #3b5bdb;
+      outline-offset: 1px;
+    }
+    .toolbar label[for="schoolFilter"] {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+    #schoolFilter {
+      flex: 0 1 220px;
+      min-width: 140px;
+      max-width: 280px;
+      padding: 0.5rem 0.65rem;
+      border: 1px solid var(--border-input);
+      border-radius: 6px;
+      font-size: 1rem;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+    }
+    #schoolFilter:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+    #schoolFilter:focus {
+      outline: 2px solid #3b5bdb;
+      outline-offset: 1px;
+    }
+    .hint {
+      font-size: 0.85rem;
+      color: var(--hint-text);
+      background: var(--surface);
+      border: 1px solid var(--hint-border);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+    }
+    .hint code {
+      font-size: 0.8rem;
+      background: var(--hint-code-bg);
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px var(--shadow-strong);
+      font-size: 0.92rem;
+    }
+    caption {
+      text-align: left;
+      font-weight: 600;
+      padding: 0.5rem 0.75rem;
+      background: var(--caption-bg);
+      border-bottom: 1px solid var(--caption-border);
+      color: var(--text);
+    }
+    th, td {
+      padding: 0.5rem 0.65rem;
+      text-align: left;
+      border-bottom: 1px solid var(--td-border);
+      vertical-align: top;
+    }
+    th {
+      background: var(--th-bg);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    tbody tr:hover {
+      background: var(--row-hover);
+    }
+    tbody tr.hidden {
+      display: none;
+    }
+    a.job-title {
+      color: var(--link);
+      font-weight: 500;
+      text-decoration: none;
+    }
+    a.job-title:hover {
+      text-decoration: underline;
+    }
+    .muted {
+      color: var(--text-muted);
+    }
+    .count {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+      margin: 0.25rem 0 1rem;
+    }
+    .actions-spacer {
+      flex: 1 1 auto;
+      min-width: 0.25rem;
+    }
+    .theme-toggle {
+      padding: 0;
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      line-height: 0;
+    }
+    .theme-toggle:hover {
+      filter: brightness(0.97);
+    }
+    html[data-theme="dark"] .theme-toggle:hover {
+      filter: brightness(1.08);
+    }
+    .theme-toggle__track {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 3.6rem;
+      height: 1.9rem;
+      padding: 0 0.38rem;
+      box-sizing: border-box;
+      border-radius: 9999px;
+      background: var(--caption-bg);
+    }
+    /* Light = sun (right); dark = moon (left) */
+    .theme-toggle__thumb {
+      position: absolute;
+      top: 50%;
+      left: calc(100% - 0.2rem - 1.42rem);
+      width: 1.42rem;
+      height: 1.42rem;
+      margin-top: -0.71rem;
+      border-radius: 50%;
+      background: var(--surface);
+      box-shadow: 0 1px 4px var(--shadow-strong);
+      transition: left 0.22s ease;
+      z-index: 1;
+      pointer-events: none;
+    }
+    html[data-theme="dark"] .theme-toggle__thumb {
+      left: 0.2rem;
+    }
+    .theme-toggle__glyph {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.1rem;
+      height: 1.1rem;
+      pointer-events: none;
+      opacity: 0.45;
+      color: var(--text);
+    }
+    .theme-toggle__glyph svg {
+      width: 1rem;
+      height: 1rem;
+    }
+    html[data-theme="light"] .theme-toggle__glyph--sun {
+      opacity: 1;
+    }
+    html[data-theme="dark"] .theme-toggle__glyph--moon {
+      opacity: 1;
+    }
+    #refreshBtn:focus-visible {
+      outline: 2px solid #93c5fd;
+      outline-offset: 2px;
+    }
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 1.75rem;
+      right: 1.75rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      padding: 0;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      box-shadow: 0 2px 10px var(--shadow-strong);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+      z-index: 100;
+    }
+    .scroll-top-btn.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .scroll-top-btn:hover {
+      background: var(--row-hover);
+    }
+    .scroll-top-btn:focus-visible {
+      outline: 2px solid #3b5bdb;
+      outline-offset: 2px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .scroll-top-btn { transition: none; }
+    }
+
+    /* ── Toast notification ───────────────────────────────────────────────────── */
+    .toast {
+      position: fixed;
+      bottom: 1.75rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(0);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px var(--shadow-strong);
+      padding: 0.8rem 1rem 0.8rem 1.1rem;
+      max-width: min(440px, calc(100vw - 2rem));
+      font-size: 0.91rem;
+      color: var(--text);
+      z-index: 400;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      animation: toast-in 0.22s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    .toast.toast-hiding {
+      animation: toast-out 0.2s ease forwards;
+    }
+    @keyframes toast-in {
+      from { opacity: 0; transform: translateX(-50%) translateY(16px); }
+      to   { opacity: 1; transform: translateX(-50%) translateY(0);    }
+    }
+    @keyframes toast-out {
+      from { opacity: 1; transform: translateX(-50%) translateY(0);    }
+      to   { opacity: 0; transform: translateX(-50%) translateY(12px); }
+    }
+    .toast-msg { flex: 1 1 0; line-height: 1.5; }
+    .toast-close {
+      flex-shrink: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+      padding: 0;
+      margin-top: -0.1rem;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 1.1rem;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+    }
+    .toast-close:hover { color: var(--text); background: var(--row-hover); }
+    .toast-close:focus-visible { outline: 2px solid #3b5bdb; outline-offset: 1px; }
+    @media (prefers-reduced-motion: reduce) {
+      .toast, .toast.toast-hiding { animation: none; }
+    }
+
+    /* ── Info button ─────────────────────────────────────────────────────────── */
+    #infoBtn {
+      width: 1.9rem;
+      height: 1.9rem;
+      padding: 0;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    #infoBtn:hover { color: var(--text); filter: brightness(0.97); }
+    html[data-theme="dark"] #infoBtn:hover { filter: brightness(1.08); }
+    #infoBtn:focus-visible { outline: 2px solid #3b5bdb; outline-offset: 2px; }
+
+    /* ── Modal ───────────────────────────────────────────────────────────────── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .modal-overlay[hidden] { display: none !important; }
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+      max-width: 480px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 1.25rem 0.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .modal-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0;
+      color: var(--text);
+    }
+    .modal-close {
+      width: 1.9rem;
+      height: 1.9rem;
+      padding: 0;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+    .modal-close:hover { color: var(--text); background: var(--row-hover); }
+    .modal-close:focus-visible { outline: 2px solid #3b5bdb; outline-offset: 1px; }
+    .modal-body {
+      padding: 1.1rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .modal-body p {
+      margin: 0;
+      font-size: 0.93rem;
+      line-height: 1.6;
+      color: var(--text-soft);
+    }
+    .modal-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .modal-links a {
+      font-size: 0.93rem;
+      color: var(--link);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .modal-links a:hover { text-decoration: underline; }
+    .modal-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0;
+    }
+    .modal-toggle-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+    .modal-toggle-text { flex: 1 1 0; }
+    .modal-toggle-label {
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: var(--text);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .modal-toggle-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    /* Toggle switch */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 2.75rem;
+      height: 1.55rem;
+      flex-shrink: 0;
+      margin-top: 0.05rem;
+    }
+    .switch input { opacity: 0; width: 0; height: 0; position: absolute; }
+    .switch-track {
+      position: absolute;
+      inset: 0;
+      background: var(--step-pending-border);
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .switch input:checked + .switch-track { background: #2563eb; }
+    .switch-track::after {
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      width: 1.0rem;
+      height: 1.0rem;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+      transition: transform 0.2s;
+    }
+    .switch input:checked + .switch-track::after { transform: translateX(1.2rem); }
+    .switch:focus-within .switch-track { outline: 2px solid #3b5bdb; outline-offset: 2px; }
+
+    /* ── Ad containers ───────────────────────────────────────────────────────── */
+    #adLeft, #adRight {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 160px;
+      min-height: 600px;
+      display: none;
+      z-index: 10;
+      align-items: center;
+      justify-content: center;
+    }
+    #adLeft  { left:  8px; }
+    #adRight { right: 8px; }
+    #adBottom {
+      display: none;
+      margin: 1.5rem 0 0;
+      text-align: center;
+      min-height: 250px;
+    }
+    @media (min-width: 1560px) {
+      body.ads-enabled #adLeft,
+      body.ads-enabled #adRight  { display: flex; }
+      body.ads-enabled #adBottom { display: none; }
+    }
+    @media (max-width: 1559px) {
+      body.ads-enabled #adBottom { display: block; }
+    }
+    .sortable-th {
+      cursor: pointer;
+      user-select: none;
+    }
+    .sortable-th:hover {
+      background: var(--row-hover);
+    }
+    .sort-arrow {
+      display: inline-block;
+      margin-left: 0.2rem;
+      font-size: 0.8em;
+      opacity: 0.45;
+      min-width: 0.7em;
+    }
+    .sort-arrow.asc::after { content: '↑'; opacity: 1; }
+    .sort-arrow.desc::after { content: '↓'; opacity: 1; }
+  </style>
+</head>
+<body>
+  <h1>Claremont Colleges Job Listings</h1>
+
+  <div class="actions">
+    <button type="button" id="refreshBtn">Reload data</button>
+    <span id="refreshStatus" class="muted"></span>
+    <span class="actions-spacer" aria-hidden="true"></span>
+    <button type="button" id="themeToggle" class="theme-toggle" role="switch" aria-checked="false" aria-label="Use dark theme" title="Dark mode">
+      <span class="theme-toggle__track">
+        <span class="theme-toggle__glyph theme-toggle__glyph--moon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </span>
+        <span class="theme-toggle__glyph theme-toggle__glyph--sun" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+        </span>
+        <span class="theme-toggle__thumb" aria-hidden="true"></span>
+      </span>
+    </button>
+    <button type="button" id="infoBtn" aria-label="About this site" title="About / Help">?</button>
+  </div>
+
+  <p id="metaLine" class="count muted">Loading…</p>
+
+  <div id="loadHint" class="hint" style="display:none;"></div>
+
+  <div class="toolbar">
+    <label for="schoolFilter">School</label>
+    <select id="schoolFilter" aria-label="Filter by school" disabled>
+      <option value="">All schools</option>
+    </select>
+    <label for="search">Filter by title</label>
+    <input type="search" id="search" placeholder="Type to filter job titles…" autocomplete="off" disabled>
+  </div>
+
+  <table id="jobsTable" style="margin-top:1rem;" aria-label="Job postings">
+    <caption>Postings</caption>
+    <thead>
+      <tr>
+        <th class="sortable-th" data-sort-key="title" tabindex="0" role="button" aria-label="Sort by title">Title <span class="sort-arrow" aria-hidden="true"></span></th>
+        <th class="sortable-th" data-sort-key="site" tabindex="0" role="button" aria-label="Sort by site">Site <span class="sort-arrow" aria-hidden="true"></span></th>
+        <th class="sortable-th" data-sort-key="location" tabindex="0" role="button" aria-label="Sort by location">Location <span class="sort-arrow" aria-hidden="true"></span></th>
+        <th class="sortable-th" data-sort-key="time_type" tabindex="0" role="button" aria-label="Sort by time type">Time type <span class="sort-arrow" aria-hidden="true"></span></th>
+        <th class="sortable-th" data-sort-key="posted_on" tabindex="0" role="button" aria-label="Sort by posted date">Posted <span class="sort-arrow" aria-hidden="true"></span></th>
+      </tr>
+    </thead>
+    <tbody id="jobsBody"></tbody>
+  </table>
+
+  <!-- Bottom ad: visible on screens narrower than 1560px when ads are enabled -->
+  <div id="adBottom" aria-hidden="true">
+    <!-- TODO: paste your AdSense <ins class="adsbygoogle"> unit here -->
+  </div>
+  <!-- Sidebar ads: visible on screens 1560px+ when ads are enabled -->
+  <div id="adLeft"  aria-hidden="true"><!-- TODO: paste left AdSense unit here --></div>
+  <div id="adRight" aria-hidden="true"><!-- TODO: paste right AdSense unit here --></div>
+
+  <!-- About / Help modal -->
+  <div id="infoModal" class="modal-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="infoModalTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title" id="infoModalTitle">About this site</h2>
+        <button type="button" class="modal-close" id="infoModalClose" aria-label="Close">&#x2715;</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          This site is not affiliated with, endorsed by, or connected to The Claremont Colleges
+          or any of their member institutions. It is an independent tool that aggregates publicly
+          available job listings from each college's Workday career site, making it easier to
+          browse open positions across all seven campuses in one place and support a more
+          seamless application process.
+        </p>
+        <hr class="modal-divider">
+        <div class="modal-links">
+          <a id="githubLink" href="#" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            View source on GitHub
+          </a>
+          <a id="issuesLink" href="#" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Report an issue or ask for help
+          </a>
+        </div>
+        <hr class="modal-divider">
+        <div class="modal-toggle-row">
+          <div class="modal-toggle-text">
+            <span class="modal-toggle-label">Show ads</span>
+            <span class="modal-toggle-desc">Ads help keep this tool free. On wide screens they appear in the side margins; on smaller screens below the listings.</span>
+          </div>
+          <label class="switch" title="Toggle ads">
+            <input type="checkbox" id="adsToggle" aria-label="Show ads">
+            <span class="switch-track"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" id="scrollTopBtn" class="scroll-top-btn" aria-label="Back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="1.1rem" height="1.1rem" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script>
+(function () {
+  // ── Update these when your GitHub repo is live ────────────────────────────
+  var REPO_URL   = 'https://github.com/tpbnick/claremont-colleges-job-tracker';
+  var ISSUES_URL = REPO_URL + '/issues';
+  // ─────────────────────────────────────────────────────────────────────────
+
+  var THEME_KEY = 'lyssJobTheme';
+  var ADS_KEY = 'lyssJobAdsEnabled';
+  var COOLDOWN_KEY = 'lyssJobCooldownUntil'; // absolute ms timestamp: when reload is next allowed
+  var COOLDOWN_MS = 5 * 60 * 1000; // 5 minutes between reloads
+
+  var searchEl = document.getElementById('search');
+  var schoolFilterEl = document.getElementById('schoolFilter');
+  var jobsBody = document.getElementById('jobsBody');
+  var loadHint = document.getElementById('loadHint');
+  var metaLine = document.getElementById('metaLine');
+  var refreshBtn = document.getElementById('refreshBtn');
+  var refreshStatus = document.getElementById('refreshStatus');
+  var themeToggle = document.getElementById('themeToggle');
+  var _allJobs = [];
+  var _sortCol = null; // null = original order; string = data-sort-key of active column
+  var _sortDir = 1;   // 1 = ascending, -1 = descending
+
+  function formatTimePST(isoStr) {
+    if (!isoStr) return '';
+    var d = new Date(isoStr);
+    if (isNaN(d.getTime())) return isoStr;
+    var tz = 'America/Los_Angeles';
+    var datePart = d.toLocaleDateString('en-US', { timeZone: tz, month: 'numeric', day: 'numeric', year: 'numeric' });
+    var timePart = d.toLocaleTimeString('en-US', { timeZone: tz, hour: 'numeric', minute: '2-digit', hour12: true });
+    return datePart + ' ' + timePart;
+  }
+
+  function postedDays(str) {
+    if (!str) return Infinity;
+    var s = str.toLowerCase();
+    if (s.indexOf('today') !== -1) return 0;
+    if (s.indexOf('yesterday') !== -1) return 1;
+    var m = s.match(/(\d+)\+?\s*day/);
+    if (m) return parseInt(m[1], 10);
+    return Infinity;
+  }
+
+  var _toastEl = null;
+  var _toastTimer = null;
+
+  function showToast(msg, durationMs) {
+    if (durationMs === undefined) durationMs = 7000;
+    if (_toastEl) {
+      if (_toastTimer) { window.clearTimeout(_toastTimer); _toastTimer = null; }
+      _toastEl.remove();
+      _toastEl = null;
+    }
+    var el = document.createElement('div');
+    el.className = 'toast';
+    el.setAttribute('role', 'alert');
+    var msgEl = document.createElement('span');
+    msgEl.className = 'toast-msg';
+    msgEl.textContent = msg;
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'toast-close';
+    closeBtn.setAttribute('aria-label', 'Dismiss');
+    closeBtn.textContent = '×';
+    closeBtn.addEventListener('click', dismissToast);
+    el.appendChild(msgEl);
+    el.appendChild(closeBtn);
+    document.body.appendChild(el);
+    _toastEl = el;
+    _toastTimer = window.setTimeout(dismissToast, durationMs);
+  }
+
+  function dismissToast() {
+    if (!_toastEl) return;
+    if (_toastTimer) { window.clearTimeout(_toastTimer); _toastTimer = null; }
+    var el = _toastEl;
+    _toastEl = null;
+    el.classList.add('toast-hiding');
+    window.setTimeout(function () { el.remove(); }, 250);
+  }
+
+  function applyTheme(theme) {
+    var t = theme === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+    try {
+      localStorage.setItem(THEME_KEY, t);
+    } catch (err) {}
+    themeToggle.setAttribute('aria-checked', t === 'dark' ? 'true' : 'false');
+    if (t === 'dark') {
+      themeToggle.setAttribute('aria-label', 'Use light theme');
+      themeToggle.title = 'Switch to light mode';
+    } else {
+      themeToggle.setAttribute('aria-label', 'Use dark theme');
+      themeToggle.title = 'Switch to dark mode';
+    }
+  }
+
+  function initTheme() {
+    try {
+      var saved = localStorage.getItem(THEME_KEY);
+      if (saved === 'dark' || saved === 'light') {
+        applyTheme(saved);
+        return;
+      }
+    } catch (err) {}
+    applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+  }
+
+  var MSG_NO_SNAPSHOT =
+    'No job data found. The listing file (claremont_jobs_latest.json) has not been generated yet. ' +
+    'It is updated automatically every 30 minutes via GitHub Actions. Try again shortly.';
+
+  var MSG_LOAD_FAILED =
+    'Could not load job data. The listing file may be temporarily unavailable. Try reloading the page.';
+
+  var deltaState = {
+    previous_scraped_at: null,
+    newUrls: {},
+  };
+  var lastLoadInfo = { scraped_at: '' };
+
+  /* Mirrors claremont_job_tracker.SCHOOL_DISPLAY_NAMES — keys are Workday site_id slugs. */
+  var SCHOOL_LABEL_BY_ID = {
+    TCCS_Careers: 'The Claremont Colleges Services',
+    POM_Careers: 'Pomona College',
+    CGU_Careers: 'Claremont Graduate University',
+    SCR_Career_Staff: 'Scripps College',
+    CMC_Staff: 'Claremont McKenna College',
+    HMC_Careers: 'Harvey Mudd College',
+    PIT_Staff: 'Pitzer College',
+    KGI_Careers: 'Keck Graduate Institute',
+  };
+
+  function schoolDisplayName(siteId) {
+    if (!siteId) return '';
+    if (Object.prototype.hasOwnProperty.call(SCHOOL_LABEL_BY_ID, siteId)) {
+      return SCHOOL_LABEL_BY_ID[siteId];
+    }
+    var s = String(siteId).replace(/_/g, ' ');
+    var sufs = [' Career Staff', ' Careers', ' Career', ' Staff'];
+    for (var i = 0; i < sufs.length; i++) {
+      var suf = sufs[i];
+      if (s.length >= suf.length && s.slice(-suf.length) === suf) return s.slice(0, -suf.length).trim();
+    }
+    return s;
+  }
+
+  function setMeta(data) {
+    lastLoadInfo.scraped_at = data.scraped_at || '';
+  }
+
+  function applyDelta(d) {
+    if (!d) {
+      deltaState.previous_scraped_at = null;
+      deltaState.newUrls = {};
+      return;
+    }
+    deltaState.previous_scraped_at = d.previous_scraped_at || null;
+    var urls = {};
+    var jobs = d.new_jobs || [];
+    for (var i = 0; i < jobs.length; i++) {
+      var u = jobs[i].url;
+      if (u) urls[u] = true;
+    }
+    deltaState.newUrls = urls;
+  }
+
+  function cell(text) {
+    var td = document.createElement('td');
+    td.textContent = text || '—';
+    if (!text) td.classList.add('muted');
+    return td;
+  }
+
+  function _renderJobsRaw(jobs) {
+    jobsBody.textContent = '';
+    for (var i = 0; i < jobs.length; i++) {
+      var j = jobs[i];
+      var tr = document.createElement('tr');
+      tr.dataset.title = (j.title || '').toLowerCase();
+      tr.dataset.siteId = j.site_id || '';
+      var u = j.url || '';
+      tr.dataset.isNew = deltaState.newUrls[u] ? '1' : '0';
+
+      var tdTitle = document.createElement('td');
+      var a = document.createElement('a');
+      a.className = 'job-title';
+      a.href = u || '#';
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.textContent = j.title || '(no title)';
+      tdTitle.appendChild(a);
+
+      tr.appendChild(tdTitle);
+      tr.appendChild(cell(schoolDisplayName(j.site_id) || j.site));
+      tr.appendChild(cell(j.location));
+      tr.appendChild(cell(j.time_type));
+      tr.appendChild(cell(j.posted_on));
+      jobsBody.appendChild(tr);
+    }
+  }
+
+  function renderRows(jobs) {
+    _allJobs = jobs.slice();
+    _renderJobsRaw(jobs);
+  }
+
+  function populateSchoolFilter(jobs) {
+    var prev = schoolFilterEl.value;
+    schoolFilterEl.textContent = '';
+    var optAll = document.createElement('option');
+    optAll.value = '';
+    optAll.textContent = 'All schools';
+    schoolFilterEl.appendChild(optAll);
+    var byId = {};
+    for (var i = 0; i < jobs.length; i++) {
+      var sid = jobs[i].site_id || '';
+      if (!sid) continue;
+      byId[sid] = schoolDisplayName(sid) || jobs[i].site || sid;
+    }
+    var ids = Object.keys(byId);
+    ids.sort(function (a, b) {
+      return schoolDisplayName(a).localeCompare(schoolDisplayName(b), undefined, { sensitivity: 'base' });
+    });
+    for (var k = 0; k < ids.length; k++) {
+      var id = ids[k];
+      var o = document.createElement('option');
+      o.value = id;
+      o.textContent = byId[id];
+      schoolFilterEl.appendChild(o);
+    }
+    if (prev && Object.prototype.hasOwnProperty.call(byId, prev)) schoolFilterEl.value = prev;
+    else schoolFilterEl.value = '';
+    schoolFilterEl.disabled = false;
+  }
+
+  function applyFilter() {
+    var q = (searchEl.value || '').trim().toLowerCase();
+    var schoolId = (schoolFilterEl.value || '').trim();
+    var rows = jobsBody.querySelectorAll('tr');
+    var n = 0;
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      var t = r.dataset.title || '';
+      var titleOk = !q || t.indexOf(q) !== -1;
+      var schoolOk = !schoolId || (r.dataset.siteId || '') === schoolId;
+      var show = titleOk && schoolOk;
+      r.classList.toggle('hidden', !show);
+      if (show) n++;
+    }
+
+    var parts = [];
+    if (schoolId) {
+      var si = schoolFilterEl.selectedIndex;
+      var lab = si >= 0 ? schoolFilterEl.options[si].textContent : schoolId;
+      parts.push('school: ' + lab);
+    }
+    if (q) parts.push('title contains "' + searchEl.value.trim() + '"');
+    var suffix = parts.length ? ' (' + parts.join('; ') + ')' : '';
+
+    if (!q && !schoolId) {
+      var when = lastLoadInfo.scraped_at ? ' (last checked ' + formatTimePST(lastLoadInfo.scraped_at) + ' PST)' : '';
+      metaLine.textContent = 'Showing all ' + rows.length + ' postings' + when + '.';
+    } else {
+      metaLine.textContent = 'Showing ' + n + ' of ' + rows.length + ' postings' + suffix + '.';
+    }
+  }
+
+  function ingest(data, delta) {
+    if (!data || !Array.isArray(data.jobs)) {
+      alert('Invalid JSON: expected an object with a "jobs" array.');
+      return;
+    }
+    loadHint.style.display = 'none';
+    applyDelta(delta);
+    setMeta(data);
+    searchEl.disabled = false;
+    _sortCol = null;
+    _sortDir = 1;
+    document.querySelectorAll('.sortable-th .sort-arrow').forEach(function (el) { el.className = 'sort-arrow'; });
+    renderRows(data.jobs);
+    populateSchoolFilter(data.jobs);
+    applyFilter();
+  }
+
+  function fetchJson(url) {
+    return fetch(url, { cache: 'no-store', credentials: 'include' }).then(function (r) {
+      if (r.status === 404) {
+        var err = new Error('HTTP 404');
+        err.is404 = true;
+        throw err;
+      }
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    });
+  }
+
+  function loadData() {
+    var latestP = fetchJson('claremont_jobs_latest.json');
+    var deltaP = fetchJson('claremont_jobs_delta.json').catch(function () { return null; });
+    return Promise.all([latestP, deltaP]).then(function (results) {
+      ingest(results[0], results[1]);
+    });
+  }
+
+  function cooldownRemaining() {
+    try {
+      var until = parseInt(localStorage.getItem(COOLDOWN_KEY) || '0', 10);
+      return Math.max(0, until - Date.now());
+    } catch (e) { return 0; }
+  }
+
+  function setCooldownUntil(absMs) {
+    try { localStorage.setItem(COOLDOWN_KEY, String(absMs)); } catch (e) {}
+  }
+
+  function updateRefreshBtn() {
+    var rem = cooldownRemaining();
+    if (rem > 0) {
+      refreshBtn.disabled = true;
+      var availAt = new Date(Date.now() + rem);
+      refreshStatus.textContent = 'Next reload available at ' + formatTimePST(availAt.toISOString()) + ' PST.';
+      refreshStatus.classList.remove('error');
+    } else {
+      refreshBtn.disabled = false;
+      if (refreshStatus.textContent.indexOf('Next reload') === 0) {
+        refreshStatus.textContent = '';
+      }
+    }
+  }
+
+  function onRefresh() {
+    if (cooldownRemaining() > 0) return;
+    setCooldownUntil(Date.now() + COOLDOWN_MS);
+    refreshStatus.textContent = 'Loading…';
+    refreshStatus.classList.remove('error');
+    refreshBtn.disabled = true;
+    loadData()
+      .then(function () {
+        refreshStatus.textContent = '';
+      })
+      .catch(function (e) {
+        setCooldownUntil(0);
+        refreshStatus.textContent = 'Load failed: ' + (e && e.message || 'Unknown error');
+        refreshStatus.classList.add('error');
+      })
+      .finally(function () {
+        updateRefreshBtn();
+      });
+  }
+
+  searchEl.addEventListener('input', applyFilter);
+
+  schoolFilterEl.addEventListener('change', applyFilter);
+
+  refreshBtn.addEventListener('click', onRefresh);
+
+  // Apply cooldown state immediately on load and re-check every 30s so the
+  // button re-enables itself once the cooldown expires without needing a reload.
+  updateRefreshBtn();
+  window.setInterval(updateRefreshBtn, 30000);
+
+  function applySort() {
+    document.querySelectorAll('.sortable-th').forEach(function (th) {
+      var arrow = th.querySelector('.sort-arrow');
+      if (!arrow) return;
+      var key = th.dataset.sortKey;
+      if (key === _sortCol) {
+        arrow.className = 'sort-arrow' + (_sortDir === 1 ? ' asc' : ' desc');
+      } else {
+        arrow.className = 'sort-arrow';
+      }
+    });
+    var sorted = _allJobs.slice().sort(function (a, b) {
+      var va, vb;
+      if (_sortCol === 'posted_on') {
+        va = postedDays(a.posted_on);
+        vb = postedDays(b.posted_on);
+        return (va - vb) * _sortDir;
+      }
+      var fieldMap = { title: 'title', site: 'site_id', location: 'location', time_type: 'time_type' };
+      var field = fieldMap[_sortCol] || _sortCol;
+      if (_sortCol === 'site') {
+        va = schoolDisplayName(a.site_id || '').toLowerCase();
+        vb = schoolDisplayName(b.site_id || '').toLowerCase();
+      } else {
+        va = (a[field] || '').toLowerCase();
+        vb = (b[field] || '').toLowerCase();
+      }
+      return va < vb ? -_sortDir : va > vb ? _sortDir : 0;
+    });
+    _renderJobsRaw(sorted);
+    applyFilter();
+  }
+
+  document.querySelectorAll('.sortable-th').forEach(function (th) {
+    th.addEventListener('click', function () {
+      var key = th.dataset.sortKey;
+      if (_sortCol === key) {
+        _sortDir = _sortDir === 1 ? -1 : 1;
+      } else {
+        _sortCol = key;
+        _sortDir = 1;
+      }
+      applySort();
+    });
+    th.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); th.click(); }
+    });
+  });
+
+  initTheme();
+  themeToggle.addEventListener('click', function () {
+    var cur = document.documentElement.getAttribute('data-theme') || 'light';
+    applyTheme(cur === 'dark' ? 'light' : 'dark');
+  });
+
+  var scrollTopBtn = document.getElementById('scrollTopBtn');
+  function updateScrollTopBtn() {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+  }
+  window.addEventListener('scroll', updateScrollTopBtn, { passive: true });
+  scrollTopBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  });
+  updateScrollTopBtn();
+
+  // ── Ads ──────────────────────────────────────────────────────────────────
+  var adsToggle = document.getElementById('adsToggle');
+
+  function adsEnabled() {
+    try {
+      var v = localStorage.getItem(ADS_KEY);
+      return v === null ? true : v === '1'; // default on
+    } catch (e) { return true; }
+  }
+
+  function setAdsEnabled(on) {
+    try { localStorage.setItem(ADS_KEY, on ? '1' : '0'); } catch (e) {}
+    document.body.classList.toggle('ads-enabled', on);
+    adsToggle.checked = on;
+  }
+
+  setAdsEnabled(adsEnabled());
+  adsToggle.addEventListener('change', function () { setAdsEnabled(adsToggle.checked); });
+
+  // ── Info modal ────────────────────────────────────────────────────────────
+  var infoBtn        = document.getElementById('infoBtn');
+  var infoModal      = document.getElementById('infoModal');
+  var infoModalClose = document.getElementById('infoModalClose');
+  var githubLink     = document.getElementById('githubLink');
+  var issuesLink     = document.getElementById('issuesLink');
+
+  githubLink.href = REPO_URL;
+  issuesLink.href = ISSUES_URL;
+
+  var _modalPrevFocus = null;
+
+  function openModal() {
+    _modalPrevFocus = document.activeElement;
+    infoModal.hidden = false;
+    infoModalClose.focus();
+    document.addEventListener('keydown', onModalKey);
+  }
+
+  function closeModal() {
+    infoModal.hidden = true;
+    document.removeEventListener('keydown', onModalKey);
+    if (_modalPrevFocus && typeof _modalPrevFocus.focus === 'function') {
+      _modalPrevFocus.focus();
+    }
+  }
+
+  function onModalKey(e) {
+    if (e.key === 'Escape') { e.preventDefault(); closeModal(); return; }
+    if (e.key !== 'Tab') return;
+    var focusable = Array.prototype.slice.call(
+      infoModal.querySelectorAll('button, a[href], input, [tabindex]:not([tabindex="-1"])')
+    ).filter(function (el) { return !el.disabled && el.offsetParent !== null; });
+    if (!focusable.length) return;
+    var first = focusable[0], last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault(); last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault(); first.focus();
+    }
+  }
+
+  infoBtn.addEventListener('click', openModal);
+  infoModalClose.addEventListener('click', closeModal);
+  infoModal.addEventListener('click', function (e) {
+    if (e.target === infoModal) closeModal(); // click backdrop
+  });
+
+  loadData().catch(function (e) {
+    loadHint.style.display = 'block';
+    loadHint.textContent = e && e.is404 ? MSG_NO_SNAPSHOT : MSG_LOAD_FAILED;
+    metaLine.textContent = 'No listings loaded yet.';
+    schoolFilterEl.textContent = '';
+    var o = document.createElement('option');
+    o.value = '';
+    o.textContent = 'All schools';
+    schoolFilterEl.appendChild(o);
+    schoolFilterEl.value = '';
+    schoolFilterEl.disabled = true;
+  });
+})();
+  </script>
+</body>
+</html>

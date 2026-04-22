@@ -1,0 +1,20 @@
+# Local development only — not used by Railway.
+# From this directory: docker compose up --build
+# Open http://localhost:8765/
+#
+# For tunnel-only exposure change "8765:8765" to "127.0.0.1:8765:8765".
+# If cloudflared runs in another Compose container, remove `ports` and set
+# the tunnel URL to http://lyss-job:8765 (the service name).
+services:
+  lyss-job:
+    build: .
+    ports:
+      - "8765:8765"
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      # TURNSTILE_SECRET: set to your Cloudflare Turnstile secret key to enable
+      # human verification. Leave commented out for local dev (skipped automatically).
+      # TURNSTILE_SECRET: "your-secret-key-here"
+      PORT: "8765"
