@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-24T08:53:23-07:00",
+  "scraped_at": "2026-04-24T09:20:19-07:00",
   "total": 115,
   "jobs": [
     {
@@ -93,6 +93,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Assistant Dean, Admissions",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Dean--Admissions_REQ-8040-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Director, Systems Training",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Director--Systems-Training_REQ-8045-1",
       "site_id": "POM_Careers",
@@ -127,15 +136,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 14 Days Ago"
-    },
-    {
-      "title": "Assistant Dean, Admissions",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Dean--Admissions_REQ-8040-1",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
     },
     {
       "title": "Cook 3",
@@ -549,7 +549,7 @@
       "site": "Harvey Mudd College",
       "location": "Kingston Hall",
       "time_type": "Full time",
-      "posted_on": "Posted 2 Days Ago"
+      "posted_on": "Posted Today"
     },
     {
       "title": "Temporary Upward Bound Tutor",
