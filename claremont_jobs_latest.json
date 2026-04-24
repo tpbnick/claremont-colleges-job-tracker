@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-24T14:16:56-07:00",
-  "total": 114,
+  "scraped_at": "2026-04-24T14:46:14-07:00",
+  "total": 115,
   "jobs": [
     {
       "title": "Testing Center Support Specialist/Evening Exam Proctor",
@@ -77,15 +77,6 @@
     {
       "title": "Campus Safety Dispatcher",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Campus-Safety-Dispatcher_REQ-7839",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Campus Safety Officer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Campus-Safety-Officer_REQ-7785-1",
       "site_id": "TCCS_Careers",
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
@@ -253,6 +244,24 @@
       "location": "Harper Hall - LC20601",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Post-Bac Program Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Post-Bac-Program-Assistant_REQ-8075",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Research Technician",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/SCR-Department-of-Natural-Sciences/Research-Technician_REQ-8076",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "SCR-Department of Natural Sciences",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Research Technician",
