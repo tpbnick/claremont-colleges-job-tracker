@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-04-24T15:15:00-07:00",
-  "current_scraped_at": "2026-04-24T15:44:50-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-04-24T15:44:50-07:00",
+  "current_scraped_at": "2026-04-24T16:13:55-07:00",
+  "new_count": 2,
+  "removed_count": 2,
+  "new_jobs": [
+    {
+      "title": "Research Technician",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Research-Technician_REQ-8076",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Program Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Program-Coordinator_REQ-8042",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
