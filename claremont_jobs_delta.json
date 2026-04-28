@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-04-28T15:19:50-07:00",
-  "current_scraped_at": "2026-04-28T15:47:31-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-04-28T15:47:31-07:00",
+  "current_scraped_at": "2026-04-28T16:18:22-07:00",
+  "new_count": 2,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Major Gifts Officer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Steele-Hall/Major-Gifts-Officer_REQ-8062",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Steele Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Summer Conference Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Summer-Conference-Assistant_REQ-8080",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
