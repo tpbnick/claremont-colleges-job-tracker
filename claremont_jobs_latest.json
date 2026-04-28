@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-28T13:01:28-07:00",
-  "total": 115,
+  "scraped_at": "2026-04-28T13:52:41-07:00",
+  "total": 117,
   "jobs": [
     {
       "title": "Testing Center Support Specialist/Evening Exam Proctor",
@@ -82,6 +82,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Stewardship Project Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Stewardship-Project-Coordinator_REQ-8085",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Curator of Native American and Indigenous Art",
@@ -631,6 +640,15 @@
       "location": "Kingston Hall",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Web and Email Content Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Mead-Hall/Web-and-Email-Content-Specialist_REQ-8083",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Mead Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Financial Aid Office Assistant",
