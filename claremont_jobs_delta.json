@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-04-28T13:01:28-07:00",
-  "current_scraped_at": "2026-04-28T13:52:41-07:00",
-  "new_count": 2,
+  "previous_scraped_at": "2026-04-28T13:52:41-07:00",
+  "current_scraped_at": "2026-04-28T14:23:28-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Stewardship Project Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Stewardship-Project-Coordinator_REQ-8085",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Web and Email Content Specialist",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Mead-Hall/Web-and-Email-Content-Specialist_REQ-8083",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Mead Hall",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
