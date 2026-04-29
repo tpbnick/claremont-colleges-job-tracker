@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-04-29T15:19:09-07:00",
-  "current_scraped_at": "2026-04-29T15:47:50-07:00",
-  "new_count": 2,
+  "previous_scraped_at": "2026-04-29T15:47:50-07:00",
+  "current_scraped_at": "2026-04-29T16:18:59-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Graduate Assistant \u2013 Civic Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Graduate-Assistant-and-Civic-Coordinator_REQ-8081-1",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Building Attendant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Claremont/Building-Attendant_REQ-8050",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
