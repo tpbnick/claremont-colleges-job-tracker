@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-29T15:19:09-07:00",
-  "total": 118,
+  "scraped_at": "2026-04-29T15:47:50-07:00",
+  "total": 120,
   "jobs": [
     {
       "title": "Testing Center Support Specialist/Evening Exam Proctor",
@@ -559,6 +559,24 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Graduate Assistant \u2013 Civic Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Graduate-Assistant-and-Civic-Coordinator_REQ-8081-1",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Building Attendant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Claremont/Building-Attendant_REQ-8050",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Philanthropic Advisor",
