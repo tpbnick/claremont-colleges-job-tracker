@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-04-30T09:31:05-07:00",
-  "current_scraped_at": "2026-04-30T10:30:46-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Associate Director, Employer Engagement",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Associate-Director--Employer-Engagement_REQ-8091-1",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-04-30T10:30:46-07:00",
+  "current_scraped_at": "2026-04-30T10:59:34-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
