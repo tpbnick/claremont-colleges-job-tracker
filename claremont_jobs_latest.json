@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-30T08:35:12-07:00",
-  "total": 120,
+  "scraped_at": "2026-04-30T09:31:05-07:00",
+  "total": 121,
   "jobs": [
     {
       "title": "Clinical Nurse Supervisor",
@@ -66,13 +66,22 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Director of Sports Medicine (Coterminous Faculty)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Director-Sports-Medicine--Collegiate-_REQ-8037",
+      "title": "Cook 1",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Cook-1_REQ-8071-1",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted Yesterday"
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Floating Cook 1",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Floating-Cook-1_REQ-8070-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Stewardship Project Coordinator",

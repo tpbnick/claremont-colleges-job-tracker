@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-04-30T07:42:23-07:00",
-  "current_scraped_at": "2026-04-30T08:35:12-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-04-30T08:35:12-07:00",
+  "current_scraped_at": "2026-04-30T09:31:05-07:00",
+  "new_count": 2,
+  "removed_count": 1,
+  "new_jobs": [
+    {
+      "title": "Cook 1",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Cook-1_REQ-8071-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Floating Cook 1",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Floating-Cook-1_REQ-8070-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
