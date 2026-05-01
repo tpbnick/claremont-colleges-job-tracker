@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-04-30T16:18:41-07:00",
-  "current_scraped_at": "2026-04-30T16:47:04-07:00",
-  "new_count": 1,
-  "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Graduate Assistant \u2013 Community Engagement Scholar",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Graduate-Assistant---Community-Engagement-Scholar_REQ-8086",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-04-30T16:47:04-07:00",
+  "current_scraped_at": "2026-04-30T17:28:43-07:00",
+  "new_count": 0,
+  "removed_count": 1,
+  "new_jobs": []
 }
