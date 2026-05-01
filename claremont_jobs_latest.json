@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-01T09:47:41-07:00",
-  "total": 121,
+  "scraped_at": "2026-05-01T10:21:53-07:00",
+  "total": 122,
   "jobs": [
     {
       "title": "Clinical Nurse Supervisor",
@@ -253,6 +253,15 @@
       "location": "Harper Hall - LC20601",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Research Technician",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Research-Technician_REQ-8093",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Administrative Assistant",
