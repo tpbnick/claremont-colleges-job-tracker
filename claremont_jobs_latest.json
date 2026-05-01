@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-01T14:16:59-07:00",
-  "total": 121,
+  "scraped_at": "2026-05-01T14:47:06-07:00",
+  "total": 122,
   "jobs": [
     {
       "title": "Clinical Nurse Supervisor",
@@ -244,6 +244,15 @@
       "location": "Harper Hall - LC20601",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Financial Aid Advisor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Financial-Aid-Advisor_REQ-8087",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Research Technician",
@@ -732,6 +741,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Adjunct Faculty, Occupational Therapy Doctorate Program",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Adjunct-Faculty--Occupational-Therapy-Doctorate-Program_REQ-5762",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "215 York Building - LC72000",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Dean, School of Pharmacy",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Dean--School-of-Pharmacy_REQ-7896",
       "site_id": "KGI_Careers",
@@ -854,15 +872,6 @@
       "site_id": "KGI_Careers",
       "site": "Keck Graduate Institute",
       "location": "Building: 535",
-      "time_type": "Part time",
-      "posted_on": "Posted 7 Days Ago"
-    },
-    {
-      "title": "Adjunct Faculty, Occupational Therapy Doctorate Program",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Adjunct-Faculty--Occupational-Therapy-Doctorate-Program_REQ-5762",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "215 York Building - LC72000",
       "time_type": "Part time",
       "posted_on": "Posted 7 Days Ago"
     },

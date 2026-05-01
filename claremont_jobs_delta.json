@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-05-01T13:46:59-07:00",
-  "current_scraped_at": "2026-05-01T14:16:59-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-05-01T14:16:59-07:00",
+  "current_scraped_at": "2026-05-01T14:47:06-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Financial Aid Advisor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Financial-Aid-Advisor_REQ-8087",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
