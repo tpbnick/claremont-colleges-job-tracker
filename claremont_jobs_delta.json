@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-05-01T15:46:17-07:00",
-  "current_scraped_at": "2026-05-01T16:17:29-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Graduate Assistant/Office of Institutional Diversity",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Graduate-Assistant-Office-of-Institutional-Diversity_REQ-8082",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-05-01T16:17:29-07:00",
+  "current_scraped_at": "2026-05-01T16:46:41-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
