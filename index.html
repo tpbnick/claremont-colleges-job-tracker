@@ -93,30 +93,6 @@
       align-items: center;
       margin: 0.75rem 0 1rem;
     }
-    #refreshBtn {
-      padding: 0.45rem 1rem;
-      font-size: 0.95rem;
-      font-weight: 600;
-      border: 1px solid #1c4ed8;
-      border-radius: 6px;
-      background: #2563eb;
-      color: #fff;
-      cursor: pointer;
-    }
-    #refreshBtn:hover:not(:disabled) {
-      background: #1d4ed8;
-    }
-    #refreshBtn:disabled {
-      opacity: 0.55;
-      cursor: not-allowed;
-    }
-    #refreshStatus {
-      font-size: 0.88rem;
-      color: var(--text-soft);
-    }
-    #refreshStatus.error {
-      color: var(--error);
-    }
     .toolbar {
       display: flex;
       flex-wrap: wrap;
@@ -302,10 +278,6 @@
     html[data-theme="dark"] .theme-toggle__glyph--moon {
       opacity: 1;
     }
-    #refreshBtn:focus-visible {
-      outline: 2px solid #93c5fd;
-      outline-offset: 2px;
-    }
     .scroll-top-btn {
       position: fixed;
       bottom: 1.75rem;
@@ -395,6 +367,24 @@
     .toast-close:focus-visible { outline: 2px solid #3b5bdb; outline-offset: 1px; }
     @media (prefers-reduced-motion: reduce) {
       .toast, .toast.toast-hiding { animation: none; }
+    }
+
+    /* ── Mobile table zoom-out ────────────────────────────────────────────────── */
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    @media (max-width: 600px) {
+      table {
+        font-size: 0.72rem;
+        min-width: 480px;
+      }
+      th, td {
+        padding: 0.35rem 0.45rem;
+      }
+      caption {
+        padding: 0.35rem 0.5rem;
+      }
     }
 
     /* ── Info button ─────────────────────────────────────────────────────────── */
@@ -594,19 +584,47 @@
       display: inline-block;
       margin-left: 0.2rem;
       font-size: 0.8em;
-      opacity: 0.45;
       min-width: 0.7em;
     }
+    .sort-arrow::after { content: '↕'; opacity: 0.4; }
     .sort-arrow.asc::after { content: '↑'; opacity: 1; }
     .sort-arrow.desc::after { content: '↓'; opacity: 1; }
+
+    /* ── Table top bar (refresh + auto-update note) ───────────────────────── */
+    .table-top-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin: 0.75rem 0 0.5rem;
+    }
+    .table-refresh-btn {
+      width: 1.75rem;
+      height: 1.75rem;
+      padding: 0;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .table-refresh-btn:hover { color: var(--text); background: var(--row-hover); }
+    .table-refresh-btn:focus-visible { outline: 2px solid #3b5bdb; outline-offset: 2px; }
+    .table-refresh-btn.spinning svg { animation: spin 0.8s linear infinite; }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .table-refresh-msg {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+    }
   </style>
 </head>
 <body>
   <h1>Claremont Colleges Job Listings</h1>
 
   <div class="actions">
-    <button type="button" id="refreshBtn">Reload data</button>
-    <span id="refreshStatus" class="muted"></span>
     <span class="actions-spacer" aria-hidden="true"></span>
     <button type="button" id="themeToggle" class="theme-toggle" role="switch" aria-checked="false" aria-label="Use dark theme" title="Dark mode">
       <span class="theme-toggle__track">
@@ -635,7 +653,15 @@
     <input type="search" id="search" placeholder="Type to filter job titles…" autocomplete="off" disabled>
   </div>
 
-  <table id="jobsTable" style="margin-top:1rem;" aria-label="Job postings">
+  <div class="table-top-bar">
+    <button type="button" id="tableRefreshBtn" class="table-refresh-btn" title="Refresh job listings" aria-label="Refresh job listings">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+    </button>
+    <span id="tableRefreshMsg" class="table-refresh-msg" aria-live="polite"></span>
+  </div>
+
+  <div class="table-wrap">
+  <table id="jobsTable" aria-label="Job postings">
     <caption>Postings</caption>
     <thead>
       <tr>
@@ -648,6 +674,7 @@
     </thead>
     <tbody id="jobsBody"></tbody>
   </table>
+  </div>
 
   <!-- Bottom ad: visible on screens narrower than 1560px when ads are enabled -->
   <div id="adBottom" aria-hidden="true">
@@ -722,510 +749,1061 @@
 
   <script>
 (function () {
-  // ── Update these when your GitHub repo is live ────────────────────────────
-  var REPO_URL   = 'https://github.com/tpbnick/claremont-colleges-job-tracker';
-  var ISSUES_URL = REPO_URL + '/issues';
-  // ─────────────────────────────────────────────────────────────────────────
+  'use strict';
 
-  var THEME_KEY = 'claremontCollegeJobsTrackerTheme';
-  var ADS_KEY = 'claremontCollegeJobsTrackerAdsEnabled';
-  var COOLDOWN_KEY = 'claremontCollegeJobsTrackerCooldownUntil'; // absolute ms timestamp: when reload is next allowed
-  var COOLDOWN_MS = 5 * 60 * 1000; // 5 minutes between reloads
+  // ══════════════════════════════════════════════════════════════════════════
+  // CONFIGURATION
+  // ══════════════════════════════════════════════════════════════════════════
+  var CONFIG = {
+    // GitHub repository URLs
+    REPO_URL: 'https://github.com/tpbnick/claremont-colleges-job-tracker',
+    get ISSUES_URL() { return this.REPO_URL + '/issues'; },
 
-  var searchEl = document.getElementById('search');
-  var schoolFilterEl = document.getElementById('schoolFilter');
-  var jobsBody = document.getElementById('jobsBody');
-  var loadHint = document.getElementById('loadHint');
-  var metaLine = document.getElementById('metaLine');
-  var refreshBtn = document.getElementById('refreshBtn');
-  var refreshStatus = document.getElementById('refreshStatus');
-  var themeToggle = document.getElementById('themeToggle');
-  var _allJobs = [];
-  var _sortCol = null; // null = original order; string = data-sort-key of active column
-  var _sortDir = 1;   // 1 = ascending, -1 = descending
+    // LocalStorage keys
+    STORAGE_KEYS: {
+      THEME: 'claremontCollegeJobsTrackerTheme',
+      ADS_ENABLED: 'claremontCollegeJobsTrackerAdsEnabled',
+      LAST_FETCH: 'claremontCollegeJobsTrackerLastFetch'
+    },
 
+    // Time constants (in milliseconds)
+    TIMING: {
+      COOLDOWN_MSG_DURATION: 10 * 1000,  // Cooldown message fades after 10 seconds
+      TOAST_DURATION: 7000,              // Toast auto-dismiss after 7 seconds
+      TOAST_HIDE_ANIMATION: 250          // Toast fade-out animation duration
+    },
+
+    // UI thresholds
+    UI: {
+      SCROLL_TOP_THRESHOLD: 300  // Show scroll-to-top button after scrolling 300px
+    },
+
+    // Data file names — use production URL when opening the file locally
+    DATA_FILES: (function() {
+      var base = window.location.protocol === 'file:'
+        ? 'https://claremontcollegejobs.com/'
+        : '';
+      return {
+        LATEST: base + 'claremont_jobs_latest.json',
+        DELTA:  base + 'claremont_jobs_delta.json'
+      };
+    })()
+  };
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // DOM ELEMENTS
+  // ══════════════════════════════════════════════════════════════════════════
+  var elements = {
+    search: document.getElementById('search'),
+    schoolFilter: document.getElementById('schoolFilter'),
+    jobsTable: {
+      body: document.getElementById('jobsBody'),
+      table: document.getElementById('jobsTable')
+    },
+    ui: {
+      loadHint: document.getElementById('loadHint'),
+      metaLine: document.getElementById('metaLine'),
+      tableRefreshBtn: document.getElementById('tableRefreshBtn'),
+      tableRefreshMsg: document.getElementById('tableRefreshMsg'),
+      themeToggle: document.getElementById('themeToggle'),
+      scrollTopBtn: document.getElementById('scrollTopBtn'),
+      adsToggle: document.getElementById('adsToggle')
+    },
+    modals: {
+      info: {
+        btn: document.getElementById('infoBtn'),
+        overlay: document.getElementById('infoModal'),
+        close: document.getElementById('infoModalClose')
+      }
+    },
+    links: {
+      github: document.getElementById('githubLink'),
+      issues: document.getElementById('issuesLink')
+    }
+  };
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // APPLICATION STATE
+  // ══════════════════════════════════════════════════════════════════════════
+  var state = {
+    jobs: {
+      all: [],  // All jobs from latest snapshot
+      lastScrapedAt: ''  // ISO timestamp of when data was scraped
+    },
+    delta: {
+      previousScrapedAt: null,
+      newJobUrls: {}  // Set of URLs for newly posted jobs
+    },
+    sorting: {
+      column: null,  // null = original order; string = active sort column
+      direction: 1   // 1 = ascending, -1 = descending
+    },
+    toast: {
+      element: null,
+      timer: null
+    }
+  };
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // UTILITY FUNCTIONS
+  // ══════════════════════════════════════════════════════════════════════════
+
+  /**
+   * Formats an ISO timestamp to PST with readable date and time.
+   * @param {string} isoStr - ISO 8601 timestamp
+   * @returns {string} Formatted string like "4/28/2026 3:45 PM"
+   */
   function formatTimePST(isoStr) {
     if (!isoStr) return '';
-    var d = new Date(isoStr);
-    if (isNaN(d.getTime())) return isoStr;
-    var tz = 'America/Los_Angeles';
-    var datePart = d.toLocaleDateString('en-US', { timeZone: tz, month: 'numeric', day: 'numeric', year: 'numeric' });
-    var timePart = d.toLocaleTimeString('en-US', { timeZone: tz, hour: 'numeric', minute: '2-digit', hour12: true });
+    var date = new Date(isoStr);
+    if (isNaN(date.getTime())) return isoStr;
+
+    var timezone = 'America/Los_Angeles';
+    var datePart = date.toLocaleDateString('en-US', {
+      timeZone: timezone,
+      month: 'numeric',
+      day: 'numeric',
+      year: 'numeric'
+    });
+    var timePart = date.toLocaleTimeString('en-US', {
+      timeZone: timezone,
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    });
+
     return datePart + ' ' + timePart;
   }
 
-  function postedDays(str) {
+  /**
+   * Parses "posted on" strings like "Today", "Yesterday", "2 days ago" into a numeric value.
+   * Used for sorting jobs by recency.
+   * @param {string} str - The posted_on field from job data
+   * @returns {number} Days ago (0 = today, 1 = yesterday, etc.)
+   */
+  function parsePostedDaysAgo(str) {
     if (!str) return Infinity;
-    var s = str.toLowerCase();
-    if (s.indexOf('today') !== -1) return 0;
-    if (s.indexOf('yesterday') !== -1) return 1;
-    var m = s.match(/(\d+)\+?\s*day/);
-    if (m) return parseInt(m[1], 10);
+
+    var normalized = str.toLowerCase();
+    if (normalized.indexOf('today') !== -1) return 0;
+    if (normalized.indexOf('yesterday') !== -1) return 1;
+
+    var daysMatch = normalized.match(/(\d+)\+?\s*day/);
+    if (daysMatch) return parseInt(daysMatch[1], 10);
+
     return Infinity;
   }
 
-  var _toastEl = null;
-  var _toastTimer = null;
+  /**
+   * Converts a Workday site_id (e.g., "POM_Careers") into a display name.
+   * Falls back to formatting the site_id if not in the mapping.
+   */
+  function getSchoolDisplayName(siteId) {
+    // Mirrors SCHOOL_DISPLAY_NAMES from Python scraper
+    var SCHOOL_NAMES = {
+      TCCS_Careers: 'The Claremont Colleges Services',
+      POM_Careers: 'Pomona College',
+      CGU_Careers: 'Claremont Graduate University',
+      SCR_Career_Staff: 'Scripps College',
+      CMC_Staff: 'Claremont McKenna College',
+      HMC_Careers: 'Harvey Mudd College',
+      PIT_Staff: 'Pitzer College',
+      KGI_Careers: 'Keck Graduate Institute'
+    };
 
-  function showToast(msg, durationMs) {
-    if (durationMs === undefined) durationMs = 7000;
-    if (_toastEl) {
-      if (_toastTimer) { window.clearTimeout(_toastTimer); _toastTimer = null; }
-      _toastEl.remove();
-      _toastEl = null;
+    if (!siteId) return '';
+    if (Object.prototype.hasOwnProperty.call(SCHOOL_NAMES, siteId)) {
+      return SCHOOL_NAMES[siteId];
     }
-    var el = document.createElement('div');
-    el.className = 'toast';
-    el.setAttribute('role', 'alert');
-    var msgEl = document.createElement('span');
-    msgEl.className = 'toast-msg';
-    msgEl.textContent = msg;
-    var closeBtn = document.createElement('button');
-    closeBtn.className = 'toast-close';
-    closeBtn.setAttribute('aria-label', 'Dismiss');
-    closeBtn.textContent = '×';
-    closeBtn.addEventListener('click', dismissToast);
-    el.appendChild(msgEl);
-    el.appendChild(closeBtn);
-    document.body.appendChild(el);
-    _toastEl = el;
-    _toastTimer = window.setTimeout(dismissToast, durationMs);
-  }
 
-  function dismissToast() {
-    if (!_toastEl) return;
-    if (_toastTimer) { window.clearTimeout(_toastTimer); _toastTimer = null; }
-    var el = _toastEl;
-    _toastEl = null;
-    el.classList.add('toast-hiding');
-    window.setTimeout(function () { el.remove(); }, 250);
-  }
-
-  function applyTheme(theme) {
-    var t = theme === 'dark' ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', t);
-    try {
-      localStorage.setItem(THEME_KEY, t);
-    } catch (err) {}
-    themeToggle.setAttribute('aria-checked', t === 'dark' ? 'true' : 'false');
-    if (t === 'dark') {
-      themeToggle.setAttribute('aria-label', 'Use light theme');
-      themeToggle.title = 'Switch to light mode';
-    } else {
-      themeToggle.setAttribute('aria-label', 'Use dark theme');
-      themeToggle.title = 'Switch to dark mode';
+    // Fallback: format the site_id by removing common suffixes
+    var formatted = String(siteId).replace(/_/g, ' ');
+    var suffixes = [' Career Staff', ' Careers', ' Career', ' Staff'];
+    for (var i = 0; i < suffixes.length; i++) {
+      var suffix = suffixes[i];
+      if (formatted.length >= suffix.length && formatted.slice(-suffix.length) === suffix) {
+        return formatted.slice(0, -suffix.length).trim();
+      }
     }
+    return formatted;
   }
 
-  function initTheme() {
-    try {
-      var saved = localStorage.getItem(THEME_KEY);
-      if (saved === 'dark' || saved === 'light') {
-        applyTheme(saved);
+  // ══════════════════════════════════════════════════════════════════════════
+  // TOAST NOTIFICATION SYSTEM
+  // ══════════════════════════════════════════════════════════════════════════
+
+  var toast = {
+    /**
+     * Shows a toast notification at the bottom of the screen.
+     * Auto-dismisses previous toast if one is active.
+     */
+    show: function(message, durationMs) {
+      if (durationMs === undefined) durationMs = CONFIG.TIMING.TOAST_DURATION;
+
+      // Dismiss existing toast first
+      this.dismiss();
+
+      // Create toast elements
+      var container = document.createElement('div');
+      container.className = 'toast';
+      container.setAttribute('role', 'alert');
+
+      var messageEl = document.createElement('span');
+      messageEl.className = 'toast-msg';
+      messageEl.textContent = message;
+
+      var closeBtn = document.createElement('button');
+      closeBtn.className = 'toast-close';
+      closeBtn.setAttribute('aria-label', 'Dismiss');
+      closeBtn.textContent = '×';
+      closeBtn.addEventListener('click', this.dismiss.bind(this));
+
+      container.appendChild(messageEl);
+      container.appendChild(closeBtn);
+      document.body.appendChild(container);
+
+      // Store reference and set auto-dismiss timer
+      state.toast.element = container;
+      state.toast.timer = window.setTimeout(
+        this.dismiss.bind(this),
+        durationMs
+      );
+    },
+
+    /**
+     * Dismisses the current toast with fade-out animation.
+     */
+    dismiss: function() {
+      if (!state.toast.element) return;
+
+      // Clear auto-dismiss timer
+      if (state.toast.timer) {
+        window.clearTimeout(state.toast.timer);
+        state.toast.timer = null;
+      }
+
+      // Trigger fade-out animation
+      var element = state.toast.element;
+      state.toast.element = null;
+      element.classList.add('toast-hiding');
+
+      // Remove from DOM after animation completes
+      window.setTimeout(function() {
+        element.remove();
+      }, CONFIG.TIMING.TOAST_HIDE_ANIMATION);
+    }
+  };
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // MODAL CONTROLLER FACTORY
+  // ══════════════════════════════════════════════════════════════════════════
+
+  /**
+   * Creates a modal controller with open/close/keyboard navigation.
+   */
+  function createModalController(overlayEl, closeBtnEl) {
+    var previousFocusedElement = null;
+
+    function handleKeyDown(event) {
+      // Close on Escape
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        controller.close();
         return;
       }
-    } catch (err) {}
-    applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+
+      // Trap focus with Tab
+      if (event.key !== 'Tab') return;
+
+      var focusableElements = Array.prototype.slice.call(
+        overlayEl.querySelectorAll('button, a[href], input, [tabindex]:not([tabindex="-1"])')
+      ).filter(function(el) {
+        return !el.disabled && el.offsetParent !== null;
+      });
+
+      if (!focusableElements.length) return;
+
+      var firstElement = focusableElements[0];
+      var lastElement = focusableElements[focusableElements.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    }
+
+    var controller = {
+      open: function() {
+        previousFocusedElement = document.activeElement;
+        overlayEl.hidden = false;
+        closeBtnEl.focus();
+        document.addEventListener('keydown', handleKeyDown);
+      },
+
+      close: function() {
+        overlayEl.hidden = true;
+        document.removeEventListener('keydown', handleKeyDown);
+
+        // Restore focus to element that opened the modal
+        if (previousFocusedElement && typeof previousFocusedElement.focus === 'function') {
+          previousFocusedElement.focus();
+        }
+      }
+    };
+
+    return controller;
   }
 
-  var MSG_NO_SNAPSHOT =
-    'No job data found. The listing file (claremont_jobs_latest.json) has not been generated yet. ' +
-    'It is updated automatically every 30 minutes via GitHub Actions. Try again shortly.';
+  // ══════════════════════════════════════════════════════════════════════════
+  // THEME MANAGEMENT
+  // ══════════════════════════════════════════════════════════════════════════
 
-  var MSG_LOAD_FAILED =
-    'Could not load job data. The listing file may be temporarily unavailable. Try reloading the page.';
+  var theme = {
+    /**
+     * Applies and persists the theme (light or dark).
+     */
+    apply: function(themeValue) {
+      var normalizedTheme = themeValue === 'dark' ? 'dark' : 'light';
+      var isDark = normalizedTheme === 'dark';
 
-  var deltaState = {
-    previous_scraped_at: null,
-    newUrls: {},
+      // Update DOM
+      document.documentElement.setAttribute('data-theme', normalizedTheme);
+
+      // Update toggle button accessibility
+      elements.ui.themeToggle.setAttribute('aria-checked', isDark ? 'true' : 'false');
+      elements.ui.themeToggle.setAttribute(
+        'aria-label',
+        isDark ? 'Use light theme' : 'Use dark theme'
+      );
+      elements.ui.themeToggle.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+
+      // Persist to localStorage
+      try {
+        localStorage.setItem(CONFIG.STORAGE_KEYS.THEME, normalizedTheme);
+      } catch (err) {
+        // Silently fail if localStorage unavailable
+      }
+    },
+
+    /**
+     * Initializes theme from localStorage or defaults to light.
+     */
+    initialize: function() {
+      try {
+        var savedTheme = localStorage.getItem(CONFIG.STORAGE_KEYS.THEME);
+        if (savedTheme === 'dark' || savedTheme === 'light') {
+          this.apply(savedTheme);
+          return;
+        }
+      } catch (err) {
+        // Fall through to default
+      }
+
+      // Default to current HTML attribute or light
+      var defaultTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      this.apply(defaultTheme);
+    },
+
+    /**
+     * Toggles between light and dark themes.
+     */
+    toggle: function() {
+      var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      this.apply(newTheme);
+    }
   };
-  var lastLoadInfo = { scraped_at: '' };
 
-  /* Mirrors claremont_job_tracker.SCHOOL_DISPLAY_NAMES — keys are Workday site_id slugs. */
-  var SCHOOL_LABEL_BY_ID = {
-    TCCS_Careers: 'The Claremont Colleges Services',
-    POM_Careers: 'Pomona College',
-    CGU_Careers: 'Claremont Graduate University',
-    SCR_Career_Staff: 'Scripps College',
-    CMC_Staff: 'Claremont McKenna College',
-    HMC_Careers: 'Harvey Mudd College',
-    PIT_Staff: 'Pitzer College',
-    KGI_Careers: 'Keck Graduate Institute',
+  // ══════════════════════════════════════════════════════════════════════════
+  // ERROR MESSAGES
+  // ══════════════════════════════════════════════════════════════════════════
+
+  var ERROR_MESSAGES = {
+    NO_SNAPSHOT:
+      'No job data found. The listing file (claremont_jobs_latest.json) has not been generated yet. ' +
+      'It is updated automatically every hour via GitHub Actions. Try again shortly.',
+
+    LOAD_FAILED:
+      'Could not load job data. The listing file may be temporarily unavailable. Try reloading the page.'
   };
 
-  function schoolDisplayName(siteId) {
-    if (!siteId) return '';
-    if (Object.prototype.hasOwnProperty.call(SCHOOL_LABEL_BY_ID, siteId)) {
-      return SCHOOL_LABEL_BY_ID[siteId];
+  // ══════════════════════════════════════════════════════════════════════════
+  // DATA MANAGEMENT
+  // ══════════════════════════════════════════════════════════════════════════
+
+  var dataManager = {
+    /**
+     * Updates the last scraped timestamp from the data snapshot.
+     */
+    setMetadata: function(data) {
+      state.jobs.lastScrapedAt = data.scraped_at || '';
+    },
+
+    /**
+     * Processes delta data to identify newly posted jobs.
+     * Delta data shows which jobs are new since the previous snapshot.
+     */
+    applyDelta: function(deltaData) {
+      if (!deltaData) {
+        state.delta.previousScrapedAt = null;
+        state.delta.newJobUrls = {};
+        return;
+      }
+
+      state.delta.previousScrapedAt = deltaData.previous_scraped_at || null;
+
+      // Build a set of URLs for newly posted jobs
+      var newUrls = {};
+      var newJobs = deltaData.new_jobs || [];
+      for (var i = 0; i < newJobs.length; i++) {
+        var jobUrl = newJobs[i].url;
+        if (jobUrl) newUrls[jobUrl] = true;
+      }
+      state.delta.newJobUrls = newUrls;
+    },
+
+    /**
+     * Fetches a JSON file with cache-busting and error handling.
+     */
+    fetchJson: function(url) {
+      return fetch(url, { cache: 'no-store', credentials: 'omit' })
+        .then(function(response) {
+          if (response.status === 404) {
+            var error = new Error('HTTP 404');
+            error.is404 = true;
+            throw error;
+          }
+          if (!response.ok) {
+            throw new Error('HTTP ' + response.status);
+          }
+          return response.json();
+        });
+    },
+
+    /**
+     * Loads both the latest jobs snapshot and delta data in parallel.
+     * Returns a Promise that resolves when both are loaded and processed.
+     */
+    load: function() {
+      var latestPromise = this.fetchJson(CONFIG.DATA_FILES.LATEST);
+      var deltaPromise = this.fetchJson(CONFIG.DATA_FILES.DELTA)
+        .catch(function() {
+          // Delta file is optional; don't fail if it's missing
+          return null;
+        });
+
+      return Promise.all([latestPromise, deltaPromise])
+        .then(function(results) {
+          var latestData = results[0];
+          var deltaData = results[1];
+
+          if (!latestData || !Array.isArray(latestData.jobs)) {
+            throw new Error('Invalid JSON: expected an object with a "jobs" array.');
+          }
+
+          dataManager.setMetadata(latestData);
+          dataManager.applyDelta(deltaData);
+
+          return latestData;
+        });
     }
-    var s = String(siteId).replace(/_/g, ' ');
-    var sufs = [' Career Staff', ' Careers', ' Career', ' Staff'];
-    for (var i = 0; i < sufs.length; i++) {
-      var suf = sufs[i];
-      if (s.length >= suf.length && s.slice(-suf.length) === suf) return s.slice(0, -suf.length).trim();
+  };
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // TABLE RENDERING
+  // ══════════════════════════════════════════════════════════════════════════
+
+  var tableRenderer = {
+    /**
+     * Creates a table cell with optional muted styling for empty values.
+     */
+    createCell: function(text) {
+      var cell = document.createElement('td');
+      cell.textContent = text || '—';
+      if (!text) cell.classList.add('muted');
+      return cell;
+    },
+
+    /**
+     * Creates a job title cell with a link.
+     */
+    createTitleCell: function(job) {
+      var cell = document.createElement('td');
+      var link = document.createElement('a');
+      link.className = 'job-title';
+      var safeUrl = /^https?:\/\//i.test(job.url) ? job.url : '#';
+      link.href = safeUrl;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = job.title || '(no title)';
+      cell.appendChild(link);
+      return cell;
+    },
+
+    /**
+     * Creates a table row for a single job posting.
+     */
+    createRow: function(job) {
+      var row = document.createElement('tr');
+
+      // Store searchable/filterable data as data attributes
+      row.dataset.title = (job.title || '').toLowerCase();
+      row.dataset.siteId = job.site_id || '';
+      row.dataset.isNew = state.delta.newJobUrls[job.url] ? '1' : '0';
+
+      // Build row cells
+      row.appendChild(this.createTitleCell(job));
+      row.appendChild(this.createCell(getSchoolDisplayName(job.site_id) || job.site));
+      row.appendChild(this.createCell(job.location));
+      row.appendChild(this.createCell(job.time_type));
+      row.appendChild(this.createCell(job.posted_on));
+
+      return row;
+    },
+
+    /**
+     * Renders an array of jobs to the table body.
+     * Clears existing rows first.
+     */
+    render: function(jobs) {
+      state.jobs.all = jobs.slice();
+      var fragment = document.createDocumentFragment();
+      for (var i = 0; i < jobs.length; i++) {
+        fragment.appendChild(this.createRow(jobs[i]));
+      }
+      elements.jobsTable.body.textContent = '';
+      elements.jobsTable.body.appendChild(fragment);
     }
-    return s;
-  }
+  };
 
-  function setMeta(data) {
-    lastLoadInfo.scraped_at = data.scraped_at || '';
-  }
+  // ══════════════════════════════════════════════════════════════════════════
+  // FILTERING & SORTING
+  // ══════════════════════════════════════════════════════════════════════════
 
-  function applyDelta(d) {
-    if (!d) {
-      deltaState.previous_scraped_at = null;
-      deltaState.newUrls = {};
-      return;
+  var filtering = {
+    /**
+     * Populates the school dropdown with unique schools from the jobs array.
+     * Preserves the current selection if still valid.
+     */
+    populateSchoolFilter: function(jobs) {
+      var previousValue = elements.schoolFilter.value;
+
+      // Clear and add "All schools" option
+      elements.schoolFilter.textContent = '';
+      var allOption = document.createElement('option');
+      allOption.value = '';
+      allOption.textContent = 'All schools';
+      elements.schoolFilter.appendChild(allOption);
+
+      // Build unique school map
+      var schoolsById = {};
+      for (var i = 0; i < jobs.length; i++) {
+        var siteId = jobs[i].site_id || '';
+        if (!siteId) continue;
+        schoolsById[siteId] = getSchoolDisplayName(siteId) || jobs[i].site || siteId;
+      }
+
+      // Sort schools alphabetically by display name
+      var schoolIds = Object.keys(schoolsById);
+      schoolIds.sort(function(a, b) {
+        return getSchoolDisplayName(a).localeCompare(
+          getSchoolDisplayName(b),
+          undefined,
+          { sensitivity: 'base' }
+        );
+      });
+
+      // Add school options
+      for (var k = 0; k < schoolIds.length; k++) {
+        var id = schoolIds[k];
+        var option = document.createElement('option');
+        option.value = id;
+        option.textContent = schoolsById[id];
+        elements.schoolFilter.appendChild(option);
+      }
+
+      // Restore previous selection if still valid
+      if (previousValue && Object.prototype.hasOwnProperty.call(schoolsById, previousValue)) {
+        elements.schoolFilter.value = previousValue;
+      } else {
+        elements.schoolFilter.value = '';
+      }
+
+      elements.schoolFilter.disabled = false;
+    },
+
+    /**
+     * Applies search and school filters to table rows.
+     * Updates the meta line with filter status.
+     */
+    apply: function() {
+      var searchQuery = (elements.search.value || '').trim().toLowerCase();
+      var selectedSchool = (elements.schoolFilter.value || '').trim();
+      var allRows = elements.jobsTable.body.querySelectorAll('tr');
+      var visibleCount = 0;
+
+      // Filter rows
+      for (var i = 0; i < allRows.length; i++) {
+        var row = allRows[i];
+        var titleText = row.dataset.title || '';
+        var rowSchool = row.dataset.siteId || '';
+
+        var matchesTitle = !searchQuery || titleText.indexOf(searchQuery) !== -1;
+        var matchesSchool = !selectedSchool || rowSchool === selectedSchool;
+        var isVisible = matchesTitle && matchesSchool;
+
+        row.classList.toggle('hidden', !isVisible);
+        if (isVisible) visibleCount++;
+      }
+
+      // Update meta line
+      this.updateMetaLine(visibleCount, allRows.length, searchQuery, selectedSchool);
+    },
+
+    /**
+     * Updates the metadata line showing filter status and timestamp.
+     */
+    updateMetaLine: function(visibleCount, totalCount, searchQuery, selectedSchool) {
+      var filterParts = [];
+
+      if (selectedSchool) {
+        var selectedIndex = elements.schoolFilter.selectedIndex;
+        var schoolLabel = selectedIndex >= 0
+          ? elements.schoolFilter.options[selectedIndex].textContent
+          : selectedSchool;
+        filterParts.push('school: ' + schoolLabel);
+      }
+
+      if (searchQuery) {
+        filterParts.push('title contains "' + elements.search.value.trim() + '"');
+      }
+
+      if (filterParts.length === 0) {
+        // No filters active: show all jobs with timestamp and auto-update note
+        var timestamp = state.jobs.lastScrapedAt
+          ? ' (last checked ' + formatTimePST(state.jobs.lastScrapedAt) + ' PST)'
+          : '';
+        elements.ui.metaLine.textContent =
+          'Showing all ' + totalCount + ' postings' + timestamp + ' · Auto-updates hourly.';
+      } else {
+        // Filters active: show filtered count
+        var filterSummary = filterParts.join('; ');
+        elements.ui.metaLine.textContent =
+          'Showing ' + visibleCount + ' of ' + totalCount + ' postings (' + filterSummary + ').';
+      }
     }
-    deltaState.previous_scraped_at = d.previous_scraped_at || null;
-    var urls = {};
-    var jobs = d.new_jobs || [];
-    for (var i = 0; i < jobs.length; i++) {
-      var u = jobs[i].url;
-      if (u) urls[u] = true;
+  };
+
+  var sorting = {
+    /**
+     * Sorts the jobs array and re-renders the table.
+     */
+    apply: function() {
+      // Update sort arrow indicators
+      document.querySelectorAll('.sortable-th').forEach(function(th) {
+        var arrow = th.querySelector('.sort-arrow');
+        if (!arrow) return;
+
+        var columnKey = th.dataset.sortKey;
+        if (columnKey === state.sorting.column) {
+          var direction = state.sorting.direction === 1 ? ' asc' : ' desc';
+          arrow.className = 'sort-arrow' + direction;
+        } else {
+          arrow.className = 'sort-arrow';
+        }
+      });
+
+      // Sort jobs
+      var sortedJobs = state.jobs.all.slice().sort(this.compareJobs.bind(this));
+
+      // Re-render table and apply filters
+      tableRenderer.render(sortedJobs);
+      filtering.apply();
+    },
+
+    /**
+     * Comparison function for sorting jobs.
+     */
+    compareJobs: function(jobA, jobB) {
+      // Special handling for posted date (numeric comparison)
+      if (state.sorting.column === 'posted_on') {
+        var daysA = parsePostedDaysAgo(jobA.posted_on);
+        var daysB = parsePostedDaysAgo(jobB.posted_on);
+        return (daysA - daysB) * state.sorting.direction;
+      }
+
+      // Map column keys to job object properties
+      var fieldMap = {
+        title: 'title',
+        site: 'site_id',
+        location: 'location',
+        time_type: 'time_type'
+      };
+
+      var field = fieldMap[state.sorting.column] || state.sorting.column;
+      var valueA, valueB;
+
+      // Special handling for school/site (use display name)
+      if (state.sorting.column === 'site') {
+        valueA = getSchoolDisplayName(jobA.site_id || '').toLowerCase();
+        valueB = getSchoolDisplayName(jobB.site_id || '').toLowerCase();
+      } else {
+        valueA = (jobA[field] || '').toLowerCase();
+        valueB = (jobB[field] || '').toLowerCase();
+      }
+
+      // String comparison with direction
+      if (valueA < valueB) return -state.sorting.direction;
+      if (valueA > valueB) return state.sorting.direction;
+      return 0;
+    },
+
+    /**
+     * Sets the sort column and direction, then applies the sort.
+     */
+    setColumn: function(columnKey) {
+      if (state.sorting.column === columnKey) {
+        // Toggle direction if same column
+        state.sorting.direction = state.sorting.direction === 1 ? -1 : 1;
+      } else {
+        // New column: default to ascending
+        state.sorting.column = columnKey;
+        state.sorting.direction = 1;
+      }
+      this.apply();
+    },
+
+    /**
+     * Resets sorting to original order.
+     */
+    reset: function() {
+      state.sorting.column = null;
+      state.sorting.direction = 1;
+      document.querySelectorAll('.sortable-th .sort-arrow').forEach(function(el) {
+        el.className = 'sort-arrow';
+      });
     }
-    deltaState.newUrls = urls;
-  }
+  };
 
-  function cell(text) {
-    var td = document.createElement('td');
-    td.textContent = text || '—';
-    if (!text) td.classList.add('muted');
-    return td;
-  }
+  // ══════════════════════════════════════════════════════════════════════════
+  // DATA INGESTION
+  // ══════════════════════════════════════════════════════════════════════════
 
-  function _renderJobsRaw(jobs) {
-    jobsBody.textContent = '';
-    for (var i = 0; i < jobs.length; i++) {
-      var j = jobs[i];
-      var tr = document.createElement('tr');
-      tr.dataset.title = (j.title || '').toLowerCase();
-      tr.dataset.siteId = j.site_id || '';
-      var u = j.url || '';
-      tr.dataset.isNew = deltaState.newUrls[u] ? '1' : '0';
-
-      var tdTitle = document.createElement('td');
-      var a = document.createElement('a');
-      a.className = 'job-title';
-      a.href = u || '#';
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      a.textContent = j.title || '(no title)';
-      tdTitle.appendChild(a);
-
-      tr.appendChild(tdTitle);
-      tr.appendChild(cell(schoolDisplayName(j.site_id) || j.site));
-      tr.appendChild(cell(j.location));
-      tr.appendChild(cell(j.time_type));
-      tr.appendChild(cell(j.posted_on));
-      jobsBody.appendChild(tr);
-    }
-  }
-
-  function renderRows(jobs) {
-    _allJobs = jobs.slice();
-    _renderJobsRaw(jobs);
-  }
-
-  function populateSchoolFilter(jobs) {
-    var prev = schoolFilterEl.value;
-    schoolFilterEl.textContent = '';
-    var optAll = document.createElement('option');
-    optAll.value = '';
-    optAll.textContent = 'All schools';
-    schoolFilterEl.appendChild(optAll);
-    var byId = {};
-    for (var i = 0; i < jobs.length; i++) {
-      var sid = jobs[i].site_id || '';
-      if (!sid) continue;
-      byId[sid] = schoolDisplayName(sid) || jobs[i].site || sid;
-    }
-    var ids = Object.keys(byId);
-    ids.sort(function (a, b) {
-      return schoolDisplayName(a).localeCompare(schoolDisplayName(b), undefined, { sensitivity: 'base' });
-    });
-    for (var k = 0; k < ids.length; k++) {
-      var id = ids[k];
-      var o = document.createElement('option');
-      o.value = id;
-      o.textContent = byId[id];
-      schoolFilterEl.appendChild(o);
-    }
-    if (prev && Object.prototype.hasOwnProperty.call(byId, prev)) schoolFilterEl.value = prev;
-    else schoolFilterEl.value = '';
-    schoolFilterEl.disabled = false;
-  }
-
-  function applyFilter() {
-    var q = (searchEl.value || '').trim().toLowerCase();
-    var schoolId = (schoolFilterEl.value || '').trim();
-    var rows = jobsBody.querySelectorAll('tr');
-    var n = 0;
-    for (var i = 0; i < rows.length; i++) {
-      var r = rows[i];
-      var t = r.dataset.title || '';
-      var titleOk = !q || t.indexOf(q) !== -1;
-      var schoolOk = !schoolId || (r.dataset.siteId || '') === schoolId;
-      var show = titleOk && schoolOk;
-      r.classList.toggle('hidden', !show);
-      if (show) n++;
-    }
-
-    var parts = [];
-    if (schoolId) {
-      var si = schoolFilterEl.selectedIndex;
-      var lab = si >= 0 ? schoolFilterEl.options[si].textContent : schoolId;
-      parts.push('school: ' + lab);
-    }
-    if (q) parts.push('title contains "' + searchEl.value.trim() + '"');
-    var suffix = parts.length ? ' (' + parts.join('; ') + ')' : '';
-
-    if (!q && !schoolId) {
-      var when = lastLoadInfo.scraped_at ? ' (last checked ' + formatTimePST(lastLoadInfo.scraped_at) + ' PST)' : '';
-      metaLine.textContent = 'Showing all ' + rows.length + ' postings' + when + '.';
-    } else {
-      metaLine.textContent = 'Showing ' + n + ' of ' + rows.length + ' postings' + suffix + '.';
-    }
-  }
-
-  function ingest(data, delta) {
+  /**
+   * Processes loaded data and updates the UI.
+   * This is the main entry point after data loading completes.
+   */
+  function ingestData(data) {
     if (!data || !Array.isArray(data.jobs)) {
       alert('Invalid JSON: expected an object with a "jobs" array.');
       return;
     }
-    loadHint.style.display = 'none';
-    applyDelta(delta);
-    setMeta(data);
-    searchEl.disabled = false;
-    _sortCol = null;
-    _sortDir = 1;
-    document.querySelectorAll('.sortable-th .sort-arrow').forEach(function (el) { el.className = 'sort-arrow'; });
-    renderRows(data.jobs);
-    populateSchoolFilter(data.jobs);
-    applyFilter();
+
+    // Hide loading hint
+    elements.ui.loadHint.style.display = 'none';
+
+    // Enable search input
+    elements.search.disabled = false;
+
+    // Default sort: newest first
+    state.sorting.column = 'posted_on';
+    state.sorting.direction = 1;
+
+    // Render jobs and populate filters, then apply default sort
+    tableRenderer.render(data.jobs);
+    filtering.populateSchoolFilter(data.jobs);
+    sorting.apply();
   }
 
-  function fetchJson(url) {
-    return fetch(url, { cache: 'no-store', credentials: 'include' }).then(function (r) {
-      if (r.status === 404) {
-        var err = new Error('HTTP 404');
-        err.is404 = true;
-        throw err;
+  // ══════════════════════════════════════════════════════════════════════════
+  // TABLE REFRESH
+  // ══════════════════════════════════════════════════════════════════════════
+
+  var tableRefresh = {
+    _fetching: false,
+    _msgTimer: null,
+
+    getLastFetch: function() {
+      try {
+        return parseInt(localStorage.getItem(CONFIG.STORAGE_KEYS.LAST_FETCH) || '0', 10);
+      } catch (e) { return 0; }
+    },
+
+    setLastFetch: function(ts) {
+      try {
+        localStorage.setItem(CONFIG.STORAGE_KEYS.LAST_FETCH, String(ts));
+      } catch (e) {}
+    },
+
+    // Returns the next UTC hour boundary after a given timestamp (when the scraper will next run).
+    nextUpdateTime: function(afterMs) {
+      var d = new Date(afterMs);
+      d.setUTCMinutes(0, 0, 0);
+      d.setUTCHours(d.getUTCHours() + 1);
+      return d.getTime();
+    },
+
+    remaining: function() {
+      var lastFetch = this.getLastFetch();
+      if (!lastFetch) return 0;
+      return Math.max(0, this.nextUpdateTime(lastFetch) - Date.now());
+    },
+
+    showMsg: function(text) {
+      var msg = elements.ui.tableRefreshMsg;
+      if (this._msgTimer) {
+        clearTimeout(this._msgTimer);
+        this._msgTimer = null;
       }
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return r.json();
-    });
-  }
+      msg.style.transition = 'none';
+      msg.style.opacity = '1';
+      msg.textContent = text;
 
-  function loadData() {
-    var latestP = fetchJson('claremont_jobs_latest.json');
-    var deltaP = fetchJson('claremont_jobs_delta.json').catch(function () { return null; });
-    return Promise.all([latestP, deltaP]).then(function (results) {
-      ingest(results[0], results[1]);
-    });
-  }
+      var self = this;
+      this._msgTimer = window.setTimeout(function() {
+        msg.style.transition = 'opacity 0.5s ease';
+        msg.style.opacity = '0';
+        self._msgTimer = null;
+      }, CONFIG.TIMING.COOLDOWN_MSG_DURATION);
+    },
 
-  function cooldownRemaining() {
-    try {
-      var until = parseInt(localStorage.getItem(COOLDOWN_KEY) || '0', 10);
-      return Math.max(0, until - Date.now());
-    } catch (e) { return 0; }
-  }
+    setSpin: function(active) {
+      elements.ui.tableRefreshBtn.classList.toggle('spinning', active);
+    },
 
-  function setCooldownUntil(absMs) {
-    try { localStorage.setItem(COOLDOWN_KEY, String(absMs)); } catch (e) {}
-  }
+    handleClick: function() {
+      if (this._fetching) return;
 
-  function updateRefreshBtn() {
-    var rem = cooldownRemaining();
-    if (rem > 0) {
-      refreshBtn.disabled = true;
-      var availAt = new Date(Date.now() + rem);
-      refreshStatus.textContent = 'Next reload available at ' + formatTimePST(availAt.toISOString()) + ' PST.';
-      refreshStatus.classList.remove('error');
-    } else {
-      refreshBtn.disabled = false;
-      if (refreshStatus.textContent.indexOf('Next reload') === 0) {
-        refreshStatus.textContent = '';
+      var rem = this.remaining();
+      if (rem > 0) {
+        var nextTime = new Date(this.nextUpdateTime(this.getLastFetch()));
+        var timeStr = nextTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
+        this.showMsg('Next refresh available at ' + timeStr + ' (when data updates).');
+        return;
       }
+
+      // Snapshot current job URLs so we can diff after reload
+      var previousUrls = {};
+      var hadJobs = state.jobs.all.length > 0;
+      for (var i = 0; i < state.jobs.all.length; i++) {
+        if (state.jobs.all[i].url) previousUrls[state.jobs.all[i].url] = true;
+      }
+
+      this._fetching = true;
+      this.setLastFetch(Date.now());
+      this.setSpin(true);
+
+      var self = this;
+      dataManager.load()
+        .then(function(data) {
+          ingestData(data);
+
+          if (hadJobs) {
+            var newCount = 0;
+            for (var j = 0; j < state.jobs.all.length; j++) {
+              if (state.jobs.all[j].url && !previousUrls[state.jobs.all[j].url]) newCount++;
+            }
+            self.showMsg(newCount > 0
+              ? newCount + ' new job' + (newCount === 1 ? '' : 's') + ' found.'
+              : 'No new jobs since last check.'
+            );
+          }
+        })
+        .catch(function() {
+          self.setLastFetch(0);
+          self.showMsg('Refresh failed. Please try again.');
+        })
+        .finally(function() {
+          self._fetching = false;
+          self.setSpin(false);
+        });
     }
+  };
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // ADS MANAGEMENT
+  // ══════════════════════════════════════════════════════════════════════════
+
+  var adsManager = {
+    /**
+     * Checks if ads are enabled (defaults to true).
+     */
+    isEnabled: function() {
+      try {
+        var value = localStorage.getItem(CONFIG.STORAGE_KEYS.ADS_ENABLED);
+        return value === null ? true : value === '1';  // Default: enabled
+      } catch (err) {
+        return true;
+      }
+    },
+
+    /**
+     * Enables or disables ads and persists the preference.
+     */
+    setEnabled: function(enabled) {
+      try {
+        localStorage.setItem(CONFIG.STORAGE_KEYS.ADS_ENABLED, enabled ? '1' : '0');
+      } catch (err) {
+        // Silently fail if localStorage unavailable
+      }
+
+      // Update UI
+      document.body.classList.toggle('ads-enabled', enabled);
+      elements.ui.adsToggle.checked = enabled;
+    },
+
+    /**
+     * Initializes ads state from localStorage.
+     */
+    initialize: function() {
+      this.setEnabled(this.isEnabled());
+    }
+  };
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // UI HELPERS
+  // ══════════════════════════════════════════════════════════════════════════
+
+  var ui = {
+    /**
+     * Updates scroll-to-top button visibility based on scroll position.
+     */
+    updateScrollTopButton: function() {
+      var isScrolled = window.scrollY > CONFIG.UI.SCROLL_TOP_THRESHOLD;
+      elements.ui.scrollTopBtn.classList.toggle('visible', isScrolled);
+    },
+
+    /**
+     * Scrolls to top of page with smooth animation (respects prefers-reduced-motion).
+     */
+    scrollToTop: function() {
+      var behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'auto'
+        : 'smooth';
+      window.scrollTo({ top: 0, behavior: behavior });
+    }
+  };
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // EVENT HANDLERS
+  // ══════════════════════════════════════════════════════════════════════════
+
+  function setupEventListeners() {
+    // Search and filter inputs
+    elements.search.addEventListener('input', function() {
+      filtering.apply();
+    });
+
+    elements.schoolFilter.addEventListener('change', function() {
+      filtering.apply();
+    });
+
+    // Theme toggle
+    elements.ui.themeToggle.addEventListener('click', function() {
+      theme.toggle();
+    });
+
+    // Scroll-to-top button
+    window.addEventListener('scroll', ui.updateScrollTopButton, { passive: true });
+    elements.ui.scrollTopBtn.addEventListener('click', ui.scrollToTop);
+
+    // Table refresh button
+    elements.ui.tableRefreshBtn.addEventListener('click', function() {
+      tableRefresh.handleClick();
+    });
+
+    // Ads toggle
+    elements.ui.adsToggle.addEventListener('change', function() {
+      adsManager.setEnabled(elements.ui.adsToggle.checked);
+    });
+
+    // Sortable table headers
+    document.querySelectorAll('.sortable-th').forEach(function(header) {
+      header.addEventListener('click', function() {
+        var columnKey = header.dataset.sortKey;
+        sorting.setColumn(columnKey);
+      });
+
+      // Keyboard navigation for accessibility
+      header.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          header.click();
+        }
+      });
+    });
+
+    // Initialize modal controllers using the factory
+    var infoModalController = createModalController(
+      elements.modals.info.overlay,
+      elements.modals.info.close
+    );
+
+    // Modal button handlers
+    elements.modals.info.btn.addEventListener('click', function() {
+      infoModalController.open();
+    });
+
+    // Close modal on backdrop click
+    elements.modals.info.overlay.addEventListener('click', function(event) {
+      if (event.target === elements.modals.info.overlay) {
+        infoModalController.close();
+      }
+    });
   }
 
-  function onRefresh() {
-    if (cooldownRemaining() > 0) return;
-    setCooldownUntil(Date.now() + COOLDOWN_MS);
-    refreshStatus.textContent = 'Loading…';
-    refreshStatus.classList.remove('error');
-    refreshBtn.disabled = true;
-    loadData()
-      .then(function () {
-        refreshStatus.textContent = '';
+  // ══════════════════════════════════════════════════════════════════════════
+  // INITIALIZATION
+  // ══════════════════════════════════════════════════════════════════════════
+
+  function initialize() {
+    // Set up GitHub links
+    elements.links.github.href = CONFIG.REPO_URL;
+    elements.links.issues.href = CONFIG.ISSUES_URL;
+
+    // Initialize theme
+    theme.initialize();
+
+    // Initialize ads
+    adsManager.initialize();
+
+    // Set up event listeners
+    setupEventListeners();
+
+    // Initialize scroll-to-top button visibility
+    ui.updateScrollTopButton();
+
+    // Load initial data
+    dataManager.load()
+      .then(function(data) {
+        tableRefresh.setLastFetch(Date.now());
+        ingestData(data);
       })
-      .catch(function (e) {
-        setCooldownUntil(0);
-        refreshStatus.textContent = 'Load failed: ' + (e && e.message || 'Unknown error');
-        refreshStatus.classList.add('error');
-      })
-      .finally(function () {
-        updateRefreshBtn();
+      .catch(function(error) {
+        // Show error hint
+        elements.ui.loadHint.style.display = 'block';
+        elements.ui.loadHint.textContent = error && error.is404
+          ? ERROR_MESSAGES.NO_SNAPSHOT
+          : ERROR_MESSAGES.LOAD_FAILED;
+
+        elements.ui.metaLine.textContent = 'No listings loaded yet.';
+
+        // Set up empty school filter
+        elements.schoolFilter.textContent = '';
+        var defaultOption = document.createElement('option');
+        defaultOption.value = '';
+        defaultOption.textContent = 'All schools';
+        elements.schoolFilter.appendChild(defaultOption);
+        elements.schoolFilter.value = '';
+        elements.schoolFilter.disabled = true;
       });
   }
 
-  searchEl.addEventListener('input', applyFilter);
-
-  schoolFilterEl.addEventListener('change', applyFilter);
-
-  refreshBtn.addEventListener('click', onRefresh);
-
-  // Apply cooldown state immediately on load and re-check every 30s so the
-  // button re-enables itself once the cooldown expires without needing a reload.
-  updateRefreshBtn();
-  window.setInterval(updateRefreshBtn, 30000);
-
-  function applySort() {
-    document.querySelectorAll('.sortable-th').forEach(function (th) {
-      var arrow = th.querySelector('.sort-arrow');
-      if (!arrow) return;
-      var key = th.dataset.sortKey;
-      if (key === _sortCol) {
-        arrow.className = 'sort-arrow' + (_sortDir === 1 ? ' asc' : ' desc');
-      } else {
-        arrow.className = 'sort-arrow';
-      }
-    });
-    var sorted = _allJobs.slice().sort(function (a, b) {
-      var va, vb;
-      if (_sortCol === 'posted_on') {
-        va = postedDays(a.posted_on);
-        vb = postedDays(b.posted_on);
-        return (va - vb) * _sortDir;
-      }
-      var fieldMap = { title: 'title', site: 'site_id', location: 'location', time_type: 'time_type' };
-      var field = fieldMap[_sortCol] || _sortCol;
-      if (_sortCol === 'site') {
-        va = schoolDisplayName(a.site_id || '').toLowerCase();
-        vb = schoolDisplayName(b.site_id || '').toLowerCase();
-      } else {
-        va = (a[field] || '').toLowerCase();
-        vb = (b[field] || '').toLowerCase();
-      }
-      return va < vb ? -_sortDir : va > vb ? _sortDir : 0;
-    });
-    _renderJobsRaw(sorted);
-    applyFilter();
-  }
-
-  document.querySelectorAll('.sortable-th').forEach(function (th) {
-    th.addEventListener('click', function () {
-      var key = th.dataset.sortKey;
-      if (_sortCol === key) {
-        _sortDir = _sortDir === 1 ? -1 : 1;
-      } else {
-        _sortCol = key;
-        _sortDir = 1;
-      }
-      applySort();
-    });
-    th.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); th.click(); }
-    });
-  });
-
-  initTheme();
-  themeToggle.addEventListener('click', function () {
-    var cur = document.documentElement.getAttribute('data-theme') || 'light';
-    applyTheme(cur === 'dark' ? 'light' : 'dark');
-  });
-
-  var scrollTopBtn = document.getElementById('scrollTopBtn');
-  function updateScrollTopBtn() {
-    scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
-  }
-  window.addEventListener('scroll', updateScrollTopBtn, { passive: true });
-  scrollTopBtn.addEventListener('click', function () {
-    window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-  });
-  updateScrollTopBtn();
-
-  // ── Ads ──────────────────────────────────────────────────────────────────
-  var adsToggle = document.getElementById('adsToggle');
-
-  function adsEnabled() {
-    try {
-      var v = localStorage.getItem(ADS_KEY);
-      return v === null ? true : v === '1'; // default on
-    } catch (e) { return true; }
-  }
-
-  function setAdsEnabled(on) {
-    try { localStorage.setItem(ADS_KEY, on ? '1' : '0'); } catch (e) {}
-    document.body.classList.toggle('ads-enabled', on);
-    adsToggle.checked = on;
-  }
-
-  setAdsEnabled(adsEnabled());
-  adsToggle.addEventListener('change', function () { setAdsEnabled(adsToggle.checked); });
-
-  // ── Info modal ────────────────────────────────────────────────────────────
-  var infoBtn        = document.getElementById('infoBtn');
-  var infoModal      = document.getElementById('infoModal');
-  var infoModalClose = document.getElementById('infoModalClose');
-  var githubLink     = document.getElementById('githubLink');
-  var issuesLink     = document.getElementById('issuesLink');
-
-  githubLink.href = REPO_URL;
-  issuesLink.href = ISSUES_URL;
-
-  var _modalPrevFocus = null;
-
-  function openModal() {
-    _modalPrevFocus = document.activeElement;
-    infoModal.hidden = false;
-    infoModalClose.focus();
-    document.addEventListener('keydown', onModalKey);
-  }
-
-  function closeModal() {
-    infoModal.hidden = true;
-    document.removeEventListener('keydown', onModalKey);
-    if (_modalPrevFocus && typeof _modalPrevFocus.focus === 'function') {
-      _modalPrevFocus.focus();
-    }
-  }
-
-  function onModalKey(e) {
-    if (e.key === 'Escape') { e.preventDefault(); closeModal(); return; }
-    if (e.key !== 'Tab') return;
-    var focusable = Array.prototype.slice.call(
-      infoModal.querySelectorAll('button, a[href], input, [tabindex]:not([tabindex="-1"])')
-    ).filter(function (el) { return !el.disabled && el.offsetParent !== null; });
-    if (!focusable.length) return;
-    var first = focusable[0], last = focusable[focusable.length - 1];
-    if (e.shiftKey && document.activeElement === first) {
-      e.preventDefault(); last.focus();
-    } else if (!e.shiftKey && document.activeElement === last) {
-      e.preventDefault(); first.focus();
-    }
-  }
-
-  infoBtn.addEventListener('click', openModal);
-  infoModalClose.addEventListener('click', closeModal);
-  infoModal.addEventListener('click', function (e) {
-    if (e.target === infoModal) closeModal(); // click backdrop
-  });
-
-  loadData().catch(function (e) {
-    loadHint.style.display = 'block';
-    loadHint.textContent = e && e.is404 ? MSG_NO_SNAPSHOT : MSG_LOAD_FAILED;
-    metaLine.textContent = 'No listings loaded yet.';
-    schoolFilterEl.textContent = '';
-    var o = document.createElement('option');
-    o.value = '';
-    o.textContent = 'All schools';
-    schoolFilterEl.appendChild(o);
-    schoolFilterEl.value = '';
-    schoolFilterEl.disabled = true;
-  });
+  // Start the application
+  initialize();
 })();
   </script>
 </body>
