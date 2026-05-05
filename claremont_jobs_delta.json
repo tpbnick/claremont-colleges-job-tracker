@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-05-05T09:41:57-07:00",
-  "current_scraped_at": "2026-05-05T10:40:08-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-05-05T10:40:08-07:00",
+  "current_scraped_at": "2026-05-05T11:41:33-07:00",
+  "new_count": 1,
+  "removed_count": 1,
+  "new_jobs": [
+    {
+      "title": "Assistant Dean of Students",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Dean-of-Students_REQ-8098-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }

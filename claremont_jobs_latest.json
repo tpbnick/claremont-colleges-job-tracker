@@ -1,16 +1,7 @@
 {
-  "scraped_at": "2026-05-05T10:40:08-07:00",
+  "scraped_at": "2026-05-05T11:41:33-07:00",
   "total": 125,
   "jobs": [
-    {
-      "title": "Clinical Nurse Supervisor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Tranquada-Student-Services-Center-TSSC---LC10005/Clinical-Nurse-Supervisor_REQ-8027",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Tranquada Student Services Center TSSC - LC10005",
-      "time_type": "Full time",
-      "posted_on": "Posted 11 Days Ago"
-    },
     {
       "title": "Human Resources Business Partner",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Human-Resources-Business-Partner_REQ-8049-1",
@@ -64,6 +55,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Assistant Dean of Students",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Dean-of-Students_REQ-8098-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Associate Director, Employer Engagement",
