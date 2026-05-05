@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-05T12:40:11-07:00",
+  "scraped_at": "2026-05-05T13:32:46-07:00",
   "total": 125,
   "jobs": [
     {
@@ -246,6 +246,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Lifeguard",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Lifeguard_REQ-7939",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Post-Doctoral Researcher",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Post-Doctoral-Researcher_REQ-8079",
       "site_id": "SCR_Career_Staff",
@@ -441,15 +450,6 @@
       "site": "Scripps College",
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Lifeguard",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Lifeguard_REQ-7939",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
     },
     {
