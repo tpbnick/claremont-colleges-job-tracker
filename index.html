@@ -4,9 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <title>Claremont Colleges — job listings</title>
+  <title>Claremont College Jobs | All 7C Job Listings in One Place</title>
+  <meta name="description" content="Browse every open job at all seven Claremont Colleges — Pomona, Claremont McKenna, Harvey Mudd, Scripps, Pitzer, Claremont Graduate University, and Keck Graduate Institute — updated daily from each college's Workday career site.">
+  <link rel="canonical" href="https://claremontcollegejobs.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://claremontcollegejobs.com/">
+  <meta property="og:title" content="Claremont College Jobs | All 7C Job Listings in One Place">
+  <meta property="og:description" content="Browse every open job at all seven Claremont Colleges, updated daily from each college's Workday career site.">
+  <meta property="og:site_name" content="Claremont College Jobs">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Claremont College Jobs | All 7C Job Listings in One Place">
+  <meta name="twitter:description" content="Browse every open job at all seven Claremont Colleges, updated daily from each college's Workday career site.">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Claremont College Jobs",
+    "url": "https://claremontcollegejobs.com/",
+    "description": "Aggregated job listings from all seven Claremont Colleges, updated daily.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://claremontcollegejobs.com/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- Google AdSense: replace YOUR_PUBLISHER_ID with your ca-pub-XXXXXXXXXXXXXXXX value -->
+  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2574041106325612" crossorigin="anonymous"></script>
   <style>
     :root {
@@ -641,6 +675,17 @@
       font-size: 0.83rem;
       color: var(--text-muted);
     }
+    .site-footer {
+      margin: 2.5rem 0 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    .site-footer a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+    .site-footer a:hover { color: var(--text); }
   </style>
 </head>
 <body>
@@ -749,6 +794,14 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
             Report an issue or ask for help
           </a>
+          <a href="/about">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            About this site
+          </a>
+          <a href="/privacy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Privacy Policy
+          </a>
         </div>
         <hr class="modal-divider">
         <div class="modal-toggle-row">
@@ -766,6 +819,14 @@
       </div>
     </div>
   </div>
+
+  <footer class="site-footer">
+    <a href="/about">About</a>
+    &middot;
+    <a href="/privacy">Privacy Policy</a>
+    &middot;
+    <span>Not affiliated with The Claremont Colleges</span>
+  </footer>
 
   <button type="button" id="scrollTopBtn" class="scroll-top-btn" aria-label="Back to top" title="Back to top">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="1.1rem" height="1.1rem" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>

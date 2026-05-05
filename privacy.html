@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy | Claremont College Jobs</title>
+  <meta name="description" content="Privacy policy for claremontcollegejobs.com — what data is collected, how it is used, and your choices.">
+  <link rel="canonical" href="https://claremontcollegejobs.com/privacy">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.6;
+      color-scheme: light;
+      --page-bg: #f4f4f5;
+      --text: #1a1a1a;
+      --text-muted: #666;
+      --surface: #ffffff;
+      --border: #d4d4d8;
+      --link: #1c4ed8;
+    }
+    html[data-theme="dark"] {
+      color-scheme: dark;
+      --page-bg: #0f1117;
+      --text: #e8eaef;
+      --text-muted: #9ca3af;
+      --surface: #1a1d26;
+      --border: #2d3340;
+      --link: #93c5fd;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--page-bg);
+      color: var(--text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    .back-link {
+      display: inline-block;
+      color: var(--link);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+    .back-link:hover { text-decoration: underline; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .updated { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 2rem; }
+    h2 { font-size: 1.1rem; margin: 2rem 0 0.6rem; }
+    p { margin-bottom: 0.9rem; }
+    ul { padding-left: 1.4rem; margin-bottom: 0.9rem; }
+    li { margin-bottom: 0.35rem; }
+    a { color: var(--link); }
+    hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('claremontCollegeJobsTrackerTheme');
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="back-link" href="/">&larr; Back to job listings</a>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: May 5, 2026</p>
+
+  <p>
+    This privacy policy describes how <strong>claremontcollegejobs.com</strong> (the "Site")
+    handles information when you visit. The short version: <strong>we do not collect, store,
+    or share any personal information about you.</strong>
+  </p>
+
+  <h2>Who operates this site</h2>
+  <p>
+    This is an independent, non-commercial hobby project. The Site is not affiliated with,
+    endorsed by, or connected to The Claremont Colleges or any of their member institutions.
+  </p>
+
+  <h2>Information we do not collect</h2>
+  <p>We do not use analytics software, track page views, collect IP addresses, or store any
+  information about visitors on our own servers. There are no user accounts and no sign-up forms.</p>
+
+  <h2>Local storage</h2>
+  <p>
+    The Site saves three small preferences to your browser's
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener noreferrer">localStorage</a>.
+    This data never leaves your device and is never transmitted to us or any third party.
+  </p>
+  <ul>
+    <li><strong>Theme preference</strong> — whether you have chosen light or dark mode.</li>
+    <li><strong>Ads preference</strong> — whether you have enabled or disabled advertisements.</li>
+    <li><strong>Last refresh time</strong> — the timestamp of your most recent data refresh, used to enforce a cooldown between requests.</li>
+  </ul>
+  <p>You can clear this data at any time by clearing your browser's site data for this domain.</p>
+
+  <h2>Third-party advertising (Google AdSense)</h2>
+  <p>
+    This Site uses <a href="https://www.google.com/adsense/" target="_blank" rel="noopener noreferrer">Google AdSense</a>
+    to display advertisements. Google may use cookies and similar technologies to serve ads
+    based on your prior visits to this and other websites.
+  </p>
+  <ul>
+    <li>
+      You can opt out of personalized advertising by visiting
+      <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google's Ads Settings</a>.
+    </li>
+    <li>
+      For more information on how Google uses data when you use partner sites, see
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites that use our services</a>.
+    </li>
+  </ul>
+  <p>You can also disable ads entirely using the toggle in the site's About panel (the <strong>?</strong> button).</p>
+
+  <h2>External requests made by the site</h2>
+  <p>When you load or refresh job listings, your browser makes requests to:</p>
+  <ul>
+    <li>
+      <strong>This site's own files</strong> — <code>claremont_jobs_latest.json</code> and
+      <code>claremont_jobs_delta.json</code>, hosted on GitHub Pages. These are standard
+      HTTP requests; no personal data is included.
+    </li>
+    <li>
+      <strong>GitHub API</strong> — a single request to
+      <code>api.github.com</code> to retrieve the date of the most recent data update,
+      displayed as "last updated." GitHub's own
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">privacy policy</a>
+      applies to this request.
+    </li>
+  </ul>
+
+  <h2>Links to other sites</h2>
+  <p>
+    Job listings link directly to each college's Workday career site. Once you click through,
+    you are subject to that institution's own privacy policy and terms of use.
+  </p>
+
+  <h2>Children's privacy</h2>
+  <p>This Site is not directed at children under 13 and we do not knowingly collect any
+  information from children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes materially, the "last updated" date at the top of this page will
+  be revised. Continued use of the Site after any changes constitutes acceptance of the
+  updated policy.</p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy can be submitted via the
+    <a href="https://github.com/tpbnick/claremont-colleges-job-tracker/issues" target="_blank" rel="noopener noreferrer">GitHub issues page</a>.
+  </p>
+
+  <hr>
+  <footer>
+    <a href="/">Claremont College Jobs</a> &mdash; independent, not affiliated with The Claremont Colleges.
+  </footer>
+</body>
+</html>
