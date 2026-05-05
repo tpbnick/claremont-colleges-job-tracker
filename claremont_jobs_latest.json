@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-05T15:27:19-07:00",
-  "total": 125,
+  "scraped_at": "2026-05-05T16:24:31-07:00",
+  "total": 126,
   "jobs": [
     {
       "title": "Human Resources Business Partner",
@@ -55,6 +55,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Mail Services Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Mail-Services-Assistant_REQ-8100",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Dean of Students",
