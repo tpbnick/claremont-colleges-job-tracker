@@ -414,12 +414,17 @@ def main() -> int:
         if previous_data
         else {"new": [], "removed": []}
     )
-    current_data = save_current(current_jobs)
-    write_delta(previous_data, current_data, diff)
 
-    print(f"\nTotal postings scraped: {len(current_jobs)}")
-    print(f"Results saved to:        {SAVE_FILE}")
-    print(f"Delta written to:        {DELTA_FILE}")
+    has_changes = previous_data is None or bool(diff["new"] or diff["removed"])
+
+    if has_changes:
+        current_data = save_current(current_jobs)
+        write_delta(previous_data, current_data, diff)
+        print(f"\nTotal postings scraped: {len(current_jobs)}")
+        print(f"Results saved to:        {SAVE_FILE}")
+        print(f"Delta written to:        {DELTA_FILE}")
+    else:
+        print(f"\nNo changes detected ({len(current_jobs)} postings). Files not updated.")
 
     if previous_data:
         print_diff(diff, previous_data["scraped_at"])
