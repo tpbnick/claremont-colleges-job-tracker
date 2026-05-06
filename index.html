@@ -646,35 +646,6 @@
     .sort-arrow.asc::after { content: '↑'; opacity: 1; }
     .sort-arrow.desc::after { content: '↓'; opacity: 1; }
 
-    /* ── Table top bar (refresh + auto-update note) ───────────────────────── */
-    .table-top-bar {
-      display: flex;
-      align-items: center;
-      gap: 0.55rem;
-      margin: 0.75rem 0 0.5rem;
-    }
-    .table-refresh-btn {
-      width: 1.75rem;
-      height: 1.75rem;
-      padding: 0;
-      border-radius: 50%;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text-muted);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .table-refresh-btn:hover { color: var(--text); background: var(--row-hover); }
-    .table-refresh-btn:focus-visible { outline: 2px solid #3b5bdb; outline-offset: 2px; }
-    .table-refresh-btn.spinning svg { animation: spin 0.8s linear infinite; }
-    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    .table-refresh-msg {
-      font-size: 0.83rem;
-      color: var(--text-muted);
-    }
     .site-footer {
       margin: 2.5rem 0 1rem;
       font-size: 0.8rem;
@@ -720,12 +691,6 @@
     <input type="search" id="search" placeholder="Type to filter job titles…" autocomplete="off" disabled>
   </div>
 
-  <div class="table-top-bar">
-    <button type="button" id="tableRefreshBtn" class="table-refresh-btn" title="Refresh job listings" aria-label="Refresh job listings">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
-    </button>
-    <span id="tableRefreshMsg" class="table-refresh-msg" aria-live="polite"></span>
-  </div>
 
   <div class="table-wrap">
   <table id="jobsTable" aria-label="Job postings">
@@ -847,15 +812,13 @@
     // LocalStorage keys
     STORAGE_KEYS: {
       THEME: 'claremontCollegeJobsTrackerTheme',
-      ADS_ENABLED: 'claremontCollegeJobsTrackerAdsEnabled',
-      LAST_FETCH: 'claremontCollegeJobsTrackerLastFetch'
+      ADS_ENABLED: 'claremontCollegeJobsTrackerAdsEnabled'
     },
 
     // Time constants (in milliseconds)
     TIMING: {
-      COOLDOWN_MSG_DURATION: 10 * 1000,  // Cooldown message fades after 10 seconds
-      TOAST_DURATION: 7000,              // Toast auto-dismiss after 7 seconds
-      TOAST_HIDE_ANIMATION: 250          // Toast fade-out animation duration
+      TOAST_DURATION: 7000,
+      TOAST_HIDE_ANIMATION: 250
     },
 
     // UI thresholds
@@ -888,8 +851,6 @@
     ui: {
       loadHint: document.getElementById('loadHint'),
       metaLine: document.getElementById('metaLine'),
-      tableRefreshBtn: document.getElementById('tableRefreshBtn'),
-      tableRefreshMsg: document.getElementById('tableRefreshMsg'),
       themeToggle: document.getElementById('themeToggle'),
       scrollTopBtn: document.getElementById('scrollTopBtn'),
       adsToggle: document.getElementById('adsToggle')
@@ -1211,7 +1172,7 @@
   var ERROR_MESSAGES = {
     NO_SNAPSHOT:
       'No job data found. The listing file (data/claremont_jobs_latest.json) has not been generated yet. ' +
-      'It is updated automatically every hour via GitHub Actions. Try again shortly.',
+      'Listings are checked hourly and the file is created on the first run. Try again shortly.',
 
     LOAD_FAILED:
       'Could not load job data. The listing file may be temporarily unavailable. Try reloading the page.'
@@ -1471,10 +1432,10 @@
       if (filterParts.length === 0) {
         // No filters active: show all jobs with timestamp and auto-update note
         var timestamp = state.jobs.lastScrapedAt
-          ? ' (last checked ' + formatTimePST(state.jobs.lastScrapedAt) + ' PST)'
+          ? ' · last updated ' + formatTimePST(state.jobs.lastScrapedAt) + ' PST'
           : '';
         elements.ui.metaLine.textContent =
-          'Showing all ' + totalCount + ' postings' + timestamp + ' · Auto-updates hourly.';
+          'Showing all ' + totalCount + ' postings' + timestamp + ' · checked hourly, updates when listings change.';
       } else {
         // Filters active: show filtered count
         var filterSummary = filterParts.join('; ');
@@ -1605,110 +1566,6 @@
     sorting.apply();
   }
 
-  // ══════════════════════════════════════════════════════════════════════════
-  // TABLE REFRESH
-  // ══════════════════════════════════════════════════════════════════════════
-
-  var tableRefresh = {
-    _fetching: false,
-    _msgTimer: null,
-
-    getLastFetch: function() {
-      try {
-        return parseInt(localStorage.getItem(CONFIG.STORAGE_KEYS.LAST_FETCH) || '0', 10);
-      } catch (e) { return 0; }
-    },
-
-    setLastFetch: function(ts) {
-      try {
-        localStorage.setItem(CONFIG.STORAGE_KEYS.LAST_FETCH, String(ts));
-      } catch (e) {}
-    },
-
-    // Returns the next UTC hour boundary after a given timestamp (when the scraper will next run).
-    nextUpdateTime: function(afterMs) {
-      var d = new Date(afterMs);
-      d.setUTCMinutes(0, 0, 0);
-      d.setUTCHours(d.getUTCHours() + 1);
-      return d.getTime();
-    },
-
-    remaining: function() {
-      var lastFetch = this.getLastFetch();
-      if (!lastFetch) return 0;
-      return Math.max(0, this.nextUpdateTime(lastFetch) - Date.now());
-    },
-
-    showMsg: function(text) {
-      var msg = elements.ui.tableRefreshMsg;
-      if (this._msgTimer) {
-        clearTimeout(this._msgTimer);
-        this._msgTimer = null;
-      }
-      msg.style.transition = 'none';
-      msg.style.opacity = '1';
-      msg.textContent = text;
-
-      var self = this;
-      this._msgTimer = window.setTimeout(function() {
-        msg.style.transition = 'opacity 0.5s ease';
-        msg.style.opacity = '0';
-        self._msgTimer = null;
-      }, CONFIG.TIMING.COOLDOWN_MSG_DURATION);
-    },
-
-    setSpin: function(active) {
-      elements.ui.tableRefreshBtn.classList.toggle('spinning', active);
-    },
-
-    handleClick: function() {
-      if (this._fetching) return;
-
-      var rem = this.remaining();
-      if (rem > 0) {
-        var nextTime = new Date(this.nextUpdateTime(this.getLastFetch()));
-        var timeStr = nextTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
-        this.showMsg('Next refresh available at ' + timeStr + ' (when data updates).');
-        return;
-      }
-
-      // Snapshot current job URLs so we can diff after reload
-      var previousUrls = {};
-      var hadJobs = state.jobs.all.length > 0;
-      for (var i = 0; i < state.jobs.all.length; i++) {
-        if (state.jobs.all[i].url) previousUrls[state.jobs.all[i].url] = true;
-      }
-
-      this._fetching = true;
-      this.setLastFetch(Date.now());
-      this.setSpin(true);
-
-      var self = this;
-      dataManager.load()
-        .then(function(data) {
-          ingestData(data);
-
-          if (hadJobs) {
-            var newCount = 0;
-            for (var j = 0; j < state.jobs.all.length; j++) {
-              if (state.jobs.all[j].url && !previousUrls[state.jobs.all[j].url]) newCount++;
-            }
-            self.showMsg(newCount > 0
-              ? newCount + ' new job' + (newCount === 1 ? '' : 's') + ' found.'
-              : 'No new jobs since last check.'
-            );
-          }
-        })
-        .catch(function() {
-          self.setLastFetch(0);
-          self.showMsg('Refresh failed. Please try again.');
-        })
-        .finally(function() {
-          self._fetching = false;
-          self.setSpin(false);
-        });
-    }
-  };
 
   // ══════════════════════════════════════════════════════════════════════════
   // ADS MANAGEMENT
@@ -1850,10 +1707,6 @@
     window.addEventListener('scroll', ui.updateScrollTopButton, { passive: true });
     elements.ui.scrollTopBtn.addEventListener('click', ui.scrollToTop);
 
-    // Table refresh button
-    elements.ui.tableRefreshBtn.addEventListener('click', function() {
-      tableRefresh.handleClick();
-    });
 
     // Ads toggle
     elements.ui.adsToggle.addEventListener('change', function() {
@@ -1922,7 +1775,6 @@
     // Load initial data
     dataManager.load()
       .then(function(data) {
-        tableRefresh.setLastFetch(Date.now());
         ingestData(data);
       })
       .catch(function(error) {
