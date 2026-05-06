@@ -63,8 +63,8 @@ HEADERS = {
     "Content-Type": "application/json",
 }
 
-SAVE_FILE = Path(__file__).parent / "claremont_jobs_latest.json"
-DELTA_FILE = Path(__file__).parent / "claremont_jobs_delta.json"
+SAVE_FILE = Path(__file__).parent.parent / "data" / "claremont_jobs_latest.json"
+DELTA_FILE = Path(__file__).parent.parent / "data" / "claremont_jobs_delta.json"
 # Workday CXS returns HTTP 400 for limit > 20 on this tenant.
 PAGE_SIZE = 20
 REQUEST_DELAY = 0.35  # seconds between paginated / multi-site calls

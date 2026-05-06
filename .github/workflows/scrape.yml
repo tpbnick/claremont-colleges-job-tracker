@@ -19,14 +19,14 @@ jobs:
           python-version: '3.13'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r scripts/requirements.txt
 
       - name: Run scraper
-        run: python claremont_job_tracker.py
+        run: python scripts/claremont_job_tracker.py
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add claremont_jobs_latest.json claremont_jobs_delta.json
+          git add data/claremont_jobs_latest.json data/claremont_jobs_delta.json
           git diff --staged --quiet && echo "No changes to commit." || (git commit -m "chore: update job listings [skip ci]" && git push)

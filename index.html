@@ -869,8 +869,8 @@
         ? 'https://claremontcollegejobs.com/'
         : '';
       return {
-        LATEST: base + 'claremont_jobs_latest.json',
-        DELTA:  base + 'claremont_jobs_delta.json'
+        LATEST: base + 'data/claremont_jobs_latest.json',
+        DELTA:  base + 'data/claremont_jobs_delta.json'
       };
     })()
   };
@@ -1210,7 +1210,7 @@
 
   var ERROR_MESSAGES = {
     NO_SNAPSHOT:
-      'No job data found. The listing file (claremont_jobs_latest.json) has not been generated yet. ' +
+      'No job data found. The listing file (data/claremont_jobs_latest.json) has not been generated yet. ' +
       'It is updated automatically every hour via GitHub Actions. Try again shortly.',
 
     LOAD_FAILED:
