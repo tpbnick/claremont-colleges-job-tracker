@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-05-05T15:27:19-07:00",
-  "current_scraped_at": "2026-05-05T16:24:31-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-05-05T16:24:31-07:00",
+  "current_scraped_at": "2026-05-05T17:54:56-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Mail Services Assistant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Mail-Services-Assistant_REQ-8100",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
