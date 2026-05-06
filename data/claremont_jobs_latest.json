@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-06T09:43:24-07:00",
-  "total": 124,
+  "scraped_at": "2026-05-06T15:23:34-07:00",
+  "total": 125,
   "jobs": [
     {
       "title": "Human Resources Business Partner",
@@ -244,6 +244,15 @@
       "location": "Harper Hall - LC20601",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Research Technician",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Research-Technician_REQ-8099",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Lifeguard",
