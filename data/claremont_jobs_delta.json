@@ -1,15 +1,15 @@
 {
-  "previous_scraped_at": "2026-05-06T09:43:24-07:00",
-  "current_scraped_at": "2026-05-06T15:23:34-07:00",
+  "previous_scraped_at": "2026-05-06T15:23:34-07:00",
+  "current_scraped_at": "2026-05-06T17:59:20-07:00",
   "new_count": 1,
   "removed_count": 0,
   "new_jobs": [
     {
-      "title": "Research Technician",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Research-Technician_REQ-8099",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
+      "title": "Assistant Professor, Clinical Sciences - General Pharmacy or Infectious Disease",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Assistant-Professor--Clinical-Sciences---General-Pharmacy-or-Infectious-Disease_REQ-8102",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "215 York Building - LC72000",
       "time_type": "Full time",
       "posted_on": "Posted Today"
     }
