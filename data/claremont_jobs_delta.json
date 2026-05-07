@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-05-06T15:23:34-07:00",
-  "current_scraped_at": "2026-05-06T17:59:20-07:00",
-  "new_count": 1,
-  "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Assistant Professor, Clinical Sciences - General Pharmacy or Infectious Disease",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Assistant-Professor--Clinical-Sciences---General-Pharmacy-or-Infectious-Disease_REQ-8102",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "215 York Building - LC72000",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-05-06T17:59:20-07:00",
+  "current_scraped_at": "2026-05-07T09:42:13-07:00",
+  "new_count": 0,
+  "removed_count": 1,
+  "new_jobs": []
 }
