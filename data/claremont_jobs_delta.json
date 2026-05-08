@@ -1,16 +1,16 @@
 {
-  "previous_scraped_at": "2026-05-07T15:29:33-07:00",
-  "current_scraped_at": "2026-05-08T11:40:43-07:00",
+  "previous_scraped_at": "2026-05-08T11:40:43-07:00",
+  "current_scraped_at": "2026-05-08T13:29:52-07:00",
   "new_count": 1,
-  "removed_count": 0,
+  "removed_count": 1,
   "new_jobs": [
     {
-      "title": "Philanthropic Advisor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Kingston-Hall/Philanthropic-Advisor_REQ-8096",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Kingston Hall",
-      "time_type": "Full time",
+      "title": "Graduate Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Graduate-Assistant_REQ-8105",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
       "posted_on": "Posted Today"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-08T11:40:43-07:00",
+  "scraped_at": "2026-05-08T13:29:52-07:00",
   "total": 128,
   "jobs": [
     {
@@ -55,6 +55,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Graduate Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Graduate-Assistant_REQ-8105",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Director, Systems Training",
@@ -563,15 +572,6 @@
     {
       "title": "Administrative Assistant for Student Life",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Administrative-Assistant-for-Student-Life_REQ-7869",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Assistant Director of Residential Life",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Assistant-Director-of-Residential-Life_REQ-7879",
       "site_id": "CMC_Staff",
       "site": "Claremont McKenna College",
       "location": "Claremont",
