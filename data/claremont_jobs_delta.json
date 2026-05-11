@@ -1,15 +1,15 @@
 {
-  "previous_scraped_at": "2026-05-08T11:40:43-07:00",
-  "current_scraped_at": "2026-05-08T13:29:52-07:00",
+  "previous_scraped_at": "2026-05-08T13:29:52-07:00",
+  "current_scraped_at": "2026-05-11T12:38:57-07:00",
   "new_count": 1,
-  "removed_count": 1,
+  "removed_count": 0,
   "new_jobs": [
     {
-      "title": "Graduate Assistant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Graduate-Assistant_REQ-8105",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
+      "title": "Art Studio Technician",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Art-Studio-Technician_REQ-8097",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
       "time_type": "Part time",
       "posted_on": "Posted Today"
     }
