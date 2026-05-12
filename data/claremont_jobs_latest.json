@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-12T08:05:52-07:00",
-  "total": 129,
+  "scraped_at": "2026-05-12T09:52:31-07:00",
+  "total": 130,
   "jobs": [
     {
       "title": "Human Resources Business Partner",
@@ -55,6 +55,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Academic Coordinator, Chemistry",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Academic-Coordinator--Chemistry_REQ-8107",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Dean of Students",

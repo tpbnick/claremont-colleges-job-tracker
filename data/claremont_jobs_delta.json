@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-05-12T06:44:48-07:00",
-  "current_scraped_at": "2026-05-12T08:05:52-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-05-12T08:05:52-07:00",
+  "current_scraped_at": "2026-05-12T09:52:31-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Academic Coordinator, Chemistry",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Academic-Coordinator--Chemistry_REQ-8107",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
