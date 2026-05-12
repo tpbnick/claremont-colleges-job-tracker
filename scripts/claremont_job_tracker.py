@@ -417,14 +417,15 @@ def main() -> int:
 
     has_changes = previous_data is None or bool(diff["new"] or diff["removed"])
 
-    if has_changes:
-        current_data = save_current(current_jobs)
-        write_delta(previous_data, current_data, diff)
-        print(f"\nTotal postings scraped: {len(current_jobs)}")
-        print(f"Results saved to:        {SAVE_FILE}")
-        print(f"Delta written to:        {DELTA_FILE}")
-    else:
-        print(f"\nNo changes detected ({len(current_jobs)} postings). Files not updated.")
+    # Always save so that Workday's relative posted_on strings (e.g. "Today",
+    # "Yesterday") stay current even when the job set hasn't changed.
+    current_data = save_current(current_jobs)
+    write_delta(previous_data, current_data, diff)
+    print(f"\nTotal postings scraped: {len(current_jobs)}")
+    print(f"Results saved to:        {SAVE_FILE}")
+    print(f"Delta written to:        {DELTA_FILE}")
+    if not has_changes:
+        print("  (no structural changes — timestamps and posted_on fields refreshed)")
 
     if previous_data:
         print_diff(diff, previous_data["scraped_at"])
