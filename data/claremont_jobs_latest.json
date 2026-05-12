@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-11T12:38:57-07:00",
+  "scraped_at": "2026-05-11T17:57:55-07:00",
   "total": 129,
   "jobs": [
     {
@@ -57,6 +57,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Assistant Dean of Students",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Dean-of-Students_REQ-8098-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Graduate Assistant",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Graduate-Assistant_REQ-8105",
       "site_id": "POM_Careers",
@@ -86,15 +95,6 @@
     {
       "title": "Mail Services Assistant",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Mail-Services-Assistant_REQ-8100",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
-    },
-    {
-      "title": "Assistant Dean of Students",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Dean-of-Students_REQ-8098-1",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
@@ -624,6 +624,24 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Temporary Upward Bound Tutor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Temporary-Upward-Bound-Tutor_REQ-8055",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Temporary Upward Bound Instructor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Temporary-Upward-Bound-Instructor-1_REQ-8054",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Philanthropic Advisor",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Kingston-Hall/Philanthropic-Advisor_REQ-8096",
       "site_id": "HMC_Careers",
@@ -687,24 +705,6 @@
       "posted_on": "Posted 17 Days Ago"
     },
     {
-      "title": "Temporary Upward Bound Instructor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Temporary-Upward-Bound-Instructor-1_REQ-8054",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Part time",
-      "posted_on": "Posted 18 Days Ago"
-    },
-    {
-      "title": "Temporary Upward Bound Tutor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Temporary-Upward-Bound-Tutor_REQ-8055",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Part time",
-      "posted_on": "Posted 20 Days Ago"
-    },
-    {
       "title": "Mail Clerk",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Mail-Clerk_REQ-7966-1",
       "site_id": "HMC_Careers",
@@ -750,6 +750,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Senior Budget Support Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Senior-Budget-Support-Coordinator_REQ-8015",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Scott Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Web and Email Content Specialist",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Mead-Hall/Web-and-Email-Content-Specialist_REQ-8083",
       "site_id": "PIT_Staff",
@@ -766,15 +775,6 @@
       "location": "McConnell Center",
       "time_type": "Full time",
       "posted_on": "Posted 20 Days Ago"
-    },
-    {
-      "title": "Senior Budget Support Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Senior-Budget-Support-Coordinator_REQ-8015",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Scott Hall",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
     },
     {
       "title": "Director of Advancement Services",
