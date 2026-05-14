@@ -1,16 +1,16 @@
 {
-  "previous_scraped_at": "2026-05-14T08:57:18-07:00",
-  "current_scraped_at": "2026-05-14T09:50:51-07:00",
+  "previous_scraped_at": "2026-05-14T09:50:51-07:00",
+  "current_scraped_at": "2026-05-14T10:40:53-07:00",
   "new_count": 1,
-  "removed_count": 0,
+  "removed_count": 1,
   "new_jobs": [
     {
-      "title": "Assistant Coach, Swim and  Diving",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Swim-and--Diving_REQ-8114",
+      "title": "Assistant Coach, Women's Basketball",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Women-s-Basketball_REQ-8113",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
-      "time_type": "Full time",
+      "time_type": "Part time",
       "posted_on": "Posted Today"
     }
   ]

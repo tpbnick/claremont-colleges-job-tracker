@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-14T09:50:51-07:00",
+  "scraped_at": "2026-05-14T10:40:53-07:00",
   "total": 129,
   "jobs": [
     {
@@ -55,6 +55,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Assistant Coach, Women's Basketball",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Women-s-Basketball_REQ-8113",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Coach, Swim and  Diving",
@@ -455,15 +464,6 @@
     {
       "title": "Mail Center Supervisor",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Mail-Center-Supervisor_REQ-8026",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Residential Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Residential-Coordinator_REQ-8028",
       "site_id": "SCR_Career_Staff",
       "site": "Scripps College",
       "location": "Scripps College - Claremont, CA",
