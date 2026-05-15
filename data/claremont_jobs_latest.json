@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-15T10:38:00-07:00",
-  "total": 127,
+  "scraped_at": "2026-05-15T11:42:44-07:00",
+  "total": 128,
   "jobs": [
     {
       "title": "Human Resources Business Partner",
@@ -55,6 +55,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Director of Complex Assets (Legacy)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Director-of-Complex-Assets--Legacy-_REQ-8125",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Coach, Women's Basketball",

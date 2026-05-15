@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-05-15T09:43:16-07:00",
-  "current_scraped_at": "2026-05-15T10:38:00-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-05-15T10:38:00-07:00",
+  "current_scraped_at": "2026-05-15T11:42:44-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Director of Complex Assets (Legacy)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Director-of-Complex-Assets--Legacy-_REQ-8125",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
