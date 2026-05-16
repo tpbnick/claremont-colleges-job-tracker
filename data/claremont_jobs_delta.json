@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-05-15T15:27:18-07:00",
-  "current_scraped_at": "2026-05-15T16:25:30-07:00",
-  "new_count": 1,
-  "removed_count": 2,
-  "new_jobs": [
-    {
-      "title": "Accessibility Services Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Accessibility-Services-Coordinator_REQ-8123",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Scott Hall",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-05-15T16:25:30-07:00",
+  "current_scraped_at": "2026-05-15T17:58:08-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
