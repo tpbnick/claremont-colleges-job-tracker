@@ -1,16 +1,7 @@
 {
-  "scraped_at": "2026-05-18T08:13:02-07:00",
+  "scraped_at": "2026-05-18T10:05:58-07:00",
   "total": 127,
   "jobs": [
-    {
-      "title": "Human Resources Business Partner",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Human-Resources-Business-Partner_REQ-8049-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 28 Days Ago"
-    },
     {
       "title": "Collections Assistant",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Administrative-Campus-Center-ACC---LC10008/Collections-Assistant_REQ-8022",
@@ -730,6 +721,15 @@
       "location": "Kingston Hall",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Senior Academic Services Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Fletcher-Hall/Senior-Academic-Services-Coordinator_REQ-8126-1",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Fletcher Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Accessibility Services Coordinator",

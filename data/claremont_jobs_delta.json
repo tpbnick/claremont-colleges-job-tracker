@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-05-18T06:29:06-07:00",
-  "current_scraped_at": "2026-05-18T08:13:02-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-05-18T08:13:02-07:00",
+  "current_scraped_at": "2026-05-18T10:05:58-07:00",
+  "new_count": 1,
+  "removed_count": 1,
+  "new_jobs": [
+    {
+      "title": "Senior Academic Services Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Fletcher-Hall/Senior-Academic-Services-Coordinator_REQ-8126-1",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Fletcher Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
