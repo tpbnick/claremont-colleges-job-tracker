@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-05-18T14:33:47-07:00",
-  "current_scraped_at": "2026-05-18T15:27:50-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-05-18T15:27:50-07:00",
+  "current_scraped_at": "2026-05-18T16:29:54-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Admission Counselor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Balch-Hall/Admission-Counselor_REQ-8117",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Balch Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
