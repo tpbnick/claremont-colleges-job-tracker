@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-20T06:07:18-07:00",
-  "total": 128,
+  "scraped_at": "2026-05-20T08:12:16-07:00",
+  "total": 129,
   "jobs": [
     {
       "title": "Collections Assistant",
@@ -496,6 +496,15 @@
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Editorial Content Producer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Editorial-Content-Producer_REQ-8122",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Facilities Technician",

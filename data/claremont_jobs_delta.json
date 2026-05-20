@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-05-20T04:09:37-07:00",
-  "current_scraped_at": "2026-05-20T06:07:18-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-05-20T06:07:18-07:00",
+  "current_scraped_at": "2026-05-20T08:12:16-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Editorial Content Producer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Editorial-Content-Producer_REQ-8122",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
