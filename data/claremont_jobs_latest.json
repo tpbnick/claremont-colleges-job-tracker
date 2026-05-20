@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-20T13:50:52-07:00",
-  "total": 129,
+  "scraped_at": "2026-05-20T14:40:10-07:00",
+  "total": 132,
   "jobs": [
     {
       "title": "Collections Assistant",
@@ -496,6 +496,33 @@
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Athletic Communications Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Athletic-Communications-Assistant_REQ-8121",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Assistant Strength and Conditioning Coach",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Assistant-Strength-and-Conditioning-Coach_REQ-8127",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Athletic Trainer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Athletic-Trainer_REQ-8128",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Editorial Content Producer",
