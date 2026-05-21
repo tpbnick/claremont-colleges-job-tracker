@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-05-21T10:02:32-07:00",
-  "current_scraped_at": "2026-05-21T11:47:35-07:00",
-  "new_count": 2,
-  "removed_count": 2,
-  "new_jobs": [
-    {
-      "title": "Admission Counselor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Admission-Counselor_REQ-8117",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Major Gifts Officer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Major-Gifts-Officer_REQ-8062",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-05-21T11:47:35-07:00",
+  "current_scraped_at": "2026-05-21T12:39:12-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
