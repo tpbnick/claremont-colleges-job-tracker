@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-05-22T09:52:41-07:00",
-  "current_scraped_at": "2026-05-22T10:41:15-07:00",
-  "new_count": 0,
-  "removed_count": 1,
-  "new_jobs": []
+  "previous_scraped_at": "2026-05-22T10:41:15-07:00",
+  "current_scraped_at": "2026-05-22T11:45:56-07:00",
+  "new_count": 1,
+  "removed_count": 0,
+  "new_jobs": [
+    {
+      "title": "CGU- Financial Aid Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CGU_Careers/job/Harper-Hall---LC20601/CGU--Financial-Aid-Specialist_REQ-8141",
+      "site_id": "CGU_Careers",
+      "site": "Claremont Graduate University",
+      "location": "Harper Hall - LC20601",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
