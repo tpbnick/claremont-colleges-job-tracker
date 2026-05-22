@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-21T20:19:20-07:00",
-  "total": 131,
+  "scraped_at": "2026-05-21T22:30:24-07:00",
+  "total": 134,
   "jobs": [
     {
       "title": "Collections Assistant",
@@ -820,6 +820,33 @@
       "location": "Broad Center",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Pharmaceutical Discovery, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Pharmaceutical-Development---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8132",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 535",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Pharmaceutical Development, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Pharmaceutical-Development---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8131",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 535",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Virology, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Virology---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8130",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 535",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Professor, Clinical Sciences - General Pharmacy or Infectious Disease",
