@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-27T15:38:48-07:00",
+  "scraped_at": "2026-05-27T16:33:49-07:00",
   "total": 126,
   "jobs": [
     {
@@ -489,15 +489,6 @@
       "posted_on": "Posted 7 Days Ago"
     },
     {
-      "title": "Athletic Trainer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Athletic-Trainer_REQ-8128",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 7 Days Ago"
-    },
-    {
       "title": "Editorial Content Producer",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Editorial-Content-Producer_REQ-8122",
       "site_id": "CMC_Staff",
@@ -613,6 +604,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Project Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Project-Manager_REQ-8146",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Temporary Upward Bound Tutor",
