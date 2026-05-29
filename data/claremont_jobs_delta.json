@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-05-29T13:55:55-07:00",
-  "current_scraped_at": "2026-05-29T14:40:59-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-05-29T14:40:59-07:00",
+  "current_scraped_at": "2026-05-29T15:36:48-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Workday Payroll Analyst",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Workday-Payroll-Analyst_REQ-8145",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
