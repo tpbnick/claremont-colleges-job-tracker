@@ -1,35 +1,7 @@
 {
-  "previous_scraped_at": "2026-06-01T11:10:06-07:00",
-  "current_scraped_at": "2026-06-01T13:32:50-07:00",
-  "new_count": 3,
+  "previous_scraped_at": "2026-06-01T13:32:50-07:00",
+  "current_scraped_at": "2026-06-01T15:08:55-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Administrative Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Jacobs-Hall/Administrative-Coordinator_REQ-8147",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Jacobs Hall",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Building Attendant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Claremont/Building-Attendant_REQ-8148",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Adjunct Faculty, Master of Science in Human Genetics and Genetic Counseling",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Adjunct-Faculty--Master-of-Science-in-Human-Genetics-and-Genetic-Counseling_REQ-8154",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "Building: 535",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
