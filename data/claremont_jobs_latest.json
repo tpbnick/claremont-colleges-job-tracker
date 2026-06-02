@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-02T14:13:30-07:00",
-  "total": 124,
+  "scraped_at": "2026-06-02T15:48:15-07:00",
+  "total": 123,
   "jobs": [
     {
       "title": "Testing Center Support Specialist/Evening Exam Proctor",
@@ -64,6 +64,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Acting Coordinator, International and Domestic Programs",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Acting-Coordinator--International-and-Domestic-Programs_REQ-8160",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Post Baccalaureate Fellow, Instructional Technology",
@@ -194,15 +203,6 @@
     {
       "title": "Mellon Mays Undergraduate Fellowship (MMUF) Graduate Writing Coach",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Mellon-Mays-Undergraduate-Fellowship--MMUF--Graduate-Writing-Coach_REQ-7898",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Mellon Mays Undergraduate Fellowship (MMUF) Graduate Mentor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Mellon-Mays-Undergraduate-Fellowship--MMUF--Graduate-Mentor_REQ-7865",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
@@ -604,15 +604,6 @@
       "location": "Platt Campus Center",
       "time_type": "Full time",
       "posted_on": "Posted 6 Days Ago"
-    },
-    {
-      "title": "Temporary Upward Bound Tutor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Temporary-Upward-Bound-Tutor_REQ-8055",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Part time",
-      "posted_on": "Posted 22 Days Ago"
     },
     {
       "title": "Temporary Upward Bound Instructor",
