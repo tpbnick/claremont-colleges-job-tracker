@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-06-04T13:50:17-07:00",
-  "current_scraped_at": "2026-06-04T14:38:45-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-06-04T14:38:45-07:00",
+  "current_scraped_at": "2026-06-04T16:33:16-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "CSWIM Post-Baccalaureate for Programming",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/CSWIM-Post-Baccalaureate-for-Programming_REQ-8170",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
