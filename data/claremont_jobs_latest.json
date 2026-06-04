@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-04T12:47:34-07:00",
-  "total": 121,
+  "scraped_at": "2026-06-04T13:50:17-07:00",
+  "total": 123,
   "jobs": [
     {
       "title": "Campus Safety Dispatcher",
@@ -667,6 +667,24 @@
       "location": "Kingston Hall",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Lead Writer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Broad-Center/Lead-Writer_REQ-8165",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Broad Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Communications and Marketing Project Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Broad-Center/Communications-and-Marketing-Project-Coordinator_REQ-8164",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Broad Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Director of Philanthropy",
