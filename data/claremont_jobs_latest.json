@@ -1,7 +1,25 @@
 {
-  "scraped_at": "2026-06-05T08:09:49-07:00",
+  "scraped_at": "2026-06-05T09:55:52-07:00",
   "total": 125,
   "jobs": [
+    {
+      "title": "Program Coordinator and Evening Exam Proctor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Program-Coordinator-and-Evening-Exam-Proctor_REQ-7984-1",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Testing Center Support Specialist/Evening Exam Proctor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Testing-Center-Support-Specialist-Evening-Exam-Proctor_REQ-8152-1",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Campus Safety Dispatcher",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Campus-Safety-Dispatcher_REQ-7839",
@@ -14,15 +32,6 @@
     {
       "title": "Commercial HVAC Service Technician",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Commercial-HVAC-Service-Technician_REQ-7961-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 2 Days Ago"
-    },
-    {
-      "title": "Program Coordinator and Evening Exam Proctor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Program-Coordinator-and-Evening-Exam-Proctor_REQ-7984-1",
       "site_id": "TCCS_Careers",
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
@@ -46,15 +55,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 2 Days Ago"
-    },
-    {
-      "title": "Testing Center Support Specialist/Evening Exam Proctor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Testing-Center-Support-Specialist-Evening-Exam-Proctor_REQ-8152-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 3 Days Ago"
     },
     {
       "title": "Lead Building Attendant",
