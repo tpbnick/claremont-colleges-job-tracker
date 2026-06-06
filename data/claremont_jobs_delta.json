@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-06-05T20:16:41-07:00",
-  "current_scraped_at": "2026-06-05T22:25:59-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-06-05T22:25:59-07:00",
+  "current_scraped_at": "2026-06-06T02:02:01-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Lead Writer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Broad-Center/Lead-Writer_REQ-8172",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Broad Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
