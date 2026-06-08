@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-06-08T14:42:21-07:00",
-  "current_scraped_at": "2026-06-08T15:37:59-07:00",
-  "new_count": 1,
-  "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Assistant Dean, Admissions",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Dean--Admissions_REQ-8179",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-06-08T15:37:59-07:00",
+  "current_scraped_at": "2026-06-08T16:32:24-07:00",
+  "new_count": 0,
+  "removed_count": 1,
+  "new_jobs": []
 }
