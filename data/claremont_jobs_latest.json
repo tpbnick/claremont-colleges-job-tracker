@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-08T08:16:31-07:00",
+  "scraped_at": "2026-06-08T10:14:59-07:00",
   "total": 124,
   "jobs": [
     {
@@ -55,6 +55,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Chief Experience and Engagement Officer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Chief-Experience-and-Engagement-Officer_REQ-8174-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "CSWIM Post-Baccalaureate for Programming",
@@ -234,7 +243,7 @@
       "site": "Claremont Graduate University",
       "location": "Harper Hall - LC20601",
       "time_type": "Full time",
-      "posted_on": "Posted 4 Days Ago"
+      "posted_on": "Posted Today"
     },
     {
       "title": "CGU- Financial Aid Specialist",
@@ -251,15 +260,6 @@
       "site_id": "CGU_Careers",
       "site": "Claremont Graduate University",
       "location": "SCGH Office Facilities - LC20104",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "CGU- Temporary Grant Accountant, Grants & Sponsored Research",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CGU_Careers/job/Harper-Hall---LC20601/CGU--Temporary-Grant-Accountant--Grants---Sponsored-Research_REQ-8003",
-      "site_id": "CGU_Careers",
-      "site": "Claremont Graduate University",
-      "location": "Harper Hall - LC20601",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
     },
