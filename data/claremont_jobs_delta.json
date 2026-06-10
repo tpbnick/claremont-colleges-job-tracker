@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-06-09T15:38:51-07:00",
-  "current_scraped_at": "2026-06-09T16:35:08-07:00",
-  "new_count": 0,
-  "removed_count": 1,
-  "new_jobs": []
+  "previous_scraped_at": "2026-06-09T16:35:08-07:00",
+  "current_scraped_at": "2026-06-09T18:11:38-07:00",
+  "new_count": 2,
+  "removed_count": 0,
+  "new_jobs": [
+    {
+      "title": "Assistant Professor (Principal Faculty), Master of Science in Physician Associate Studies (MSPA) Program",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/555-Arrow-Building---LC73000/Assistant-Professor--Principal-Faculty---Master-of-Science-in-Physician-Associate-Studies--MSPA--Program_REQ-8175",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "555 Arrow Building - LC73000",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Assistant/Associate/Full Professor and Program Director, Occupational Therapy Doctorate Program",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-517/Assistant-Associate-Full-Professor-and-Program-Director--Occupational-Therapy-Doctorate-Program_REQ-8178",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 517",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
