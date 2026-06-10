@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-10T08:15:30-07:00",
+  "scraped_at": "2026-06-10T10:15:32-07:00",
   "total": 125,
   "jobs": [
     {
@@ -651,15 +651,6 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Building Attendant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Claremont/Building-Attendant_REQ-8050",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Administrative & Operations Assistant",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Parsons-Hall/Administrative---Operations-Assistant_REQ-8038",
       "site_id": "HMC_Careers",
@@ -676,6 +667,15 @@
       "location": "Kingston Hall",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Pitzer Photographer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Mead-Hall/Pitzer-Photographer_REQ-8184",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Mead Hall",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Accessibility Services Coordinator",
