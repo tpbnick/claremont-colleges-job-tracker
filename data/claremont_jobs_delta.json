@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-06-10T10:15:32-07:00",
-  "current_scraped_at": "2026-06-10T12:04:12-07:00",
-  "new_count": 0,
-  "removed_count": 1,
-  "new_jobs": []
+  "previous_scraped_at": "2026-06-10T12:04:12-07:00",
+  "current_scraped_at": "2026-06-10T14:00:58-07:00",
+  "new_count": 2,
+  "removed_count": 0,
+  "new_jobs": [
+    {
+      "title": "Social Media Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Social-Media-Manager_REQ-8182",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Scott Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "GIS & Agrivoltaics Education Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Redford-Conservancy-Building/GIS---Agrivoltaics-Education-Coordinator_REQ-8181-1",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Redford Conservancy Building",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
