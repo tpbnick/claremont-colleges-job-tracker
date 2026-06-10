@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-06-10T08:15:30-07:00",
-  "current_scraped_at": "2026-06-10T10:15:32-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-06-10T10:15:32-07:00",
+  "current_scraped_at": "2026-06-10T12:04:12-07:00",
+  "new_count": 0,
   "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Pitzer Photographer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Mead-Hall/Pitzer-Photographer_REQ-8184",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Mead Hall",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
