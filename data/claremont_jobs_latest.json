@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-11T08:19:27-07:00",
-  "total": 127,
+  "scraped_at": "2026-06-11T10:24:06-07:00",
+  "total": 125,
   "jobs": [
     {
       "title": "Program Coordinator and Evening Exam Proctor",
@@ -98,8 +98,8 @@
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
-      "time_type": "",
-      "posted_on": ""
+      "time_type": "Full time",
+      "posted_on": "Posted 9 Days Ago"
     },
     {
       "title": "Post Baccalaureate Fellow, Instructional Technology",
@@ -390,15 +390,6 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Research Technician",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Research-Technician_REQ-8076",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Program Coordinator",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Program-Coordinator_REQ-8042",
       "site_id": "SCR_Career_Staff",
@@ -675,15 +666,6 @@
       "site": "Pitzer College",
       "location": "Scott Hall",
       "time_type": "Full time",
-      "posted_on": "Posted Yesterday"
-    },
-    {
-      "title": "GIS & Agrivoltaics Education Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Redford-Conservancy-Building/GIS---Agrivoltaics-Education-Coordinator_REQ-8181-1",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Redford Conservancy Building",
-      "time_type": "Part time",
       "posted_on": "Posted Yesterday"
     },
     {
