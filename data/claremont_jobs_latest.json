@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-10T16:37:11-07:00",
-  "total": 126,
+  "scraped_at": "2026-06-10T18:14:40-07:00",
+  "total": 127,
   "jobs": [
     {
       "title": "Program Coordinator and Evening Exam Proctor",
@@ -80,8 +80,8 @@
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 2 Days Ago"
+      "time_type": "",
+      "posted_on": ""
     },
     {
       "title": "CSWIM Post-Baccalaureate for Programming",
@@ -89,8 +89,8 @@
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
+      "time_type": "",
+      "posted_on": ""
     },
     {
       "title": "Acting Coordinator, International and Domestic Programs",
@@ -134,8 +134,8 @@
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 26 Days Ago"
+      "time_type": "",
+      "posted_on": ""
     },
     {
       "title": "Academic Coordinator, Chemistry",
@@ -161,8 +161,8 @@
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted 30+ Days Ago"
+      "time_type": "",
+      "posted_on": ""
     },
     {
       "title": "Director, Systems Training",
@@ -206,8 +206,8 @@
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
+      "time_type": "",
+      "posted_on": ""
     },
     {
       "title": "Cultivation Coordinator, The Pomona Plan",
@@ -577,6 +577,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Building Attendant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Building-Attendant_REQ-8004",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Administrative Coordinator",
