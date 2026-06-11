@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-06-10T16:37:11-07:00",
-  "current_scraped_at": "2026-06-10T18:14:40-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-06-10T18:14:40-07:00",
+  "current_scraped_at": "2026-06-10T20:18:02-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Building Attendant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Building-Attendant_REQ-8004",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
