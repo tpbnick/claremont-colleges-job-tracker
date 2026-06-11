@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-06-11T10:24:06-07:00",
-  "current_scraped_at": "2026-06-11T12:09:43-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-06-11T12:09:43-07:00",
+  "current_scraped_at": "2026-06-11T13:57:09-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Mailroom and Print Center Assistant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Atherton-Hall/Mailroom-and-Print-Center-Assistant_REQ-8188",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Atherton Hall",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
