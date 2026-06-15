@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-06-15T09:44:00-07:00",
-  "current_scraped_at": "2026-06-15T11:38:16-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-06-15T11:38:16-07:00",
+  "current_scraped_at": "2026-06-15T13:15:14-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Director-Gift Planning",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Director-Gift-Planning_REQ-8189",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
