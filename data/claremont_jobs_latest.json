@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-15T13:15:14-07:00",
-  "total": 125,
+  "scraped_at": "2026-06-15T14:56:52-07:00",
+  "total": 126,
   "jobs": [
     {
       "title": "Program Coordinator and Evening Exam Proctor",
@@ -55,6 +55,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Assistant Coach, Men's Baseball",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Men-s-Baseball_REQ-8191",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Dean, Admissions",
