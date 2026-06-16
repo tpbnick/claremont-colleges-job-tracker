@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-06-16T05:41:22-07:00",
-  "current_scraped_at": "2026-06-16T07:45:18-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-06-16T07:45:18-07:00",
+  "current_scraped_at": "2026-06-16T09:38:28-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Director of Development (Regional)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Alexander-Hall---LC00002/Director-of-Development--Regional-_REQ-8192",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Alexander Hall - LC00002",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
