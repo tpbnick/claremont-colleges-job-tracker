@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-17T10:57:57-07:00",
-  "total": 125,
+  "scraped_at": "2026-06-17T12:03:15-07:00",
+  "total": 126,
   "jobs": [
     {
       "title": "Commercial HVAC Service Technician",
@@ -280,6 +280,15 @@
       "location": "Burkle Building - LC20103",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Career Counselor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Career-Counselor_REQ-8190",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Scientific Instrument & Electronics Shop Manager",
