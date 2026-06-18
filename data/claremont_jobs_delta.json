@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-06-18T08:12:28-07:00",
-  "current_scraped_at": "2026-06-18T10:12:32-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-06-18T10:12:32-07:00",
+  "current_scraped_at": "2026-06-18T11:58:01-07:00",
+  "new_count": 1,
+  "removed_count": 1,
+  "new_jobs": [
+    {
+      "title": "Asian Library Print and Digital Collection Engagement Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Asian-Library-Print-and-Digital-Collection-Engagement-Specialist_REQ-8194",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
