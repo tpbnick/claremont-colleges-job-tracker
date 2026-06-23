@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-23T14:39:19-07:00",
-  "total": 130,
+  "scraped_at": "2026-06-23T15:34:25-07:00",
+  "total": 131,
   "jobs": [
     {
       "title": "Administrative Assistant, Student Disability Resource Center",
@@ -73,6 +73,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Building Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Building-Manager_REQ-8213",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Director of Development (Regional)",
@@ -291,6 +300,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Human Resources Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Human-Resources-Coordinator_REQ-8095",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Graduate Lab Assistant",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Graduate-Lab-Assistant_REQ-8207-1",
       "site_id": "SCR_Career_Staff",
@@ -361,15 +379,6 @@
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
       "posted_on": "Posted 22 Days Ago"
-    },
-    {
-      "title": "Human Resources Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Human-Resources-Coordinator_REQ-8095",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 27 Days Ago"
     },
     {
       "title": "Major Gifts Officer",
