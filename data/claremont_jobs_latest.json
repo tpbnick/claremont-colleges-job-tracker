@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-23T12:42:34-07:00",
-  "total": 129,
+  "scraped_at": "2026-06-23T13:52:04-07:00",
+  "total": 130,
   "jobs": [
     {
       "title": "Administrative Assistant, Student Disability Resource Center",
@@ -289,6 +289,15 @@
       "location": "Burkle Building - LC20103",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Graduate Lab Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Graduate-Lab-Assistant_REQ-8207-1",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Cashier",
