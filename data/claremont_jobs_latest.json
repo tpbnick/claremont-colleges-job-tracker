@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-06-22T16:36:28-07:00",
-  "total": 124,
+  "scraped_at": "2026-06-22T18:04:11-07:00",
+  "total": 127,
   "jobs": [
+    {
+      "title": "Administrative Assistant, Student Disability Resource Center",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Administrative-Assistant--Student-Disability-Resource-Center_REQ-8197",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Asian Library Print and Digital Collection Engagement Specialist",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Asian-Library-Print-and-Digital-Collection-Engagement-Specialist_REQ-8194",
@@ -550,6 +559,24 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Assistant Director, Upward Bound",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Assistant-Director--Upward-Bound_REQ-8204",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Graduate Assistant - Dean of Students Office",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Graduate-Assistant---Dean-of-Students-Office_REQ-8205",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Building Attendant",
