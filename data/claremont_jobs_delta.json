@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-06-23T14:39:19-07:00",
-  "current_scraped_at": "2026-06-23T15:34:25-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-06-23T15:34:25-07:00",
+  "current_scraped_at": "2026-06-23T16:30:13-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Building Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Building-Manager_REQ-8213",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
