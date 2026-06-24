@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-24T08:04:01-07:00",
-  "total": 131,
+  "scraped_at": "2026-06-24T09:52:10-07:00",
+  "total": 127,
   "jobs": [
     {
       "title": "Administrative Assistant, Student Disability Resource Center",
@@ -86,15 +86,6 @@
     {
       "title": "Assistant Dean, Admissions",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Dean--Admissions_REQ-8179",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 16 Days Ago"
-    },
-    {
-      "title": "Admissions Officer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Admissions-Officer_REQ-8177",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
@@ -444,24 +435,6 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Research Technician",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Research-Technician_REQ-8059-1",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Mail Center Supervisor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Mail-Center-Supervisor_REQ-8026",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Sport Operations and Equipment Manager",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Sport-Operations-and-Equipment-Manager_REQ-8168",
       "site_id": "CMC_Staff",
@@ -665,15 +638,6 @@
       "site_id": "HMC_Careers",
       "site": "Harvey Mudd College",
       "location": "Platt Campus Center",
-      "time_type": "Part time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Administrative & Operations Assistant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Parsons-Hall/Administrative---Operations-Assistant_REQ-8038",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Parsons Hall",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
     },
