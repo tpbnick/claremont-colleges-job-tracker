@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-23T16:30:13-07:00",
-  "total": 131,
+  "scraped_at": "2026-06-23T18:02:49-07:00",
+  "total": 132,
   "jobs": [
     {
       "title": "Administrative Assistant, Student Disability Resource Center",
@@ -694,6 +694,15 @@
       "location": "Kingston Hall",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Temporary Alumni Engagement Liaison",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Broad-Center/Temporary-Alumni-Engagement-Liaison_REQ-8212",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Broad Center",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Associate Director of IT Operations & Infrastructure",
