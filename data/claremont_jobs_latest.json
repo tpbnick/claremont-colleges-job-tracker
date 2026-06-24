@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-24T00:24:06-07:00",
-  "total": 130,
+  "scraped_at": "2026-06-24T02:17:36-07:00",
+  "total": 131,
   "jobs": [
     {
       "title": "Administrative Assistant, Student Disability Resource Center",
@@ -55,6 +55,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Assistant Coach, Football",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Football_REQ-8216",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Building Manager",
