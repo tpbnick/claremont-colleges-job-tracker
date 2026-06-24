@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-06-24T00:24:06-07:00",
-  "current_scraped_at": "2026-06-24T02:17:36-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-06-24T02:17:36-07:00",
+  "current_scraped_at": "2026-06-24T04:08:15-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Assistant Coach, Football",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Football_REQ-8216",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
