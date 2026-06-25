@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-06-25T14:38:47-07:00",
-  "current_scraped_at": "2026-06-25T15:37:07-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-06-25T15:37:07-07:00",
+  "current_scraped_at": "2026-06-25T16:35:20-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Philanthropic Advisor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Kingston-Hall/Philanthropic-Advisor_REQ-8218-1",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Kingston Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
