@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-06-25T16:35:20-07:00",
-  "current_scraped_at": "2026-06-25T18:10:01-07:00",
-  "new_count": 2,
+  "previous_scraped_at": "2026-06-25T18:10:01-07:00",
+  "current_scraped_at": "2026-06-25T20:18:55-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Associate Vice President for Construction Management and Capital Projects",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Associate-Vice-President-for-Construction-Management-and-Capital-Projects_REQ-8221-1",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Senior Project Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Senior-Project-Manager_REQ-8222",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
