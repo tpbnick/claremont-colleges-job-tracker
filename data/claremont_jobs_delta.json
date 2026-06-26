@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-06-26T08:01:39-07:00",
-  "current_scraped_at": "2026-06-26T09:47:59-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-06-26T09:47:59-07:00",
+  "current_scraped_at": "2026-06-26T10:40:01-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "CGU- Director of Operations at (TEI) and (CEC)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CGU_Careers/job/Claremont/CGU--Director-of-Operations-at--TEI--and--CEC-_REQ-8209",
+      "site_id": "CGU_Careers",
+      "site": "Claremont Graduate University",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
