@@ -1,15 +1,24 @@
 {
-  "previous_scraped_at": "2026-06-25T15:37:07-07:00",
-  "current_scraped_at": "2026-06-25T16:35:20-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-06-25T16:35:20-07:00",
+  "current_scraped_at": "2026-06-25T18:10:01-07:00",
+  "new_count": 2,
   "removed_count": 0,
   "new_jobs": [
     {
-      "title": "Philanthropic Advisor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Kingston-Hall/Philanthropic-Advisor_REQ-8218-1",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Kingston Hall",
+      "title": "Associate Vice President for Construction Management and Capital Projects",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Associate-Vice-President-for-Construction-Management-and-Capital-Projects_REQ-8221-1",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Senior Project Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Senior-Project-Manager_REQ-8222",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted Today"
     }

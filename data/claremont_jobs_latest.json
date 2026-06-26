@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-25T16:35:20-07:00",
-  "total": 129,
+  "scraped_at": "2026-06-25T18:10:01-07:00",
+  "total": 131,
   "jobs": [
     {
       "title": "Administrative Assistant, Student Disability Resource Center",
@@ -451,6 +451,24 @@
       "location": "Scripps College - Claremont, CA",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Associate Vice President for Construction Management and Capital Projects",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Associate-Vice-President-for-Construction-Management-and-Capital-Projects_REQ-8221-1",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Senior Project Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Senior-Project-Manager_REQ-8222",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Sport Operations and Equipment Manager",
