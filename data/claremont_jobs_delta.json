@@ -1,7 +1,35 @@
 {
-  "previous_scraped_at": "2026-07-01T06:07:23-07:00",
-  "current_scraped_at": "2026-07-01T08:06:47-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-07-01T08:06:47-07:00",
+  "current_scraped_at": "2026-07-01T09:53:42-07:00",
+  "new_count": 3,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Assistant Women\u2019s Basketball Coach/Athletic Operations",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Assistant-Women-s-Basketball-Coach-Athletic-Operations_REQ-8225",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Assistant Women\u2019s Volleyball Coach/Athletic Operations",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Assistant-Women-s-Volleyball-Coach-Athletic-Operations_REQ-8224",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Head Women\u2019s Golf Coach/Instructor in Physical Education",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Head-Women-s-Golf-Coach-Instructor-in-Physical-Education_REQ-8223",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
