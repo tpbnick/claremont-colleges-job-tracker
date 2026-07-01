@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-01T14:37:24-07:00",
-  "total": 129,
+  "scraped_at": "2026-07-01T15:35:45-07:00",
+  "total": 130,
   "jobs": [
     {
       "title": "Administrative Assistant, Student Disability Resource Center",
@@ -55,6 +55,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Assistant Athletic Trainer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Athletic-Trainer_REQ-8239",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Coach, Men's Soccer",
@@ -265,12 +274,48 @@
     },
     {
       "title": "Line Cook I",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Line-Cook-I_REQ-8203-1",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Cashier",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Cashier_REQ-8199",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Cashier",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Cashier_REQ-8198",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Building Attendant I",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Building-Attendant-I_REQ-8150",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Line Cook I",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Line-Cook-I_REQ-8200",
       "site_id": "SCR_Career_Staff",
       "site": "Scripps College",
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
-      "posted_on": "Posted 5 Days Ago"
+      "posted_on": "Posted Today"
     },
     {
       "title": "Major Gifts Officer",
@@ -297,24 +342,6 @@
       "site": "Scripps College",
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
-    },
-    {
-      "title": "Cashier",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Cashier_REQ-8198",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Part time",
-      "posted_on": "Posted 6 Days Ago"
-    },
-    {
-      "title": "Cashier",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Cashier_REQ-8199",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Part time",
       "posted_on": "Posted 6 Days Ago"
     },
     {
@@ -354,15 +381,6 @@
       "posted_on": "Posted 6 Days Ago"
     },
     {
-      "title": "Line Cook I",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Line-Cook-I_REQ-8203-1",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
-    },
-    {
       "title": "Graduate Lab Assistant",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Graduate-Lab-Assistant_REQ-8207-1",
       "site_id": "SCR_Career_Staff",
@@ -370,15 +388,6 @@
       "location": "Scripps College - Claremont, CA",
       "time_type": "Part time",
       "posted_on": "Posted 8 Days Ago"
-    },
-    {
-      "title": "Building Attendant I",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Building-Attendant-I_REQ-8150",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 30 Days Ago"
     },
     {
       "title": "Lifeguard",
