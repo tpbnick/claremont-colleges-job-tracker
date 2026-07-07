@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-07T10:22:41-07:00",
-  "total": 131,
+  "scraped_at": "2026-07-07T13:04:21-07:00",
+  "total": 136,
   "jobs": [
     {
       "title": "Assistant Payroll Manager",
@@ -640,6 +640,51 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Pantry Food Service Worker",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Salad-Worker_REQ-8253",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Pantry Food Service Worker",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Pantry-Food-Service-Worker_REQ-8252",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Dining Services Junior Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Cook_REQ-8250",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Dining Services Junior Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Dining-Services-Junior-Cook_REQ-8249",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Dining Services Utility Attendant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Dining-Services-Utility-Attendant_REQ-8248",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Building Attendant",

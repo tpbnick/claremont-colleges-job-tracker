@@ -1,24 +1,51 @@
 {
-  "previous_scraped_at": "2026-07-07T07:53:39-07:00",
-  "current_scraped_at": "2026-07-07T10:22:41-07:00",
-  "new_count": 2,
+  "previous_scraped_at": "2026-07-07T10:22:41-07:00",
+  "current_scraped_at": "2026-07-07T13:04:21-07:00",
+  "new_count": 5,
   "removed_count": 0,
   "new_jobs": [
     {
-      "title": "Assistant Payroll Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Assistant-Payroll-Manager_REQ-8243-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
+      "title": "Pantry Food Service Worker",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Salad-Worker_REQ-8253",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Pantry Food Service Worker",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Pantry-Food-Service-Worker_REQ-8252",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
       "time_type": "Full time",
       "posted_on": "Posted Today"
     },
     {
-      "title": "Introduction to Bioprocessing, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Introduction-to-Bioprocessing---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8242",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "Building: 535",
+      "title": "Dining Services Junior Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Cook_REQ-8250",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Dining Services Junior Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Dining-Services-Junior-Cook_REQ-8249",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Dining Services Utility Attendant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Dining-Services-Utility-Attendant_REQ-8248",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
       "time_type": "Part time",
       "posted_on": "Posted Today"
     }
