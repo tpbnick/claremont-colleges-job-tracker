@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-08T05:25:09-07:00",
-  "current_scraped_at": "2026-07-08T08:26:17-07:00",
-  "new_count": 1,
-  "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Low Voltage Supervisor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Low-Voltage-Supervisor_REQ-8232",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-07-08T08:26:17-07:00",
+  "current_scraped_at": "2026-07-08T10:43:30-07:00",
+  "new_count": 0,
+  "removed_count": 5,
+  "new_jobs": []
 }
