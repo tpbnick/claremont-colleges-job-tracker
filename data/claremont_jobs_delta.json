@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-08T12:42:12-07:00",
-  "current_scraped_at": "2026-07-08T14:14:29-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Junior Retail Cook/Back-up Lead",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Junior-Retail-Cook-Back-up-Lead_REQ-8254",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Hoch-Shanahan Dining Commons",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-07-08T14:14:29-07:00",
+  "current_scraped_at": "2026-07-08T16:13:36-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
