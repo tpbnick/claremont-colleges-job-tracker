@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-07-09T08:22:07-07:00",
-  "total": 133,
+  "scraped_at": "2026-07-09T11:02:15-07:00",
+  "total": 135,
   "jobs": [
+    {
+      "title": "Construction Development Project Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Construction-Development-Project-Specialist_REQ-8244",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Low Voltage Supervisor",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Low-Voltage-Supervisor_REQ-8232",
@@ -487,6 +496,15 @@
       "location": "Scripps College - Claremont, CA",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Admission Officer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Admission-Officer_REQ-8261",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Head Women\u2019s Golf Coach/Instructor in Physical Education",
