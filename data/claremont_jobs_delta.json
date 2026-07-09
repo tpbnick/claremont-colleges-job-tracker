@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-09T11:02:15-07:00",
-  "current_scraped_at": "2026-07-09T13:51:16-07:00",
-  "new_count": 1,
-  "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Planned Giving Officer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Planned-Giving-Officer_REQ-8268",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-07-09T13:51:16-07:00",
+  "current_scraped_at": "2026-07-09T15:27:23-07:00",
+  "new_count": 0,
+  "removed_count": 1,
+  "new_jobs": []
 }
