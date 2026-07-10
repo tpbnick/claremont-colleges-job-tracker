@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-10T10:01:46-07:00",
-  "current_scraped_at": "2026-07-10T12:40:44-07:00",
-  "new_count": 1,
-  "removed_count": 2,
-  "new_jobs": [
-    {
-      "title": "Health and Wellness Outreach Facilitator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Health-and-Wellness-Outreach-Facilitator_REQ-8279",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Scott Hall",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-07-10T12:40:44-07:00",
+  "current_scraped_at": "2026-07-10T14:11:00-07:00",
+  "new_count": 0,
+  "removed_count": 1,
+  "new_jobs": []
 }
