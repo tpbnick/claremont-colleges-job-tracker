@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-10T10:01:46-07:00",
-  "total": 136,
+  "scraped_at": "2026-07-10T12:40:44-07:00",
+  "total": 135,
   "jobs": [
     {
       "title": "Construction Development Project Specialist",
@@ -46,15 +46,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 4 Days Ago"
-    },
-    {
-      "title": "Administrative Assistant, Student Disability Resource Center",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Administrative-Assistant--Student-Disability-Resource-Center_REQ-8197",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 18 Days Ago"
     },
     {
       "title": "Commercial HVAC Service Technician",
@@ -444,15 +435,6 @@
       "posted_on": "Posted 15 Days Ago"
     },
     {
-      "title": "Graduate Lab Assistant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Graduate-Lab-Assistant_REQ-8207-1",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Part time",
-      "posted_on": "Posted 17 Days Ago"
-    },
-    {
       "title": "Lifeguard",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Lifeguard_REQ-7939",
       "site_id": "SCR_Career_Staff",
@@ -775,6 +757,15 @@
       "location": "Platt Campus Center",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Health and Wellness Outreach Facilitator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Health-and-Wellness-Outreach-Facilitator_REQ-8279",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Scott Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Senior Budget Support Coordinator",
