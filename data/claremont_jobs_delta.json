@@ -1,35 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-12T04:15:37-07:00",
-  "current_scraped_at": "2026-07-12T06:39:09-07:00",
-  "new_count": 3,
+  "previous_scraped_at": "2026-07-12T06:39:09-07:00",
+  "current_scraped_at": "2026-07-12T08:02:07-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Cook II - Floater",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Cook-II---Floater_REQ-8234",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Cook II - Baker",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Cook-II---Baker_REQ-8233",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Food Service Worker - Salad Pantry",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Food-Service-Worker---Salad-Pantry_REQ-8251",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
