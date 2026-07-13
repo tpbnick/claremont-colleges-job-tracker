@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-07-13T05:12:02-07:00",
-  "total": 134,
+  "scraped_at": "2026-07-13T08:45:13-07:00",
+  "total": 138,
   "jobs": [
+    {
+      "title": "Chaplain and Director of Protestant Life",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Chaplain-and-Director-of-Protestant-Life_REQ-8262",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Construction Development Project Specialist",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Construction-Development-Project-Specialist_REQ-8244",
@@ -631,6 +640,33 @@
       "location": "Claremont",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Assistant Director of Donor Relations",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Kingston-Hall/Assistant-Director-of-Donor-Relations_REQ-8273",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Kingston Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Director of Donor Relations",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Kingston-Hall/Director-of-Donor-Relations_REQ-8275",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Kingston Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "HSA Program Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Parsons-Hall/HSA-Program-Coordinator_REQ-8272",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Parsons Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Vice President of Advancement Operations and Campaigns",
