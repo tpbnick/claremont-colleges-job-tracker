@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-07-14T13:17:49-07:00",
-  "current_scraped_at": "2026-07-14T15:03:42-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-07-14T15:03:42-07:00",
+  "current_scraped_at": "2026-07-14T16:57:15-07:00",
+  "new_count": 2,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Wellness Program Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Wellness-Program-Coordinator_REQ-8274",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Maintenance Technician 3",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Maintenance-Technician-3_REQ-8276",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }

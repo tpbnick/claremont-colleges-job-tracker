@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-14T15:03:42-07:00",
-  "total": 139,
+  "scraped_at": "2026-07-14T16:57:15-07:00",
+  "total": 141,
   "jobs": [
     {
       "title": "Chaplain and Director of Protestant Life",
@@ -91,6 +91,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Wellness Program Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Wellness-Program-Coordinator_REQ-8274",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Lead Deputy Title VI Coordinator",
@@ -640,6 +649,15 @@
       "location": "Claremont",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Maintenance Technician 3",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Maintenance-Technician-3_REQ-8276",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Director of Donor Relations",
