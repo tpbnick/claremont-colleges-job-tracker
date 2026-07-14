@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-07-14T09:22:26-07:00",
-  "current_scraped_at": "2026-07-14T11:09:56-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-07-14T11:09:56-07:00",
+  "current_scraped_at": "2026-07-14T13:17:49-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Project Management, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Project-Management---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8282",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 535",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
