@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-14T07:57:56-07:00",
-  "current_scraped_at": "2026-07-14T09:22:26-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-07-14T09:22:26-07:00",
+  "current_scraped_at": "2026-07-14T11:09:56-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Cook I \u2013 Deli/Server (Temporary)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Cook-I---Deli-Server--Temporary-_REQ-8258",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
