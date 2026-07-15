@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-07-15T12:19:52-07:00",
-  "current_scraped_at": "2026-07-15T14:05:42-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-07-15T14:05:42-07:00",
+  "current_scraped_at": "2026-07-15T16:02:05-07:00",
+  "new_count": 2,
+  "removed_count": 1,
+  "new_jobs": [
+    {
+      "title": "Academic Coordinator, Mathematics",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Academic-Coordinator--Mathematics_REQ-8287",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Laboratory Technician II",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Olin-Building/Laboratory-Technician-II_REQ-8280",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Olin Building",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
