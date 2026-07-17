@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-07-17T05:14:22-07:00",
-  "current_scraped_at": "2026-07-17T07:48:06-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-07-17T07:48:06-07:00",
+  "current_scraped_at": "2026-07-17T09:20:34-07:00",
+  "new_count": 2,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Administrative Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Sprague-Center/Administrative-Assistant_REQ-8294",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Sprague Center",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Junior Retail Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Junior-Retail-Cook_REQ-8295",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
