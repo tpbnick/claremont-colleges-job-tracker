@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-17T11:10:52-07:00",
-  "current_scraped_at": "2026-07-17T13:10:12-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Budget and Finance Analyst",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Budget-and-Finance-Analyst_REQ-8300",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "McConnell Center",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-07-17T13:10:12-07:00",
+  "current_scraped_at": "2026-07-17T14:58:36-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
