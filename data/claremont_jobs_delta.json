@@ -1,15 +1,15 @@
 {
-  "previous_scraped_at": "2026-07-17T09:20:34-07:00",
-  "current_scraped_at": "2026-07-17T11:10:52-07:00",
+  "previous_scraped_at": "2026-07-17T11:10:52-07:00",
+  "current_scraped_at": "2026-07-17T13:10:12-07:00",
   "new_count": 1,
-  "removed_count": 0,
+  "removed_count": 1,
   "new_jobs": [
     {
-      "title": "Academic Services Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Fletcher-Hall/Academic-Services-Coordinator_REQ-8298",
+      "title": "Budget and Finance Analyst",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Budget-and-Finance-Analyst_REQ-8300",
       "site_id": "PIT_Staff",
       "site": "Pitzer College",
-      "location": "Fletcher Hall",
+      "location": "McConnell Center",
       "time_type": "Full time",
       "posted_on": "Posted Today"
     }
