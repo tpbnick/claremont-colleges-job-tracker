@@ -1,25 +1,16 @@
 {
-  "previous_scraped_at": "2026-07-21T10:27:22-07:00",
-  "current_scraped_at": "2026-07-21T12:39:28-07:00",
-  "new_count": 2,
+  "previous_scraped_at": "2026-07-21T12:39:28-07:00",
+  "current_scraped_at": "2026-07-21T14:16:40-07:00",
+  "new_count": 1,
   "removed_count": 0,
   "new_jobs": [
     {
-      "title": "Sponsored Research Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Sponsored-Research-Coordinator_REQ-8299",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Principles of Biology and Biochemistry, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Principles-of-Biology-and-Biochemistry---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8306",
+      "title": "Administrative Coordinator, School of Pharmacy",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Administrative-Coordinator--School-of-Pharmacy_REQ-8311",
       "site_id": "KGI_Careers",
       "site": "Keck Graduate Institute",
-      "location": "Building: 535",
-      "time_type": "Part time",
+      "location": "215 York Building - LC72000",
+      "time_type": "Full time",
       "posted_on": "Posted Today"
     }
   ]
