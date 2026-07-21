@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-21T08:08:01-07:00",
+  "scraped_at": "2026-07-21T10:27:22-07:00",
   "total": 144,
   "jobs": [
     {
@@ -800,7 +800,7 @@
       "site_id": "HMC_Careers",
       "site": "Harvey Mudd College",
       "location": "Platt Campus Center",
-      "time_type": "Full time",
+      "time_type": "",
       "posted_on": "Posted 29 Days Ago"
     },
     {
@@ -847,6 +847,15 @@
       "location": "Platt Campus Center",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Accessibility Services Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Accessibility-Services-Coordinator_REQ-8123",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Scott Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Budget and Finance Analyst",
@@ -899,15 +908,6 @@
       "site_id": "PIT_Staff",
       "site": "Pitzer College",
       "location": "Mead Hall",
-      "time_type": "Part time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Accessibility Services Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Accessibility-Services-Coordinator_REQ-8123",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Scott Hall",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
     },
