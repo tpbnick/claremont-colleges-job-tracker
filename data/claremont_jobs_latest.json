@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-21T10:27:22-07:00",
-  "total": 144,
+  "scraped_at": "2026-07-21T12:39:28-07:00",
+  "total": 146,
   "jobs": [
     {
       "title": "Chaplain and Director of Protestant Life",
@@ -471,6 +471,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Sponsored Research Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Sponsored-Research-Coordinator_REQ-8299",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Cook I \u2013 Deli/Server (Temporary)",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Cook-I---Deli-Server--Temporary-_REQ-8258",
       "site_id": "CMC_Staff",
@@ -800,7 +809,7 @@
       "site_id": "HMC_Careers",
       "site": "Harvey Mudd College",
       "location": "Platt Campus Center",
-      "time_type": "",
+      "time_type": "Full time",
       "posted_on": "Posted 29 Days Ago"
     },
     {
@@ -919,6 +928,15 @@
       "location": "Broad Center",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Principles of Biology and Biochemistry, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Principles-of-Biology-and-Biochemistry---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8306",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 535",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Project Management, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
