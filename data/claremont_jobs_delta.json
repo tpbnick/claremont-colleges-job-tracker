@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-21T12:39:28-07:00",
-  "current_scraped_at": "2026-07-21T14:16:40-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-07-21T14:16:40-07:00",
+  "current_scraped_at": "2026-07-21T16:02:20-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Administrative Coordinator, School of Pharmacy",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Administrative-Coordinator--School-of-Pharmacy_REQ-8311",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "215 York Building - LC72000",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
