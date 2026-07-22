@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-22T09:23:49-07:00",
-  "current_scraped_at": "2026-07-22T11:12:54-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-07-22T11:12:54-07:00",
+  "current_scraped_at": "2026-07-22T13:14:53-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Nurse Practitioner",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Nurse-Practitioner_REQ-8301",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
