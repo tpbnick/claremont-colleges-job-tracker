@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-22T15:09:38-07:00",
-  "total": 145,
+  "scraped_at": "2026-07-22T17:05:11-07:00",
+  "total": 147,
   "jobs": [
     {
       "title": "Nurse Practitioner",
@@ -264,15 +264,6 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Director, Foundation & Corporate Relations",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Director--Foundation---Corporate-Relations_REQ-7775",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Director, Complex Assets (Principal Gifts)",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Director--Complex-Assets_REQ-7736",
       "site_id": "POM_Careers",
@@ -478,6 +469,24 @@
       "location": "Scripps College - Claremont, CA",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Post-Doctoral Research Fellow (Part-Time)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Post-Doctoral-Research-Fellow--Part-Time-_REQ-8308",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Staff Psychologist (Part Time)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Staff-Psychologist--Part-Time-_REQ-8307",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Sponsored Research Coordinator",
@@ -856,6 +865,15 @@
       "location": "Platt Campus Center",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Automation Specialist (IAM and Systems)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Automation-Specialist_REQ-7537",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Scott Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Accessibility Services Coordinator",
