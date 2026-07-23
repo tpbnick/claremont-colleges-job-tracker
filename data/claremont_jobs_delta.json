@@ -1,15 +1,15 @@
 {
-  "previous_scraped_at": "2026-07-23T10:35:51-07:00",
-  "current_scraped_at": "2026-07-23T12:26:16-07:00",
+  "previous_scraped_at": "2026-07-23T12:26:16-07:00",
+  "current_scraped_at": "2026-07-23T14:10:46-07:00",
   "new_count": 1,
-  "removed_count": 1,
+  "removed_count": 0,
   "new_jobs": [
     {
-      "title": "Academic Services Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Fletcher-Hall/Academic-Services-Coordinator_REQ-8298",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Fletcher Hall",
+      "title": "Assistant/Associate/Full Professor and Program Director, Master of Science in Physician Associate Studies",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/555-Arrow-Building---LC73000/Assistant-Associate-Full-Professor-and-Program-Director--Master-of-Science-in-Physician-Associate-Studies_REQ-8313",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "555 Arrow Building - LC73000",
       "time_type": "Full time",
       "posted_on": "Posted Today"
     }
