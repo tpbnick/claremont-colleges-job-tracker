@@ -1,35 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-22T15:09:38-07:00",
-  "current_scraped_at": "2026-07-22T17:05:11-07:00",
-  "new_count": 3,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Post-Doctoral Research Fellow (Part-Time)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Post-Doctoral-Research-Fellow--Part-Time-_REQ-8308",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Staff Psychologist (Part Time)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Staff-Psychologist--Part-Time-_REQ-8307",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Automation Specialist (IAM and Systems)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Automation-Specialist_REQ-7537",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Scott Hall",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-07-22T17:05:11-07:00",
+  "current_scraped_at": "2026-07-22T21:19:28-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
