@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-23T14:10:46-07:00",
-  "current_scraped_at": "2026-07-23T16:02:00-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-07-23T16:02:00-07:00",
+  "current_scraped_at": "2026-07-23T20:17:41-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Administrative Coordinator for Fellowships, Grants & Career Advising",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Alexander-Hall---LC00002/Administrative-Coordinator-for-Fellowships--Grants---Career-Advising_REQ-8315",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Alexander Hall - LC00002",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
