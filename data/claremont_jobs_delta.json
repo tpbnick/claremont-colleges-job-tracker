@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-24T12:37:39-07:00",
-  "current_scraped_at": "2026-07-24T14:10:22-07:00",
-  "new_count": 1,
-  "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Senior Academic Coordinator, Center for Global Engagement",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Senior-Academic-Coordinator--Center-for-Global-Engagement_REQ-8316",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-07-24T14:10:22-07:00",
+  "current_scraped_at": "2026-07-24T16:06:48-07:00",
+  "new_count": 0,
+  "removed_count": 1,
+  "new_jobs": []
 }
