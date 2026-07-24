@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-24T10:42:50-07:00",
-  "total": 144,
+  "scraped_at": "2026-07-24T12:37:39-07:00",
+  "total": 145,
   "jobs": [
     {
       "title": "Nurse Practitioner",
@@ -316,6 +316,15 @@
       "location": "Burkle Building - LC20103",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Visitor Services Associate",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Visitor-Services-Associate_REQ-8310-1",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Line Cook I",
