@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-07-26T17:05:20-07:00",
-  "current_scraped_at": "2026-07-26T21:41:00-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-07-26T21:41:00-07:00",
+  "current_scraped_at": "2026-07-27T01:36:15-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Utility Worker",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center-Dining-Hall/Utility-Worker_REQ-8309-1",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "McConnell Center-Dining Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
