@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-28T09:44:52-07:00",
-  "total": 145,
+  "scraped_at": "2026-07-28T11:20:02-07:00",
+  "total": 146,
   "jobs": [
     {
       "title": "Nurse Practitioner",
@@ -901,6 +901,15 @@
       "location": "Broad Center",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Research Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Research-Assistant_REQ-8318",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "215 York Building - LC72000",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant/Associate/Full Professor and Program Director, Master of Science in Physician Associate Studies",
