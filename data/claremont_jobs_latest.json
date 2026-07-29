@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-07-29T10:20:38-07:00",
+  "scraped_at": "2026-07-29T12:25:18-07:00",
   "total": 148,
   "jobs": [
+    {
+      "title": "Head of Research Services",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/TCCS---Head--Research-Services_REQ-8323",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Campus Safety Officer",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Campus-Safety-Officer_REQ-8078-1",
@@ -102,8 +111,8 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Assistant Coach, Football",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Football_REQ-8216",
+      "title": "Women's Soccer Goalkeeper Coach",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Women-s-Soccer-Goalkeeper-Coach_REQ-8328",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
@@ -909,15 +918,6 @@
       "site": "Pitzer College",
       "location": "Mead Hall",
       "time_type": "Part time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Director of Philanthropy",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Broad-Center/Major-Gifts-Officer_REQ-7974",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Broad Center",
-      "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
     },
     {

@@ -1,16 +1,25 @@
 {
-  "previous_scraped_at": "2026-07-29T08:52:52-07:00",
-  "current_scraped_at": "2026-07-29T10:20:38-07:00",
-  "new_count": 1,
-  "removed_count": 0,
+  "previous_scraped_at": "2026-07-29T10:20:38-07:00",
+  "current_scraped_at": "2026-07-29T12:25:18-07:00",
+  "new_count": 2,
+  "removed_count": 2,
   "new_jobs": [
     {
-      "title": "Sustainability Engagement Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Sustainability-Engagement-Coordinator_REQ-8325",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Scott Hall",
+      "title": "Head of Research Services",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/TCCS---Head--Research-Services_REQ-8323",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
       "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Women's Soccer Goalkeeper Coach",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Women-s-Soccer-Goalkeeper-Coach_REQ-8328",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
       "posted_on": "Posted Today"
     }
   ]
