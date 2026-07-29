@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-29T12:25:18-07:00",
-  "current_scraped_at": "2026-07-29T14:02:34-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-07-29T14:02:34-07:00",
+  "current_scraped_at": "2026-07-29T16:02:48-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Assistant Coach, Women's Soccer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Women-s-Soccer_REQ-8330",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
