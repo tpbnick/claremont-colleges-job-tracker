@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-29T06:05:00-07:00",
-  "total": 146,
+  "scraped_at": "2026-07-29T08:52:52-07:00",
+  "total": 147,
   "jobs": [
     {
       "title": "Campus Safety Officer",
@@ -100,6 +100,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Assistant Coach, Football",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Football_REQ-8216",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Administrative Coordinator for Experiential Learning Programs, Fellowships, & Career Advising",
