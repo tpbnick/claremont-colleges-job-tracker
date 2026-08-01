@@ -1,12 +1,12 @@
 {
-  "previous_scraped_at": "2026-07-31T14:12:49-07:00",
-  "current_scraped_at": "2026-07-31T16:07:43-07:00",
+  "previous_scraped_at": "2026-07-31T16:07:43-07:00",
+  "current_scraped_at": "2026-07-31T20:28:37-07:00",
   "new_count": 2,
-  "removed_count": 1,
+  "removed_count": 0,
   "new_jobs": [
     {
-      "title": "Executive Operations and Projects Administrator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Executive-Operations-and-Projects-Administrator_REQ-8334-1",
+      "title": "Senior Project Manager-DSI",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Senior-Project-Manager-DSI_REQ-8340",
       "site_id": "PIT_Staff",
       "site": "Pitzer College",
       "location": "McConnell Center",
@@ -14,11 +14,11 @@
       "posted_on": "Posted Today"
     },
     {
-      "title": "Temporary Records Assistant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Fletcher-Hall/Temporary-Records-Assistant_REQ-8335",
+      "title": "Temporary Student Support Case Manager and Facilitator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Temporary-Student-Support-Case-Manager-and-Facilitator_REQ-8339",
       "site_id": "PIT_Staff",
       "site": "Pitzer College",
-      "location": "Fletcher Hall",
+      "location": "Scott Hall",
       "time_type": "Part time",
       "posted_on": "Posted Today"
     }
