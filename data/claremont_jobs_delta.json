@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-07-31T16:07:43-07:00",
-  "current_scraped_at": "2026-07-31T20:28:37-07:00",
-  "new_count": 2,
+  "previous_scraped_at": "2026-07-31T20:28:37-07:00",
+  "current_scraped_at": "2026-08-01T02:10:28-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Senior Project Manager-DSI",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Senior-Project-Manager-DSI_REQ-8340",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "McConnell Center",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Temporary Student Support Case Manager and Facilitator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Temporary-Student-Support-Case-Manager-and-Facilitator_REQ-8339",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Scott Hall",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
