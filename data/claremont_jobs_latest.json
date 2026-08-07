@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-08-07T07:58:15-07:00",
-  "total": 144,
+  "scraped_at": "2026-08-07T09:02:48-07:00",
+  "total": 146,
   "jobs": [
+    {
+      "title": "Campus Safety Officer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Campus-Safety-Officer_REQ-8078-1",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Head of Research Services",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/TCCS---Head--Research-Services_REQ-8323",
@@ -10,15 +19,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 9 Days Ago"
-    },
-    {
-      "title": "Campus Safety Officer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Campus-Safety-Officer_REQ-8078-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 10 Days Ago"
     },
     {
       "title": "Nurse Practitioner",
@@ -307,6 +307,15 @@
       "location": "Burkle Building - LC20103",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Building Attendant I",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Building-Attendant-I_REQ-8352",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Building Attendant I",
@@ -622,6 +631,15 @@
       "location": "Claremont",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Seasonal Application Reader",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Shanahan-Center/Seasonal-Application-Reader_REQ-8344",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Shanahan Center",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Dining Services Utility Attendant",
