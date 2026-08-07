@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-07T07:58:15-07:00",
-  "current_scraped_at": "2026-08-07T09:02:48-07:00",
-  "new_count": 2,
-  "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Building Attendant I",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Building-Attendant-I_REQ-8352",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Seasonal Application Reader",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Shanahan-Center/Seasonal-Application-Reader_REQ-8344",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Shanahan Center",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-08-07T09:02:48-07:00",
+  "current_scraped_at": "2026-08-07T10:52:26-07:00",
+  "new_count": 0,
+  "removed_count": 1,
+  "new_jobs": []
 }
