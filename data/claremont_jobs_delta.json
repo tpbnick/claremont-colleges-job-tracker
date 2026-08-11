@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-11T12:09:12-07:00",
-  "current_scraped_at": "2026-08-11T13:52:44-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-08-11T13:52:44-07:00",
+  "current_scraped_at": "2026-08-11T14:54:46-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Planned Giving Specialist",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Planned-Giving-Specialist_REQ-8343",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
