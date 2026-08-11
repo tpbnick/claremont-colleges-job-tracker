@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-11T08:03:54-07:00",
-  "current_scraped_at": "2026-08-11T10:02:16-07:00",
-  "new_count": 1,
-  "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Mail Center Clerk I",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Mail-Center-Clerk-I_REQ-8360",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-08-11T10:02:16-07:00",
+  "current_scraped_at": "2026-08-11T12:09:12-07:00",
+  "new_count": 0,
+  "removed_count": 2,
+  "new_jobs": []
 }
