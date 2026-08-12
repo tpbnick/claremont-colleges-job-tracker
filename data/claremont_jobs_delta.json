@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-12T12:08:05-07:00",
-  "current_scraped_at": "2026-08-12T15:47:54-07:00",
-  "new_count": 1,
-  "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Post Bacc-Admin Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Post-Bacc-Admin-Coordinator_REQ-8355",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-08-12T15:47:54-07:00",
+  "current_scraped_at": "2026-08-12T16:49:14-07:00",
+  "new_count": 0,
+  "removed_count": 1,
+  "new_jobs": []
 }
