@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-08-12T08:02:55-07:00",
-  "current_scraped_at": "2026-08-12T10:01:22-07:00",
-  "new_count": 0,
-  "removed_count": 2,
-  "new_jobs": []
+  "previous_scraped_at": "2026-08-12T10:01:22-07:00",
+  "current_scraped_at": "2026-08-12T12:08:05-07:00",
+  "new_count": 1,
+  "removed_count": 1,
+  "new_jobs": [
+    {
+      "title": "Assistant Director, Native American Initiatives",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Director--Native-American-Initiatives_REQ-8365",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
