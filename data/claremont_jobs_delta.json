@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-08-13T06:22:50-07:00",
-  "current_scraped_at": "2026-08-13T08:02:45-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-08-13T08:02:45-07:00",
+  "current_scraped_at": "2026-08-13T10:00:54-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Social Media Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Social-Media-Specialist_REQ-8369",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Scott Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }

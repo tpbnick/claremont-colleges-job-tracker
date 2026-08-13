@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-13T08:02:45-07:00",
-  "total": 142,
+  "scraped_at": "2026-08-13T10:00:54-07:00",
+  "total": 143,
   "jobs": [
     {
       "title": "Campus Safety Officer",
@@ -288,7 +288,7 @@
       "site": "Scripps College",
       "location": "Scripps College - Claremont, CA",
       "time_type": "Part time",
-      "posted_on": "Posted Yesterday"
+      "posted_on": "Posted Today"
     },
     {
       "title": "Mail Center Clerk I",
@@ -811,6 +811,15 @@
       "location": "Platt Campus Center",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Social Media Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Social-Media-Specialist_REQ-8369",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Scott Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Sustainability Engagement Coordinator",
