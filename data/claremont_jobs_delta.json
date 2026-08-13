@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-13T12:57:50-07:00",
-  "current_scraped_at": "2026-08-13T13:54:52-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-08-13T13:54:52-07:00",
+  "current_scraped_at": "2026-08-13T14:52:38-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Academic Coordinator, Anthropology and Sociology",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Academic-Coordinator--Anthropology-and-Sociology_REQ-8366",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
