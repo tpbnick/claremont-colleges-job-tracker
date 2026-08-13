@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-13T11:03:16-07:00",
-  "total": 142,
+  "scraped_at": "2026-08-13T12:57:50-07:00",
+  "total": 144,
   "jobs": [
     {
       "title": "Campus Safety Officer",
@@ -102,13 +102,31 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Assistant Director, Native American Initiatives",
+      "title": "Assistant Director, Native Indigenous Resource Center (NIRC)",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Director--Native-American-Initiatives_REQ-8365",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted Yesterday"
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Floating Cook 1",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Floating-Cook-1_REQ-8354-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Floating Dining Cashier",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Floating-Dining-Cashier_REQ-8353-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Cultivation Coordinator, The Pomona Plan",
