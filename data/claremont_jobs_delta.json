@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-17T14:30:41-07:00",
-  "current_scraped_at": "2026-08-17T15:29:49-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Director of Recreation",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Director-of-Recreation_REQ-8367",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-08-17T15:29:49-07:00",
+  "current_scraped_at": "2026-08-17T16:27:36-07:00",
+  "new_count": 0,
+  "removed_count": 2,
+  "new_jobs": []
 }
