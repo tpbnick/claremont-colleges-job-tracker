@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-08-17T16:27:36-07:00",
+  "scraped_at": "2026-08-17T18:34:35-07:00",
   "total": 140,
   "jobs": [
+    {
+      "title": "Religious and Spiritual Life Associate",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Religious-and-Spiritual-Life-Associate_REQ-8370",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Low Voltage Supervisor",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Low-Voltage-Supervisor_REQ-8232",
@@ -28,15 +37,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 19 Days Ago"
-    },
-    {
-      "title": "Nurse Practitioner",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Nurse-Practitioner_REQ-8301",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted 26 Days Ago"
     },
     {
       "title": "Chaplain and Director of Protestant Life",
