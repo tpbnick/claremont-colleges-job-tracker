@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-08-18T09:37:13-07:00",
-  "current_scraped_at": "2026-08-18T10:32:22-07:00",
-  "new_count": 0,
-  "removed_count": 2,
-  "new_jobs": []
+  "previous_scraped_at": "2026-08-18T10:32:22-07:00",
+  "current_scraped_at": "2026-08-18T11:45:21-07:00",
+  "new_count": 1,
+  "removed_count": 0,
+  "new_jobs": [
+    {
+      "title": "Chef Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Chef-Manager_REQ-8377",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }

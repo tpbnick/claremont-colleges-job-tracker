@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-18T10:32:22-07:00",
-  "total": 137,
+  "scraped_at": "2026-08-18T11:45:21-07:00",
+  "total": 138,
   "jobs": [
     {
       "title": "Religious and Spiritual Life Associate",
@@ -94,12 +94,39 @@
     },
     {
       "title": "Floating Cook 1",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Floating-Cook-1_REQ-8354-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Floating Dining Cashier",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Floating-Dining-Cashier_REQ-8353-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Floating Cook 1",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Floating-Cook-1_REQ-8361-1",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted Yesterday"
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Chef Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Chef-Manager_REQ-8377",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Academic Coordinator, Anthropology and Sociology",
@@ -117,24 +144,6 @@
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 5 Days Ago"
-    },
-    {
-      "title": "Floating Cook 1",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Floating-Cook-1_REQ-8354-1",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 5 Days Ago"
-    },
-    {
-      "title": "Floating Dining Cashier",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Floating-Dining-Cashier_REQ-8353-1",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Part time",
       "posted_on": "Posted 5 Days Ago"
     },
     {
