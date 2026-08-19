@@ -1,15 +1,15 @@
 {
-  "previous_scraped_at": "2026-08-19T08:36:49-07:00",
-  "current_scraped_at": "2026-08-19T09:37:01-07:00",
+  "previous_scraped_at": "2026-08-19T09:37:01-07:00",
+  "current_scraped_at": "2026-08-19T10:31:14-07:00",
   "new_count": 1,
-  "removed_count": 0,
+  "removed_count": 3,
   "new_jobs": [
     {
-      "title": "Interim Director, Pomona Plan",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Interim-Director--Pomona-Plan_REQ-8382",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
+      "title": "Administrative Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Administrative-Assistant_REQ-8112-1",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
       "posted_on": "Posted Today"
     }
