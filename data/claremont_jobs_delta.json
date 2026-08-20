@@ -1,7 +1,44 @@
 {
-  "previous_scraped_at": "2026-08-20T14:32:50-07:00",
-  "current_scraped_at": "2026-08-20T15:33:07-07:00",
-  "new_count": 0,
-  "removed_count": 1,
-  "new_jobs": []
+  "previous_scraped_at": "2026-08-20T15:33:07-07:00",
+  "current_scraped_at": "2026-08-20T16:30:30-07:00",
+  "new_count": 4,
+  "removed_count": 0,
+  "new_jobs": [
+    {
+      "title": "Admissions Operations and Data Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Admissions-Operations-and-Data-Specialist_REQ-8393",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Junior Retail Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Junior-Retail-Cook_REQ-8384",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Technical Analyst",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Sprague-Center/Technical-Analyst_REQ-8362",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Sprague Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Temporary Laboratory Technician",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Olin-Building/Temporary-Laboratory-Technician_REQ-8383",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Olin Building",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
