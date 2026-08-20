@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-20T12:36:00-07:00",
-  "current_scraped_at": "2026-08-20T13:34:29-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-08-20T13:34:29-07:00",
+  "current_scraped_at": "2026-08-20T14:32:50-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Assistant Men's Soccer Coach, Goalkeepers",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Assistant-Men-s-Soccer-Coach--Goalkeepers_REQ-8376",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
