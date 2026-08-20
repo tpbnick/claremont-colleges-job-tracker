@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-20T08:38:49-07:00",
-  "current_scraped_at": "2026-08-20T09:40:32-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-08-20T09:40:32-07:00",
+  "current_scraped_at": "2026-08-20T10:34:53-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Assistant/Associate Professor of Pharmacy Informatics or Healthcare Management",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Assistant-Associate-Professor-of-Pharmacy-Informatics-or-Healthcare-Management_REQ-8380",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "215 York Building - LC72000",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
