@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-19T15:29:32-07:00",
-  "current_scraped_at": "2026-08-19T16:27:13-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Assistant Men's and Women's Swimming and Diving Coach",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Assistant-Men-s-and-Women-s-Swimming-and-Diving-Coach_REQ-8378",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-08-19T16:27:13-07:00",
+  "current_scraped_at": "2026-08-19T18:35:15-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
