@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-20T16:30:30-07:00",
-  "current_scraped_at": "2026-08-20T18:40:09-07:00",
-  "new_count": 1,
+  "previous_scraped_at": "2026-08-20T18:40:09-07:00",
+  "current_scraped_at": "2026-08-20T20:08:29-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Assistant Athletic Trainer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Athletic-Trainer_REQ-8392",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
