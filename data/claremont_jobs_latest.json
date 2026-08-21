@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-21T15:30:31-07:00",
-  "total": 141,
+  "scraped_at": "2026-08-21T16:28:42-07:00",
+  "total": 142,
   "jobs": [
     {
       "title": "Lead Building Attendant",
@@ -622,6 +622,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Facilities Operations Assistant Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Facilities-Operations-Assistant-Manager_REQ-8395",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Admission Counselor",
