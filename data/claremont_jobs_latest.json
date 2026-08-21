@@ -1,7 +1,34 @@
 {
-  "scraped_at": "2026-08-21T13:31:15-07:00",
+  "scraped_at": "2026-08-21T14:30:18-07:00",
   "total": 141,
   "jobs": [
+    {
+      "title": "Psychiatric Nurse Practitioner",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Psychiatric-Nurse-Practitioner_REQ-8187",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Staff Therapist or Staff Psychologist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Staff-Therapist-or-Staff-Psychologist_REQ-8185",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Assistant Payroll Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Assistant-Payroll-Manager_REQ-8243-1",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Chaplain and Director of Protestant Life",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Chaplain-and-Director-of-Protestant-Life_REQ-8262",
@@ -37,33 +64,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 14 Days Ago"
-    },
-    {
-      "title": "Assistant Payroll Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Assistant-Payroll-Manager_REQ-8243-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Staff Therapist or Staff Psychologist",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Staff-Therapist-or-Staff-Psychologist_REQ-8185",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Psychiatric Nurse Practitioner",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Psychiatric-Nurse-Practitioner_REQ-8187",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
     },
     {
       "title": "Commercial HVAC Service Technician",
