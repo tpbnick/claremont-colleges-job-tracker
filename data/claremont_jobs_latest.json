@@ -1,7 +1,25 @@
 {
-  "scraped_at": "2026-08-21T14:30:18-07:00",
+  "scraped_at": "2026-08-21T15:30:31-07:00",
   "total": 141,
   "jobs": [
+    {
+      "title": "Lead Building Attendant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Lead-Building-Attendant_REQ-8017",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Commercial HVAC Service Technician",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Commercial-HVAC-Service-Technician_REQ-7961-1",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Psychiatric Nurse Practitioner",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Psychiatric-Nurse-Practitioner_REQ-8187",
@@ -64,24 +82,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 14 Days Ago"
-    },
-    {
-      "title": "Commercial HVAC Service Technician",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Commercial-HVAC-Service-Technician_REQ-7961-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Lead Building Attendant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Lead-Building-Attendant_REQ-8017",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
     },
     {
       "title": "Assistant Athletic Trainer",
