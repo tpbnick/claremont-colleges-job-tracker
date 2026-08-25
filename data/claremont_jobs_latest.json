@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-25T07:52:05-07:00",
-  "total": 140,
+  "scraped_at": "2026-08-25T08:49:41-07:00",
+  "total": 142,
   "jobs": [
     {
       "title": "Lead Building Attendant",
@@ -82,6 +82,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 18 Days Ago"
+    },
+    {
+      "title": "Pays Program Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Pays-Program-Manager_REQ-8402",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Athletic Trainer",
@@ -469,6 +478,15 @@
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Kitchen Utility Worker",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Kitchen-Utility-Worker_REQ-8368",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Men's Soccer Coach, Goalkeepers",
