@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-25T08:49:41-07:00",
-  "current_scraped_at": "2026-08-25T09:43:05-07:00",
-  "new_count": 2,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Executive Assistant to the Vice President and Chief Civil Rights Officer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Executive-Assistant-to-the-Vice-President-and-Chief-Civil-Rights-Officer_REQ-8390-1",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Integrated Sciences Laboratory Infrastructure and Operations Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Integrated-Sciences-Laboratory-Infrastructure-and-Operations-Manager_REQ-8389",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-08-25T09:43:05-07:00",
+  "current_scraped_at": "2026-08-25T10:36:03-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
