@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-08-27T01:34:40-07:00",
-  "total": 141,
+  "scraped_at": "2026-08-27T12:43:21-07:00",
+  "total": 143,
   "jobs": [
+    {
+      "title": "Construction Project Manager Associate",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Construction-Project-Manager-Associate_REQ-8385",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Lead Building Attendant",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Lead-Building-Attendant_REQ-8017",
@@ -73,6 +82,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 20 Days Ago"
+    },
+    {
+      "title": "Sculpture Technician",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Sculpture-Technician_REQ-8410",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Pays Program Manager",
