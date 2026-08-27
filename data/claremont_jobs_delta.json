@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-08-26T12:07:40-07:00",
-  "current_scraped_at": "2026-08-26T16:10:41-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-08-26T16:10:41-07:00",
+  "current_scraped_at": "2026-08-27T01:34:40-07:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Dining Services Utility Attendant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Dining-Services-Utility-Attendant_REQ-8396",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Part time",
+      "posted_on": "Posted Yesterday"
+    }
+  ]
 }
