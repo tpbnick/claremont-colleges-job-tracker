@@ -1,25 +1,16 @@
 {
-  "previous_scraped_at": "2026-08-27T12:43:21-07:00",
-  "current_scraped_at": "2026-08-27T21:07:50-07:00",
-  "new_count": 2,
-  "removed_count": 0,
+  "previous_scraped_at": "2026-08-27T21:07:50-07:00",
+  "current_scraped_at": "2026-08-28T10:14:20-07:00",
+  "new_count": 1,
+  "removed_count": 2,
   "new_jobs": [
     {
-      "title": "Team Masters Project Advisor \u2013 Supply Chain / Operations, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Team-Masters-Project-Advisor---Supply-Chain---Operations---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8409",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "Building: 535",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Adjunct Faculty, Master of Science in Physician Associate Studies,  School of Health Sciences",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/555-Arrow-Building---LC73000/Adjunct-Faculty--Master-of-Science-in-Physician-Associate-Studies---School-of-Health-Sciences_REQ-8403",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "555 Arrow Building - LC73000",
-      "time_type": "Part time",
+      "title": "Faculty Administrative Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Faculty-Administrative-Assistant_REQ-8412",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Scott Hall",
+      "time_type": "Full time",
       "posted_on": "Posted Today"
     }
   ]
