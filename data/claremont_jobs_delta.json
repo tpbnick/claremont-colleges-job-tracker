@@ -1,15 +1,33 @@
 {
-  "previous_scraped_at": "2026-08-27T21:07:50-07:00",
-  "current_scraped_at": "2026-08-28T10:14:20-07:00",
-  "new_count": 1,
-  "removed_count": 2,
+  "previous_scraped_at": "2026-08-28T10:14:20-07:00",
+  "current_scraped_at": "2026-08-28T18:36:06-07:00",
+  "new_count": 3,
+  "removed_count": 3,
   "new_jobs": [
     {
-      "title": "Faculty Administrative Assistant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Faculty-Administrative-Assistant_REQ-8412",
+      "title": "Athletic Trainer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Athletic-Trainer_REQ-8407",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Temporary Faculty Administrative Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Pitzer-General-Campus/Temporary-Faculty-Administrative-Assistant_REQ-8417",
       "site_id": "PIT_Staff",
       "site": "Pitzer College",
-      "location": "Scott Hall",
+      "location": "Pitzer General Campus",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Utility Worker",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center-Dining-Hall/Utility-Worker_REQ-8413",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "McConnell Center-Dining Hall",
       "time_type": "Full time",
       "posted_on": "Posted Today"
     }
