@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-08-31T14:51:30-07:00",
-  "current_scraped_at": "2026-08-31T18:08:53-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Pharmacy Informatics (Adjunct Pool), School of Pharmacy",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Pharmacy-Informatics--Adjunct-Pool---School-of-Pharmacy_REQ-8414",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "215 York Building - LC72000",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-08-31T18:08:53-07:00",
+  "current_scraped_at": "2026-09-01T00:34:51-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
