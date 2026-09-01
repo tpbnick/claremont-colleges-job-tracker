@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-09-01T06:20:53-07:00",
-  "total": 144,
+  "scraped_at": "2026-09-01T10:45:03-07:00",
+  "total": 146,
   "jobs": [
+    {
+      "title": "Acquisitions Associate",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Acquisitions-Associate_REQ-8416-1",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Construction Project Manager Associate",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Construction-Project-Manager-Associate_REQ-8385",
@@ -336,6 +345,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Temporary Events Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Temporary-Events-Assistant_REQ-8277-1",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Major Gifts Officer",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Major-Gifts-Officer_REQ-8062",
       "site_id": "SCR_Career_Staff",
@@ -432,15 +450,6 @@
       "site": "Scripps College",
       "location": "Scripps College - Claremont, CA",
       "time_type": "Part time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Temporary Events Assistant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Temporary-Events-Assistant_REQ-8277-1",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
     },
     {
@@ -793,6 +802,15 @@
       "location": "Platt Campus Center",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Maintenance Technician II",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Maintenance-Technician-II_REQ-8401-1",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "McConnell Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Sustainability Engagement Coordinator",
