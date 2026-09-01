@@ -1,16 +1,16 @@
 {
-  "previous_scraped_at": "2026-08-31T09:56:47-07:00",
-  "current_scraped_at": "2026-08-31T14:51:30-07:00",
+  "previous_scraped_at": "2026-08-31T14:51:30-07:00",
+  "current_scraped_at": "2026-08-31T18:08:53-07:00",
   "new_count": 1,
   "removed_count": 1,
   "new_jobs": [
     {
-      "title": "Sustainability Engagement Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Sustainability-Engagement-Coordinator_REQ-8325",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Scott Hall",
-      "time_type": "Full time",
+      "title": "Pharmacy Informatics (Adjunct Pool), School of Pharmacy",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Pharmacy-Informatics--Adjunct-Pool---School-of-Pharmacy_REQ-8414",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "215 York Building - LC72000",
+      "time_type": "Part time",
       "posted_on": "Posted Today"
     }
   ]
