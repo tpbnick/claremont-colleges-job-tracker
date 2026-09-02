@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-09-01T13:51:49-07:00",
-  "current_scraped_at": "2026-09-01T16:11:44-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Line Cook I",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Line-Cook-I_REQ-8200",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-09-01T16:11:44-07:00",
+  "current_scraped_at": "2026-09-01T20:53:35-07:00",
+  "new_count": 0,
+  "removed_count": 2,
+  "new_jobs": []
 }
