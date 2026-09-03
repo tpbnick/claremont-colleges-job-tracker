@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-03T13:48:32-07:00",
-  "total": 142,
+  "scraped_at": "2026-09-03T16:08:16-07:00",
+  "total": 143,
   "jobs": [
     {
       "title": "Campus Safety Officer",
@@ -53,8 +53,8 @@
       "site_id": "TCCS_Careers",
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
-      "time_type": "",
-      "posted_on": ""
+      "time_type": "Full time",
+      "posted_on": "Posted 13 Days Ago"
     },
     {
       "title": "Psychiatric Nurse Practitioner",
@@ -100,6 +100,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 13 Days Ago"
+    },
+    {
+      "title": "Men's & Women's Assistant Swim Coach",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Men-s---Women-s-Assistant-Swim-Coach_REQ-8426",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Assistant Director, Campus Advocacy Resources Education and Support (CARES)",
@@ -480,6 +489,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Cook II - Baker",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Cook-II---Baker_REQ-8233",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Athletic Trainer",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Athletic-Trainer_REQ-8407",
       "site_id": "CMC_Staff",
@@ -572,15 +590,6 @@
     {
       "title": "Sponsored Research Coordinator",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Sponsored-Research-Coordinator_REQ-8299",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Cook II - Baker",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Cook-II---Baker_REQ-8233",
       "site_id": "CMC_Staff",
       "site": "Claremont McKenna College",
       "location": "Claremont",
