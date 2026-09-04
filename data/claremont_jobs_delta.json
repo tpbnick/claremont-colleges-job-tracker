@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-09-03T13:48:32-07:00",
-  "current_scraped_at": "2026-09-03T16:08:16-07:00",
-  "new_count": 1,
-  "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Men's & Women's Assistant Swim Coach",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Men-s---Women-s-Assistant-Swim-Coach_REQ-8426",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-09-03T16:08:16-07:00",
+  "current_scraped_at": "2026-09-03T20:54:41-07:00",
+  "new_count": 0,
+  "removed_count": 3,
+  "new_jobs": []
 }
