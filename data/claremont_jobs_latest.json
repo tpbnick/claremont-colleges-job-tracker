@@ -1,19 +1,19 @@
 {
-  "scraped_at": "2026-09-04T13:35:46-07:00",
-  "total": 139,
+  "scraped_at": "2026-09-04T15:55:41-07:00",
+  "total": 138,
   "jobs": [
     {
-      "title": "Campus Safety Officer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Campus-Safety-Officer_REQ-8078-1",
+      "title": "Journeyman Electrician",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Journeyman-Electrician_REQ-8418",
       "site_id": "TCCS_Careers",
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted Yesterday"
+      "posted_on": "Posted Today"
     },
     {
-      "title": "Journeyman Electrician",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Journeyman-Electrician_REQ-8418",
+      "title": "Campus Safety Officer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Campus-Safety-Officer_REQ-8078-1",
       "site_id": "TCCS_Careers",
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
@@ -327,6 +327,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Post Bacc-Admin Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Post-Bacc-Admin-Coordinator_REQ-8355",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Floor Technician/Building Attendant I",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Building-Attendant-I_REQ-8150",
       "site_id": "SCR_Career_Staff",
@@ -396,15 +405,6 @@
       "site": "Scripps College",
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
-      "posted_on": "Posted 22 Days Ago"
-    },
-    {
-      "title": "Post Bacc-Admin Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Post-Bacc-Admin-Coordinator_REQ-8355",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Part time",
       "posted_on": "Posted 22 Days Ago"
     },
     {
@@ -615,6 +615,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Executive Chef Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Executive-Chef-Manager_REQ-8420",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Philanthropic Advisor",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Kingston-Hall/Philanthropic-Advisor_REQ-8096",
       "site_id": "HMC_Careers",
@@ -777,15 +786,6 @@
       "posted_on": "Posted 3 Days Ago"
     },
     {
-      "title": "Utility Worker",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center-Dining-Hall/Utility-Worker_REQ-8413",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "McConnell Center-Dining Hall",
-      "time_type": "Full time",
-      "posted_on": "Posted 7 Days Ago"
-    },
-    {
       "title": "Faculty Administrative Assistant",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Faculty-Administrative-Assistant_REQ-8412",
       "site_id": "PIT_Staff",
@@ -847,15 +847,6 @@
       "location": "215 York Building - LC72000",
       "time_type": "Part time",
       "posted_on": "Posted 4 Days Ago"
-    },
-    {
-      "title": "Team Masters Project Advisor \u2013 Supply Chain / Operations, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Team-Masters-Project-Advisor---Supply-Chain---Operations---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8409",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "Building: 535",
-      "time_type": "Part time",
-      "posted_on": "Posted 8 Days Ago"
     },
     {
       "title": "Adjunct Faculty, Master of Science in Physician Associate Studies,  School of Health Sciences",
