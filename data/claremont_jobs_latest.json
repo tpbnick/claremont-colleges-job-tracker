@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-09-08T13:58:05-07:00",
-  "total": 136,
+  "scraped_at": "2026-09-08T16:19:07-07:00",
+  "total": 138,
   "jobs": [
+    {
+      "title": "Campus Safety Officer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Campus-Safety-Officer_REQ-8078-1",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Acquisitions Associate",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Acquisitions-Associate_REQ-8416-1",
@@ -28,15 +37,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 4 Days Ago"
-    },
-    {
-      "title": "Campus Safety Officer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Campus-Safety-Officer_REQ-8078-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 5 Days Ago"
     },
     {
       "title": "Construction Project Manager Associate",
@@ -829,6 +829,24 @@
       "location": "Scott Hall",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Team Masters Project Advisor \u2013 Healthcare Innovation, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Team-Masters-Project-Advisor---Healthcare-Innovation---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8429",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 535",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Senior Director of Corporate Partnerships",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/555-Arrow-Building---LC73000/Senior-Director-of-Corporate-Partnerships_REQ-8430",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "555 Arrow Building - LC73000",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Pharmacy Informatics (Adjunct Pool), School of Pharmacy",
