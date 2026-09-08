@@ -1,7 +1,25 @@
 {
-  "scraped_at": "2026-09-08T05:46:08-07:00",
-  "total": 138,
+  "scraped_at": "2026-09-08T10:11:18-07:00",
+  "total": 137,
   "jobs": [
+    {
+      "title": "Acquisitions Associate",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Acquisitions-Associate_REQ-8416-1",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Psychiatric Nurse Practitioner",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Psychiatric-Nurse-Practitioner_REQ-8187",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Journeyman Electrician",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Journeyman-Electrician_REQ-8418",
@@ -19,15 +37,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 5 Days Ago"
-    },
-    {
-      "title": "Acquisitions Associate",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Acquisitions-Associate_REQ-8416-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 7 Days Ago"
     },
     {
       "title": "Construction Project Manager Associate",
@@ -50,15 +59,6 @@
     {
       "title": "Commercial HVAC Service Technician",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Commercial-HVAC-Service-Technician_REQ-7961-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 18 Days Ago"
-    },
-    {
-      "title": "Psychiatric Nurse Practitioner",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Psychiatric-Nurse-Practitioner_REQ-8187",
       "site_id": "TCCS_Careers",
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
@@ -102,6 +102,15 @@
       "posted_on": "Posted 18 Days Ago"
     },
     {
+      "title": "Pays Program Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Pays-Program-Manager_REQ-8402",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Men's & Women's Assistant Swim Coach",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Men-s---Women-s-Assistant-Swim-Coach_REQ-8426",
       "site_id": "POM_Careers",
@@ -136,15 +145,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 12 Days Ago"
-    },
-    {
-      "title": "Pays Program Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Pays-Program-Manager_REQ-8402",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 14 Days Ago"
     },
     {
       "title": "Assistant Athletic Trainer",
@@ -325,15 +325,6 @@
       "location": "Burkle Building - LC20103",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Post Bacc-Admin Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Post-Bacc-Admin-Coordinator_REQ-8355",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Part time",
-      "posted_on": "Posted 4 Days Ago"
     },
     {
       "title": "Floor Technician/Building Attendant I",
