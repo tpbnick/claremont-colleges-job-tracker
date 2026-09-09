@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-09-08T13:58:05-07:00",
-  "current_scraped_at": "2026-09-08T16:19:07-07:00",
-  "new_count": 2,
+  "previous_scraped_at": "2026-09-08T16:19:07-07:00",
+  "current_scraped_at": "2026-09-08T21:04:04-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Team Masters Project Advisor \u2013 Healthcare Innovation, (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Team-Masters-Project-Advisor---Healthcare-Innovation---Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8429",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "Building: 535",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Senior Director of Corporate Partnerships",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/555-Arrow-Building---LC73000/Senior-Director-of-Corporate-Partnerships_REQ-8430",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "555 Arrow Building - LC73000",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
