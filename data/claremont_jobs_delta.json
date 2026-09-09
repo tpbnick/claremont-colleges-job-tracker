@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-09-09T11:25:09-07:00",
-  "current_scraped_at": "2026-09-09T14:34:23-07:00",
-  "new_count": 0,
-  "removed_count": 1,
-  "new_jobs": []
+  "previous_scraped_at": "2026-09-09T14:34:23-07:00",
+  "current_scraped_at": "2026-09-09T16:57:34-07:00",
+  "new_count": 1,
+  "removed_count": 0,
+  "new_jobs": [
+    {
+      "title": "Temporary Associate Director",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Skandera-Hall/Temporary-Associate-Director_REQ-8437",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Skandera Hall",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
