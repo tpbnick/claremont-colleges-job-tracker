@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-09T07:17:54-07:00",
-  "total": 138,
+  "scraped_at": "2026-09-09T11:25:09-07:00",
+  "total": 137,
   "jobs": [
     {
       "title": "Campus Safety Officer",
@@ -100,6 +100,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 19 Days Ago"
+    },
+    {
+      "title": "Coordinator, Alumni and Family Engagement",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Coordinator--Alumni-and-Family-Engagement_REQ-8434",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Pays Program Manager",
@@ -741,15 +750,6 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Assistant Director, Upward Bound",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Assistant-Director--Upward-Bound_REQ-8204",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Graduate Assistant - Dean of Students Office",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Graduate-Assistant---Dean-of-Students-Office_REQ-8205",
       "site_id": "HMC_Careers",
@@ -847,15 +847,6 @@
       "location": "555 Arrow Building - LC73000",
       "time_type": "Full time",
       "posted_on": "Posted Yesterday"
-    },
-    {
-      "title": "Pharmacy Informatics (Adjunct Pool), School of Pharmacy",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Pharmacy-Informatics--Adjunct-Pool---School-of-Pharmacy_REQ-8414",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "215 York Building - LC72000",
-      "time_type": "Part time",
-      "posted_on": "Posted 9 Days Ago"
     },
     {
       "title": "Adjunct Faculty, Master of Science in Physician Associate Studies,  School of Health Sciences",

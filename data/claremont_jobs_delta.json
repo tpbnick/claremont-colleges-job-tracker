@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-09-09T02:29:55-07:00",
-  "current_scraped_at": "2026-09-09T07:17:54-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-09-09T07:17:54-07:00",
+  "current_scraped_at": "2026-09-09T11:25:09-07:00",
+  "new_count": 1,
+  "removed_count": 2,
+  "new_jobs": [
+    {
+      "title": "Coordinator, Alumni and Family Engagement",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Coordinator--Alumni-and-Family-Engagement_REQ-8434",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
