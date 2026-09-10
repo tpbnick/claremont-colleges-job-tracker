@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-09-10T11:14:05-07:00",
-  "current_scraped_at": "2026-09-10T14:30:02-07:00",
-  "new_count": 1,
-  "removed_count": 2,
-  "new_jobs": [
-    {
-      "title": "Executive Director, Experience and Engagement",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Executive-Director--Experience-and-Engagement_REQ-8438",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-09-10T14:30:02-07:00",
+  "current_scraped_at": "2026-09-10T16:53:50-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
