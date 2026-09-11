@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-11T13:46:35-07:00",
-  "total": 129,
+  "scraped_at": "2026-09-11T16:07:16-07:00",
+  "total": 130,
   "jobs": [
     {
       "title": "Acquisitions Associate",
@@ -550,6 +550,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Maintenance Technician 2",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Maintenance-Technician-2_REQ-8444",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Dining Services Administrative Assistant",
