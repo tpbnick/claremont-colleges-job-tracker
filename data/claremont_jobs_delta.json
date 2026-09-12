@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-09-11T16:07:16-07:00",
-  "current_scraped_at": "2026-09-11T21:01:28-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Men\u2019s and Women\u2019s Cross Country Assistant Coach",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Men-s-and-Women-s-Cross-Country-Assistant-Coach_REQ-8445",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-09-11T21:01:28-07:00",
+  "current_scraped_at": "2026-09-12T02:08:32-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
