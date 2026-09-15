@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-15T02:53:47-07:00",
-  "total": 132,
+  "scraped_at": "2026-09-15T07:46:28-07:00",
+  "total": 133,
   "jobs": [
     {
       "title": "Acquisitions Associate",
@@ -577,6 +577,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Temporary Concert Supervisor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Parsons-Hall/Temporary-Concert-Supervisor_REQ-8443",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Parsons Hall",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Maintenance Technician 2",
