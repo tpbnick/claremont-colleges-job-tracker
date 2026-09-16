@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-16T06:18:47-07:00",
+  "scraped_at": "2026-09-16T11:02:45-07:00",
   "total": 135,
   "jobs": [
     {
@@ -100,6 +100,15 @@
       "location": "Claremont",
       "time_type": "Part time",
       "posted_on": "Posted Yesterday"
+    },
+    {
+      "title": "Admissions Officer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Admissions-Officer_REQ-8451",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Men\u2019s and Women\u2019s Cross Country Assistant Coach",
@@ -606,6 +615,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Associate Director of Admission",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Shanahan-Center/Associate-Director-of-Admission_REQ-8450",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Shanahan Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Grounds Manager",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Grounds-Manager_REQ-8448",
       "site_id": "HMC_Careers",
@@ -822,15 +840,6 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Budget and Finance Analyst",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Budget-and-Finance-Analyst_REQ-8300",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "McConnell Center",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Health and Wellness Outreach Facilitator",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Health-and-Wellness-Outreach-Facilitator_REQ-8279",
       "site_id": "PIT_Staff",
@@ -847,15 +856,6 @@
       "location": "555 Arrow Building - LC73000",
       "time_type": "Full time",
       "posted_on": "Posted 8 Days Ago"
-    },
-    {
-      "title": "Adjunct Faculty, Master of Science in Physician Associate Studies,  School of Health Sciences",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/555-Arrow-Building---LC73000/Adjunct-Faculty--Master-of-Science-in-Physician-Associate-Studies---School-of-Health-Sciences_REQ-8403",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "555 Arrow Building - LC73000",
-      "time_type": "Part time",
-      "posted_on": "Posted 20 Days Ago"
     },
     {
       "title": "Assistant/Associate Professor of Pharmacy Informatics or Healthcare Management",

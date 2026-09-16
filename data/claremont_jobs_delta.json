@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-09-16T00:28:44-07:00",
-  "current_scraped_at": "2026-09-16T06:18:47-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-09-16T06:18:47-07:00",
+  "current_scraped_at": "2026-09-16T11:02:45-07:00",
+  "new_count": 2,
+  "removed_count": 2,
+  "new_jobs": [
+    {
+      "title": "Admissions Officer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Admissions-Officer_REQ-8451",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Associate Director of Admission",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Shanahan-Center/Associate-Director-of-Admission_REQ-8450",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Shanahan Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
