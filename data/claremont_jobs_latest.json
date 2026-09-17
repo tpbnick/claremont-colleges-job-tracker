@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-17T09:39:11-07:00",
-  "total": 135,
+  "scraped_at": "2026-09-17T13:06:10-07:00",
+  "total": 136,
   "jobs": [
     {
       "title": "Psychiatric Nurse Practitioner",
@@ -793,6 +793,15 @@
       "location": "Platt Campus Center",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Infrastructure & Automation Solutions Engineer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Infrastructure---Automation-Solutions-Engineer_REQ-8452",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Scott Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Budget and Finance Analyst",
