@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-09-17T13:06:10-07:00",
-  "current_scraped_at": "2026-09-17T16:28:10-07:00",
-  "new_count": 2,
+  "previous_scraped_at": "2026-09-17T16:28:10-07:00",
+  "current_scraped_at": "2026-09-17T21:05:35-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Academic Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Academic-Coordinator_REQ-8459",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Assistant Coach, Men\u2019s and Women\u2019s Track & Field - Throws",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Men-s-and-Women-s-Track---Field---Throws_REQ-8455",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
