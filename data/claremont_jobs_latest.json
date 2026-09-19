@@ -1,19 +1,28 @@
 {
-  "scraped_at": "2026-09-18T14:32:45-07:00",
-  "total": 136,
+  "scraped_at": "2026-09-18T17:02:36-07:00",
+  "total": 135,
   "jobs": [
     {
-      "title": "Psychiatric Nurse Practitioner",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Psychiatric-Nurse-Practitioner_REQ-8187",
+      "title": "Head of Research Services",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/TCCS---Head--Research-Services_REQ-8323",
       "site_id": "TCCS_Careers",
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 3 Days Ago"
+      "posted_on": "Posted Today"
     },
     {
-      "title": "Head of Research Services",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/TCCS---Head--Research-Services_REQ-8323",
+      "title": "Staff Therapist or Staff Psychologist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Staff-Therapist-or-Staff-Psychologist_REQ-8185",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Psychiatric Nurse Practitioner",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Psychiatric-Nurse-Practitioner_REQ-8187",
       "site_id": "TCCS_Careers",
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
@@ -32,15 +41,6 @@
     {
       "title": "Assistant Payroll Manager",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Assistant-Payroll-Manager_REQ-8243-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 3 Days Ago"
-    },
-    {
-      "title": "Staff Therapist or Staff Psychologist",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Staff-Therapist-or-Staff-Psychologist_REQ-8185",
       "site_id": "TCCS_Careers",
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
@@ -624,6 +624,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Maintenance Technician 2",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Maintenance-Technician-2_REQ-8444",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Associate Director of Admission",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Shanahan-Center/Associate-Director-of-Admission_REQ-8450",
       "site_id": "HMC_Careers",
@@ -649,15 +658,6 @@
       "location": "Parsons Hall",
       "time_type": "Part time",
       "posted_on": "Posted 3 Days Ago"
-    },
-    {
-      "title": "Maintenance Technician 2",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Maintenance-Technician-2_REQ-8444",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Full time",
-      "posted_on": "Posted 7 Days Ago"
     },
     {
       "title": "Dining Services Administrative Assistant",
@@ -774,15 +774,6 @@
       "site": "Harvey Mudd College",
       "location": "Kingston Hall",
       "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Graduate Assistant - Dean of Students Office",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Graduate-Assistant---Dean-of-Students-Office_REQ-8205",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
     },
     {
