@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-22T07:33:22-07:00",
-  "total": 131,
+  "scraped_at": "2026-09-22T11:39:59-07:00",
+  "total": 127,
   "jobs": [
     {
       "title": "Head of Research Services",
@@ -75,15 +75,6 @@
       "posted_on": "Posted 7 Days Ago"
     },
     {
-      "title": "Acquisitions Associate",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Acquisitions-Associate_REQ-8416-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 7 Days Ago"
-    },
-    {
       "title": "Journeyman Electrician",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Journeyman-Electrician_REQ-8418",
       "site_id": "TCCS_Careers",
@@ -136,15 +127,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 6 Days Ago"
-    },
-    {
-      "title": "Men\u2019s and Women\u2019s Cross Country Assistant Coach",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Men-s-and-Women-s-Cross-Country-Assistant-Coach_REQ-8445",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted 8 Days Ago"
     },
     {
       "title": "Cultivation Coordinator, The Pomona Plan",
@@ -507,15 +489,6 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Assistant Men's and Women's Swimming and Diving Coach",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Assistant-Men-s-and-Women-s-Swimming-and-Diving-Coach_REQ-8378",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Director of Recreation",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Director-of-Recreation_REQ-8367",
       "site_id": "CMC_Staff",
@@ -597,6 +570,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Temporary Concert Supervisor",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Parsons-Hall/Temporary-Concert-Supervisor_REQ-8443",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Parsons Hall",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Maintenance Technician 2",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Maintenance-Technician-2_REQ-8444",
       "site_id": "HMC_Careers",
@@ -621,15 +603,6 @@
       "site": "Harvey Mudd College",
       "location": "Platt Campus Center",
       "time_type": "Full time",
-      "posted_on": "Posted 7 Days Ago"
-    },
-    {
-      "title": "Temporary Concert Supervisor",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Parsons-Hall/Temporary-Concert-Supervisor_REQ-8443",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Parsons Hall",
-      "time_type": "Part time",
       "posted_on": "Posted 7 Days Ago"
     },
     {
@@ -748,15 +721,6 @@
       "location": "Platt Campus Center",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Infrastructure & Automation Solutions Engineer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Scott-Hall/Infrastructure---Automation-Solutions-Engineer_REQ-8452",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Scott Hall",
-      "time_type": "Full time",
-      "posted_on": "Posted 5 Days Ago"
     },
     {
       "title": "Budget and Finance Analyst",
