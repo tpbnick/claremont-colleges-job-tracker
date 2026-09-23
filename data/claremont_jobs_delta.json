@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-09-22T22:42:48-07:00",
-  "current_scraped_at": "2026-09-23T09:33:04-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-09-23T09:33:04-07:00",
+  "current_scraped_at": "2026-09-23T13:04:34-07:00",
+  "new_count": 2,
   "removed_count": 1,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Administrative Coordinator for CDO Operations & Data",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Administrative-Coordinator-for-CDO-Operations---Data_REQ-8471",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "IT Administrative Assistant I",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/IT-Administrative-Assistant-I_REQ-8456",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
