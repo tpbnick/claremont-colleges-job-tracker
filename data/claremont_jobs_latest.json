@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-24T11:56:09-07:00",
-  "total": 123,
+  "scraped_at": "2026-09-24T15:10:41-07:00",
+  "total": 125,
   "jobs": [
     {
       "title": "Head of Research Services",
@@ -91,6 +91,24 @@
       "location": "Claremont",
       "time_type": "Part time",
       "posted_on": "Posted 9 Days Ago"
+    },
+    {
+      "title": "Assistant Director of Faculty Affairs",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Director-of-Faculty-Affairs_REQ-8473",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Outside Readers",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Sumner-Hall---LC00056/Outside-Readers_REQ-8472",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Sumner Hall - LC00056",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Administrative Coordinator for CDO Operations & Data",
@@ -543,15 +561,6 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Senior Solutions Engineer",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Senior-Solutions-Engineer_REQ-8090",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Assistant Director of Annual Giving, Annual Fund Officer",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Assistant-Director-of-Annual-Giving--Annual-Fund-Officer_REQ-7986",
       "site_id": "CMC_Staff",
@@ -559,6 +568,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Retail - Junior Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Retail---Junior-Cook_REQ-8461",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Temporary Concert Supervisor",

@@ -1,7 +1,35 @@
 {
-  "previous_scraped_at": "2026-09-24T07:47:15-07:00",
-  "current_scraped_at": "2026-09-24T11:56:09-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-09-24T11:56:09-07:00",
+  "current_scraped_at": "2026-09-24T15:10:41-07:00",
+  "new_count": 3,
+  "removed_count": 1,
+  "new_jobs": [
+    {
+      "title": "Assistant Director of Faculty Affairs",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Director-of-Faculty-Affairs_REQ-8473",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Outside Readers",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Sumner-Hall---LC00056/Outside-Readers_REQ-8472",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Sumner Hall - LC00056",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Retail - Junior Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Hoch-Shanahan-Dining-Commons/Retail---Junior-Cook_REQ-8461",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Hoch-Shanahan Dining Commons",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
