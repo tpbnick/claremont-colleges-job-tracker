@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-25T15:07:55-07:00",
-  "total": 122,
+  "scraped_at": "2026-09-25T18:20:53-07:00",
+  "total": 123,
   "jobs": [
     {
       "title": "Head of Research Services",
@@ -694,6 +694,15 @@
       "location": "Platt Campus Center",
       "time_type": "Part time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Project Administrator, Office of the COO",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Executive-Operations-and-Projects-Administrator_REQ-8334-1",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "McConnell Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Budget and Finance Analyst",
