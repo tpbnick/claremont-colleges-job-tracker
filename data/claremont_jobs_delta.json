@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-09-27T23:32:32-07:00",
-  "current_scraped_at": "2026-09-28T08:11:34-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-09-28T08:11:34-07:00",
+  "current_scraped_at": "2026-09-28T14:44:47-07:00",
+  "new_count": 1,
+  "removed_count": 1,
+  "new_jobs": [
+    {
+      "title": "Catering Staff",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Catering-Staff_REQ-8477",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
