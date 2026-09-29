@@ -1,16 +1,16 @@
 {
-  "previous_scraped_at": "2026-09-28T08:11:34-07:00",
-  "current_scraped_at": "2026-09-28T14:44:47-07:00",
+  "previous_scraped_at": "2026-09-28T14:44:47-07:00",
+  "current_scraped_at": "2026-09-28T18:40:22-07:00",
   "new_count": 1,
   "removed_count": 1,
   "new_jobs": [
     {
-      "title": "Catering Staff",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Catering-Staff_REQ-8477",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
+      "title": "Assistant Coach, Men's and Women's Track & Field - Pole Vault",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Men-s-and-Women-s-Track---Field---Pole-Vault_REQ-8482",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
       "posted_on": "Posted Today"
     }
   ]
