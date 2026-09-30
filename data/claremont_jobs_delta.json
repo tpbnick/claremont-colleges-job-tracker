@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-09-30T06:30:06-07:00",
-  "current_scraped_at": "2026-09-30T12:00:08-07:00",
-  "new_count": 0,
-  "removed_count": 2,
-  "new_jobs": []
+  "previous_scraped_at": "2026-09-30T12:00:08-07:00",
+  "current_scraped_at": "2026-09-30T15:57:27-07:00",
+  "new_count": 1,
+  "removed_count": 1,
+  "new_jobs": [
+    {
+      "title": "Special Teams Assistant Coach",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Special-Teams-Assistant-Coach_REQ-8487-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
