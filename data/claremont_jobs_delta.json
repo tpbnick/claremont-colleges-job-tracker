@@ -1,7 +1,35 @@
 {
-  "previous_scraped_at": "2026-09-30T19:00:38-07:00",
-  "current_scraped_at": "2026-10-01T01:47:14-07:00",
-  "new_count": 0,
-  "removed_count": 1,
-  "new_jobs": []
+  "previous_scraped_at": "2026-10-01T01:47:14-07:00",
+  "current_scraped_at": "2026-10-01T09:12:59-07:00",
+  "new_count": 3,
+  "removed_count": 0,
+  "new_jobs": [
+    {
+      "title": "Adjunct Faculty, Biotechnology-Based Therapeutics,  Henry E. Riggs School of Applied Life Sciences",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Adjunct-Faculty--Biotechnology-Based-Therapeutics---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8484",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 535",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Adjunct Faculty, Competitive Strategy,  Henry E. Riggs School of Applied Life Sciences",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Adjunct-Faculty--Competitive-Strategy---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8485",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 535",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Adjunct Faculty, Master of Science in Human Genetics and Genetic Counseling",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Adjunct-Faculty--Master-of-Science-in-Human-Genetics-and-Genetic-Counseling_REQ-8483",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 535",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
