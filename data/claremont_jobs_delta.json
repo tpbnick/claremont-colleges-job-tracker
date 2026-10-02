@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-10-01T14:42:49-07:00",
-  "current_scraped_at": "2026-10-01T18:28:32-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Part-Time Faculty, Master of Science in Physician Associate Studies (MSPA) Program",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/555-Arrow-Building---LC73000/Part-Time-Faculty--Master-of-Science-in-Physician-Associate-Studies--MSPA--Program_REQ-8478",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "555 Arrow Building - LC73000",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-10-01T18:28:32-07:00",
+  "current_scraped_at": "2026-10-02T01:14:32-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
