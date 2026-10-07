@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-10-06T18:19:38-07:00",
-  "current_scraped_at": "2026-10-07T01:24:08-07:00",
-  "new_count": 2,
+  "previous_scraped_at": "2026-10-07T01:24:08-07:00",
+  "current_scraped_at": "2026-10-07T09:14:42-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "Temporary Facilities Project Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Temporary-Facilities-Project-Manager_REQ-8503",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "McConnell Center",
-      "time_type": "Full time",
-      "posted_on": "Posted Yesterday"
-    },
-    {
-      "title": "Admission Operations & Systems Analyst",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Pitzer-Hall/Admission-Operations---Systems-Analyst_REQ-8499-1",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Pitzer Hall",
-      "time_type": "Full time",
-      "posted_on": "Posted Yesterday"
-    }
-  ]
+  "new_jobs": []
 }
