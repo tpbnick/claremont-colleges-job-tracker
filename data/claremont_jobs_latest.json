@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-10-06T14:31:17-07:00",
-  "total": 117,
+  "scraped_at": "2026-10-06T18:19:38-07:00",
+  "total": 118,
   "jobs": [
     {
       "title": "Digital Production Associate",
@@ -280,6 +280,15 @@
       "location": "Burkle Building - LC20103",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Laboratory Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Laboratory-Assistant_REQ-8497",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Line Cook",
