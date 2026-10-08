@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-10-07T14:51:27-07:00",
-  "total": 121,
+  "scraped_at": "2026-10-07T18:40:18-07:00",
+  "total": 120,
   "jobs": [
+    {
+      "title": "Part Time East Asian Languages Project Cataloger",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Part-Time-East-Asian-Languages-Project-Cataloger_REQ-8500",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Digital Production Associate",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Digital-Production-Associate_REQ-8495",
@@ -399,15 +408,6 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Curator for Academic Programs and Collections",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Curator-for-Academic-Programs-and-Collections_REQ-8089",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "IT Administrative Assistant I",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/IT-Administrative-Assistant-I_REQ-8456",
       "site_id": "CMC_Staff",
@@ -433,15 +433,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 22 Days Ago"
-    },
-    {
-      "title": "Integrated Sciences Laboratory Infrastructure and Operations Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Integrated-Sciences-Laboratory-Infrastructure-and-Operations-Manager_REQ-8389",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
     },
     {
       "title": "Kitchen Utility Worker",
