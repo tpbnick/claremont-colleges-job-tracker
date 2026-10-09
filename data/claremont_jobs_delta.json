@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-10-09T01:45:10-07:00",
-  "current_scraped_at": "2026-10-09T09:00:13-07:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-10-09T09:00:13-07:00",
+  "current_scraped_at": "2026-10-09T13:48:15-07:00",
+  "new_count": 2,
+  "removed_count": 3,
+  "new_jobs": [
+    {
+      "title": "Temporary Communications & Event Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CGU_Careers/job/Harper-Hall---LC20601/Temporary-Communications---Event-Specialist_REQ-8504",
+      "site_id": "CGU_Careers",
+      "site": "Claremont Graduate University",
+      "location": "Harper Hall - LC20601",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Technical Analyst",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Claremont/Technical-Analyst_REQ-8476",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
