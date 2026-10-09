@@ -1,35 +1,7 @@
 {
-  "previous_scraped_at": "2026-10-08T09:15:59-07:00",
-  "current_scraped_at": "2026-10-08T14:54:49-07:00",
-  "new_count": 3,
+  "previous_scraped_at": "2026-10-08T14:54:49-07:00",
+  "current_scraped_at": "2026-10-08T18:53:27-07:00",
+  "new_count": 0,
   "removed_count": 0,
-  "new_jobs": [
-    {
-      "title": "CGU- Assistant Registrar",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CGU_Careers/job/Harper-Hall---LC20601/CGU--Assistant-Registrar_REQ-8507",
-      "site_id": "CGU_Careers",
-      "site": "Claremont Graduate University",
-      "location": "Harper Hall - LC20601",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Senior Solutions Consultant III",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Senior-Solutions-Consultant-III_REQ-8492",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Events Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Events-Coordinator_REQ-8493-1",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "new_jobs": []
 }
