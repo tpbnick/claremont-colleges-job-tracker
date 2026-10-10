@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-10-09T13:48:15-07:00",
+  "scraped_at": "2026-10-09T17:38:27-07:00",
   "total": 121,
   "jobs": [
+    {
+      "title": "Part-time Library User Services Associate",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Part-time-Library-User-Services-Associate_REQ-8508",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Part Time East Asian Languages Project Cataloger",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Part-Time-East-Asian-Languages-Project-Cataloger_REQ-8500",
@@ -37,15 +46,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 21 Days Ago"
-    },
-    {
-      "title": "Psychiatric Nurse Practitioner",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Psychiatric-Nurse-Practitioner_REQ-8187",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 24 Days Ago"
     },
     {
       "title": "Low Voltage Supervisor",
@@ -282,6 +282,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Baker",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Baker_REQ-8501",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Laboratory Assistant",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Laboratory-Assistant_REQ-8497",
       "site_id": "SCR_Career_Staff",
@@ -343,15 +352,6 @@
       "location": "Scripps College - Claremont, CA",
       "time_type": "Part time",
       "posted_on": "Posted 24 Days Ago"
-    },
-    {
-      "title": "Student Campaigns and the Scripps Fund Coordinator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Student-Campaigns-and-the-Scripps-Fund-Coordinator_REQ-8240",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 25 Days Ago"
     },
     {
       "title": "Associate Director, Employer Engagement and External Partnerships",
@@ -651,6 +651,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Budget and Finance Analyst",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Budget-and-Finance-Analyst_REQ-8300",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "McConnell Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Communications and Digital Media Organizer",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Redford-Conservancy-Building/Communications-and-Digital-Media-Organizer_REQ-8491",
       "site_id": "PIT_Staff",
@@ -685,15 +694,6 @@
       "location": "McConnell Center",
       "time_type": "Full time",
       "posted_on": "Posted 11 Days Ago"
-    },
-    {
-      "title": "Budget and Finance Analyst",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Budget-and-Finance-Analyst_REQ-8300",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "McConnell Center",
-      "time_type": "Full time",
-      "posted_on": "Posted 23 Days Ago"
     },
     {
       "title": "Part-Time Faculty, Master of Science in Physician Associate Studies (MSPA) Program",
