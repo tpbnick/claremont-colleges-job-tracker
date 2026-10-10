@@ -1,26 +1,7 @@
 {
-  "previous_scraped_at": "2026-10-09T13:48:15-07:00",
-  "current_scraped_at": "2026-10-09T17:38:27-07:00",
-  "new_count": 2,
-  "removed_count": 2,
-  "new_jobs": [
-    {
-      "title": "Part-time Library User Services Associate",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Part-time-Library-User-Services-Associate_REQ-8508",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Baker",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Baker_REQ-8501",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-10-09T17:38:27-07:00",
+  "current_scraped_at": "2026-10-10T06:28:12-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
