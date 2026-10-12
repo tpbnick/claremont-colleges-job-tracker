@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-10-11T17:22:13-07:00",
-  "current_scraped_at": "2026-10-12T00:08:59-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-10-12T00:08:59-07:00",
+  "current_scraped_at": "2026-10-12T10:37:59-07:00",
+  "new_count": 2,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Student Accounts Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Student-Accounts-Specialist_REQ-8509",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "McConnell Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Global Regulatory Pathways for Drugs and Biologics (Adjunct Pool), Henry E. Riggs School of Applied Life Sciences",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-535/Global-Regulatory-Pathways-for-Drugs-and-Biologics--Adjunct-Pool---Henry-E-Riggs-School-of-Applied-Life-Sciences_REQ-8506",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 535",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
