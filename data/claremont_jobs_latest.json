@@ -1,7 +1,16 @@
 {
-  "scraped_at": "2026-10-15T06:13:50-07:00",
-  "total": 118,
+  "scraped_at": "2026-10-15T11:08:01-07:00",
+  "total": 119,
   "jobs": [
+    {
+      "title": "Assistant Payroll Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Assistant-Payroll-Manager_REQ-8243-1",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
     {
       "title": "Part-time Library User Services Associate",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Part-time-Library-User-Services-Associate_REQ-8508",
@@ -41,15 +50,6 @@
     {
       "title": "Low Voltage Supervisor",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Low-Voltage-Supervisor_REQ-8232",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30 Days Ago"
-    },
-    {
-      "title": "Assistant Payroll Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Assistant-Payroll-Manager_REQ-8243-1",
       "site_id": "TCCS_Careers",
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
@@ -469,6 +469,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Philanthropic Advisor for Parent Engagement",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Kingston-Hall/Philanthropic-Advisor-for-Parent-Engagement_REQ-8512",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Kingston Hall",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Technical Analyst",
