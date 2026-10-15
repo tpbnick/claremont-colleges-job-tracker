@@ -1,15 +1,15 @@
 {
-  "previous_scraped_at": "2026-10-15T06:13:50-07:00",
-  "current_scraped_at": "2026-10-15T11:08:01-07:00",
+  "previous_scraped_at": "2026-10-15T11:08:01-07:00",
+  "current_scraped_at": "2026-10-15T15:02:19-07:00",
   "new_count": 1,
-  "removed_count": 0,
+  "removed_count": 1,
   "new_jobs": [
     {
-      "title": "Philanthropic Advisor for Parent Engagement",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Kingston-Hall/Philanthropic-Advisor-for-Parent-Engagement_REQ-8512",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Kingston Hall",
+      "title": "Vice President of Advancement",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/555-Arrow-Building---LC73000/Vice-President-of-Advancement_REQ-8516",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "555 Arrow Building - LC73000",
       "time_type": "Full time",
       "posted_on": "Posted Today"
     }
