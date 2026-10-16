@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-10-15T11:08:01-07:00",
-  "current_scraped_at": "2026-10-15T15:02:19-07:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Vice President of Advancement",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/555-Arrow-Building---LC73000/Vice-President-of-Advancement_REQ-8516",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "555 Arrow Building - LC73000",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-10-15T15:02:19-07:00",
+  "current_scraped_at": "2026-10-15T18:05:06-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
