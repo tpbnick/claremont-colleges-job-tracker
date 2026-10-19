@@ -1,7 +1,35 @@
 {
-  "previous_scraped_at": "2026-10-18T23:02:01-07:00",
-  "current_scraped_at": "2026-10-19T07:29:59-07:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-10-19T07:29:59-07:00",
+  "current_scraped_at": "2026-10-19T13:28:33-07:00",
+  "new_count": 3,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Building Attendant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Grounds---Housekeeping-Facility---LC00017/Building-Attendant_REQ-8518",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Grounds - Housekeeping Facility - LC00017",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Seasonal Application Reader (Part Time)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Seasonal-Application-Reader--Part-Time-_REQ-8519-1",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Civil Rights Manager/CARE Center Administrator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Civil-Rights-Manager-CARE-Center-Administrator_REQ-8502",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
