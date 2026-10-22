@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-10-22T12:10:14-07:00",
-  "total": 120,
+  "scraped_at": "2026-10-22T16:07:29-07:00",
+  "total": 121,
   "jobs": [
     {
       "title": "Campus Safety Officer",
@@ -82,6 +82,15 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Administrative Assistant, Campus Life (Housing and Residence Life)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Administrative-Assistant--Campus-Life--Housing-and-Residence-Life-_REQ-8525-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Building Attendant",
@@ -624,13 +633,13 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Temporary Facilities Project Manager",
+      "title": "Interim Project Manager for Design and Construction",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Temporary-Facilities-Project-Manager_REQ-8503",
       "site_id": "PIT_Staff",
       "site": "Pitzer College",
       "location": "McConnell Center",
       "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
+      "posted_on": "Posted Today"
     },
     {
       "title": "Finance and Budget Analyst",

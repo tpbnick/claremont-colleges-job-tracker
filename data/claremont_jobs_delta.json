@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-10-22T07:59:20-07:00",
-  "current_scraped_at": "2026-10-22T12:10:14-07:00",
-  "new_count": 0,
-  "removed_count": 1,
-  "new_jobs": []
+  "previous_scraped_at": "2026-10-22T12:10:14-07:00",
+  "current_scraped_at": "2026-10-22T16:07:29-07:00",
+  "new_count": 1,
+  "removed_count": 0,
+  "new_jobs": [
+    {
+      "title": "Administrative Assistant, Campus Life (Housing and Residence Life)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Administrative-Assistant--Campus-Life--Housing-and-Residence-Life-_REQ-8525-1",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
