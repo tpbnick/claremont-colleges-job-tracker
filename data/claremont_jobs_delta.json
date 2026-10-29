@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-10-28T11:11:45-07:00",
-  "current_scraped_at": "2026-10-28T16:02:38-07:00",
-  "new_count": 1,
-  "removed_count": 2,
-  "new_jobs": [
-    {
-      "title": "Seasonal Admission Application Reader",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Pitzer-Hall/Seasonal-Admission-Application-Reader_REQ-8534",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Pitzer Hall",
-      "time_type": "Part time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-10-28T16:02:38-07:00",
+  "current_scraped_at": "2026-10-28T22:11:35-07:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
