@@ -1,34 +1,16 @@
 {
-  "previous_scraped_at": "2026-10-30T05:30:57-07:00",
-  "current_scraped_at": "2026-10-30T11:30:00-07:00",
-  "new_count": 3,
-  "removed_count": 0,
+  "previous_scraped_at": "2026-10-30T11:30:00-07:00",
+  "current_scraped_at": "2026-10-30T15:53:00-07:00",
+  "new_count": 1,
+  "removed_count": 2,
   "new_jobs": [
     {
-      "title": "Dining Operations Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Frank-Dining-Hall---LC00014/Dining-Operations-Manager_REQ-8540",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Frank Dining Hall - LC00014",
+      "title": "Administrative Assistant",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Administrative-Assistant_REQ-8538",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Director of Dining",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Frank-Dining-Hall---LC00014/Director-of-Dining_REQ-8541",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Frank Dining Hall - LC00014",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    },
-    {
-      "title": "Core 99 Teaching Assistant (Temporary)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Shanahan-Center/Core-99-Teaching-Assistant--Temporary-_REQ-8530",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Shanahan Center",
-      "time_type": "Part time",
       "posted_on": "Posted Today"
     }
   ]
