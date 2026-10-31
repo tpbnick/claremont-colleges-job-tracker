@@ -1,15 +1,15 @@
 {
-  "previous_scraped_at": "2026-10-30T11:30:00-07:00",
-  "current_scraped_at": "2026-10-30T15:53:00-07:00",
+  "previous_scraped_at": "2026-10-30T15:53:00-07:00",
+  "current_scraped_at": "2026-10-30T19:10:09-07:00",
   "new_count": 1,
-  "removed_count": 2,
+  "removed_count": 1,
   "new_jobs": [
     {
-      "title": "Administrative Assistant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Administrative-Assistant_REQ-8538",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
+      "title": "Senior Project Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Senior-Project-Manager_REQ-8542",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "McConnell Center",
       "time_type": "Full time",
       "posted_on": "Posted Today"
     }
