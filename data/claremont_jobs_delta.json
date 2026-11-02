@@ -1,7 +1,26 @@
 {
-  "previous_scraped_at": "2026-11-01T18:14:25-08:00",
-  "current_scraped_at": "2026-11-02T02:46:43-08:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-11-02T02:46:43-08:00",
+  "current_scraped_at": "2026-11-02T12:41:28-08:00",
+  "new_count": 2,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "CGU-Technology Support & Engagement Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CGU_Careers/job/Academic-Computing-Building---LC20603/CGU-Technology-Support---Engagement-Specialist_REQ-8535",
+      "site_id": "CGU_Careers",
+      "site": "Claremont Graduate University",
+      "location": "Academic Computing Building - LC20603",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Director of Facilities",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Director-of-Facilities_REQ-8547",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "McConnell Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
