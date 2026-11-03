@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-11-02T12:41:28-08:00",
-  "total": 117,
+  "scraped_at": "2026-11-02T18:50:39-08:00",
+  "total": 118,
   "jobs": [
     {
       "title": "Facilities Operations and Compliance Manager",
@@ -381,15 +381,6 @@
       "posted_on": "Posted 3 Days Ago"
     },
     {
-      "title": "Seasonal Application Reader (Part Time)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Seasonal-Application-Reader--Part-Time-_REQ-8519-1",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted 14 Days Ago"
-    },
-    {
       "title": "Senior Solutions Consultant III",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Senior-Solutions-Consultant-III_REQ-8492",
       "site_id": "CMC_Staff",
@@ -469,6 +460,24 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
+    },
+    {
+      "title": "Seasonal Application Reader",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Shanahan-Center/Seasonal-Application-Reader_REQ-8546",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Shanahan Center",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Graduate Assistant in the Office of Study Abroad",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Graduate-Assistant-in-the-Office-of-Study-Abroad_REQ-8545",
+      "site_id": "HMC_Careers",
+      "site": "Harvey Mudd College",
+      "location": "Platt Campus Center",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
     },
     {
       "title": "Core 99 Teaching Assistant (Temporary)",
