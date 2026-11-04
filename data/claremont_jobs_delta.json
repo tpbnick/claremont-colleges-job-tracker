@@ -1,7 +1,17 @@
 {
-  "previous_scraped_at": "2026-11-03T21:41:49-08:00",
-  "current_scraped_at": "2026-11-04T06:06:03-08:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-11-04T06:06:03-08:00",
+  "current_scraped_at": "2026-11-04T13:09:42-08:00",
+  "new_count": 1,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Assistant Coach, Men's Tennis",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Coach--Men-s-Tennis_REQ-8550",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Part time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
