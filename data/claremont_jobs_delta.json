@@ -1,7 +1,53 @@
 {
-  "previous_scraped_at": "2026-11-09T01:28:03-08:00",
-  "current_scraped_at": "2026-11-09T12:33:44-08:00",
-  "new_count": 0,
+  "previous_scraped_at": "2026-11-09T12:33:44-08:00",
+  "current_scraped_at": "2026-11-09T19:19:44-08:00",
+  "new_count": 5,
   "removed_count": 0,
-  "new_jobs": []
+  "new_jobs": [
+    {
+      "title": "Digital Gift Officer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Digital-Gift-Officer_REQ-8554",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Family Giving Officer",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Family-Giving-Officer_REQ-8555",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Major Gifts Officer,\u00a0Family\u00a0Giving",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Major-Gifts-Officer--Family-Giving_REQ-8556",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Interim Head Men\u2019s and Women\u2019s Golf Coach",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Interim-Head-Men-s-and-Women-s-Golf-Coach_REQ-8553",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
+      "title": "Occupational Therapist Professor (Assistant, Associate, or Full)",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/Building-517/Occupational-Therapist-Professor--Assistant--Associate--or-Full-_REQ-8551",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "Building: 517",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    }
+  ]
 }
