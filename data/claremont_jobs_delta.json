@@ -1,17 +1,7 @@
 {
-  "previous_scraped_at": "2026-11-10T12:21:56-08:00",
-  "current_scraped_at": "2026-11-10T17:08:04-08:00",
-  "new_count": 1,
-  "removed_count": 1,
-  "new_jobs": [
-    {
-      "title": "Assistant Dean of Pharmacy Faculty Affairs and Faculty Member (Assistant/Associate/Full Professor), School of Pharmacy",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/215-York-Building---LC72000/Assistant-Dean-of-Pharmacy-Faculty-Affairs-and-Faculty-Member--Assistant-Associate-Full-Professor---School-of-Pharmacy_REQ-8558",
-      "site_id": "KGI_Careers",
-      "site": "Keck Graduate Institute",
-      "location": "215 York Building - LC72000",
-      "time_type": "Full time",
-      "posted_on": "Posted Today"
-    }
-  ]
+  "previous_scraped_at": "2026-11-10T17:08:04-08:00",
+  "current_scraped_at": "2026-11-11T01:04:13-08:00",
+  "new_count": 0,
+  "removed_count": 0,
+  "new_jobs": []
 }
