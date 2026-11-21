@@ -1,7 +1,25 @@
 {
-  "scraped_at": "2026-11-15T17:41:46-08:00",
-  "total": 121,
+  "scraped_at": "2026-11-21T09:14:51-08:00",
+  "total": 117,
   "jobs": [
+    {
+      "title": "Locksmith",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Locksmith_REQ-8560",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted 2 Days Ago"
+    },
+    {
+      "title": "Psychiatric Mental Health Nurse Practitioner",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Psychiatric-Mental-Health-Nurse-Practitioner_REQ-8523",
+      "site_id": "TCCS_Careers",
+      "site": "The Claremont Colleges Services",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted 5 Days Ago"
+    },
     {
       "title": "Temporary User Services Assistant",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Temporary-User-Services-Assistant_REQ-8562",
@@ -9,7 +27,7 @@
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 2 Days Ago"
+      "posted_on": "Posted 8 Days Ago"
     },
     {
       "title": "Facilities Operations and Compliance Manager",
@@ -18,7 +36,7 @@
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 19 Days Ago"
+      "posted_on": "Posted 25 Days Ago"
     },
     {
       "title": "Investigator, Title IX",
@@ -27,7 +45,7 @@
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 20 Days Ago"
+      "posted_on": "Posted 26 Days Ago"
     },
     {
       "title": "Campus Safety Officer",
@@ -36,7 +54,7 @@
       "site": "The Claremont Colleges Services",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 30 Days Ago"
+      "posted_on": "Posted 30+ Days Ago"
     },
     {
       "title": "Part-time Library User Services Associate",
@@ -102,13 +120,22 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Director of The Hive",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Director-of-The-Hive_REQ-8577",
+      "site_id": "POM_Careers",
+      "site": "Pomona College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted Yesterday"
+    },
+    {
       "title": "Digital Gift Officer",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Digital-Gift-Officer_REQ-8554",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
+      "posted_on": "Posted 12 Days Ago"
     },
     {
       "title": "Family Giving Officer",
@@ -117,7 +144,7 @@
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
+      "posted_on": "Posted 12 Days Ago"
     },
     {
       "title": "Major Gifts Officer,\u00a0Family\u00a0Giving",
@@ -126,7 +153,7 @@
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
+      "posted_on": "Posted 12 Days Ago"
     },
     {
       "title": "Interim Head Men\u2019s and Women\u2019s Golf Coach",
@@ -135,7 +162,7 @@
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
+      "posted_on": "Posted 12 Days Ago"
     },
     {
       "title": "Chef Manager",
@@ -144,7 +171,7 @@
       "site": "Pomona College",
       "location": "Frank Dining Hall - LC00014",
       "time_type": "Full time",
-      "posted_on": "Posted 9 Days Ago"
+      "posted_on": "Posted 15 Days Ago"
     },
     {
       "title": "Assistant Coach, Men's Tennis",
@@ -153,7 +180,7 @@
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Part time",
-      "posted_on": "Posted 11 Days Ago"
+      "posted_on": "Posted 17 Days Ago"
     },
     {
       "title": "Assistant Director, Native Indigenous Resource Center (NIRC)",
@@ -162,7 +189,7 @@
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 13 Days Ago"
+      "posted_on": "Posted 19 Days Ago"
     },
     {
       "title": "Director of Dining",
@@ -171,7 +198,7 @@
       "site": "Pomona College",
       "location": "Frank Dining Hall - LC00014",
       "time_type": "Full time",
-      "posted_on": "Posted 16 Days Ago"
+      "posted_on": "Posted 22 Days Ago"
     },
     {
       "title": "Administrative Assistant, Campus Life (Housing and Residence Life)",
@@ -180,7 +207,7 @@
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Part time",
-      "posted_on": "Posted 24 Days Ago"
+      "posted_on": "Posted 30 Days Ago"
     },
     {
       "title": "Building Attendant",
@@ -189,7 +216,7 @@
       "site": "Pomona College",
       "location": "Grounds - Housekeeping Facility - LC00017",
       "time_type": "Full time",
-      "posted_on": "Posted 24 Days Ago"
+      "posted_on": "Posted 30 Days Ago"
     },
     {
       "title": "Expense Procurement Specialist",
@@ -198,7 +225,7 @@
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 26 Days Ago"
+      "posted_on": "Posted 30+ Days Ago"
     },
     {
       "title": "Assistant Coach, Men's and Women's Track & Field - Pole Vault",
@@ -219,26 +246,8 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Assistant Director of Faculty Affairs",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Director-of-Faculty-Affairs_REQ-8473",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Interim Director, Pomona Plan",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Interim-Director--Pomona-Plan_REQ-8382",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Assistant Director, Campus Advocacy Resources Education and Support (CARES)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Assistant-Director--Campus-Advocacy-Resources-Education-and-Support--CARES-_REQ-8425",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
@@ -255,30 +264,12 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Head Athletic Performance Coach",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Head-Athletic-Performance-Coach_REQ-8247",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Lead Deputy Title VI Coordinator",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Lead-Deputy-Title-VI-Coordinator_REQ-8103",
       "site_id": "POM_Careers",
       "site": "Pomona College",
       "location": "Claremont",
       "time_type": "Part time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Director of Complex Assets (Legacy)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Director-of-Complex-Assets--Legacy-_REQ-8125",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
-      "time_type": "Full time",
       "posted_on": "Posted 30+ Days Ago"
     },
     {
@@ -306,7 +297,7 @@
       "site": "Claremont Graduate University",
       "location": "Academic Computing Building - LC20603",
       "time_type": "Full time",
-      "posted_on": "Posted 13 Days Ago"
+      "posted_on": "Posted 19 Days Ago"
     },
     {
       "title": "CGU- Gift Officer",
@@ -315,7 +306,7 @@
       "site": "Claremont Graduate University",
       "location": "Jagels Building - LC20602",
       "time_type": "Full time",
-      "posted_on": "Posted 27 Days Ago"
+      "posted_on": "Posted 30+ Days Ago"
     },
     {
       "title": "Temporary Communications & Event Specialist",
@@ -336,58 +327,22 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Director-Gift Planning",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Director-Gift-Planning_REQ-8189",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 3 Days Ago"
-    },
-    {
-      "title": "Floor Technician/Building Attendant I",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Building-Attendant-I_REQ-8150",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
-    },
-    {
-      "title": "Line Cook",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Line-Cook-I_REQ-8203-1",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
-    },
-    {
-      "title": "Line Cook",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Line-Cook-I_REQ-8200",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
-    },
-    {
-      "title": "Line Cook",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Line-Cook_REQ-8440",
-      "site_id": "SCR_Career_Staff",
-      "site": "Scripps College",
-      "location": "Scripps College - Claremont, CA",
-      "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
-    },
-    {
       "title": "Major Gifts Officer",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Major-Gifts-Officer_REQ-8062",
       "site_id": "SCR_Career_Staff",
       "site": "Scripps College",
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
-      "posted_on": "Posted 9 Days Ago"
+      "posted_on": "Posted Yesterday"
+    },
+    {
+      "title": "Interim Assistant Director of Academic Resource Services",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Interim-Assistant-Director-of-Academic-Resource-Services_REQ-8566",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Part time",
+      "posted_on": "Posted 5 Days Ago"
     },
     {
       "title": "Catering Staff",
@@ -396,7 +351,61 @@
       "site": "Scripps College",
       "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
+      "posted_on": "Posted 5 Days Ago"
+    },
+    {
+      "title": "Director-Gift Planning",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Director-Gift-Planning_REQ-8189",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted 9 Days Ago"
+    },
+    {
+      "title": "Floor Technician/Building Attendant I",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Building-Attendant-I_REQ-8150",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted 12 Days Ago"
+    },
+    {
+      "title": "Line Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Line-Cook-I_REQ-8203-1",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted 12 Days Ago"
+    },
+    {
+      "title": "Line Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Line-Cook-I_REQ-8200",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted 12 Days Ago"
+    },
+    {
+      "title": "Line Cook",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Line-Cook_REQ-8440",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted 12 Days Ago"
+    },
+    {
+      "title": "Associate Director, Financial Planning and Analysis",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Associate-Director--Financial-Planning-and-Analysis_REQ-8563-1",
+      "site_id": "CMC_Staff",
+      "site": "Claremont McKenna College",
+      "location": "Claremont",
+      "time_type": "Full time",
+      "posted_on": "Posted 3 Days Ago"
     },
     {
       "title": "Administrative Assistant",
@@ -405,20 +414,11 @@
       "site": "Claremont McKenna College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 16 Days Ago"
+      "posted_on": "Posted 22 Days Ago"
     },
     {
       "title": "Senior Solutions Consultant III",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Senior-Solutions-Consultant-III_REQ-8492",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "IT Administrative Assistant I",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/IT-Administrative-Assistant-I_REQ-8456",
       "site_id": "CMC_Staff",
       "site": "Claremont McKenna College",
       "location": "Claremont",
@@ -477,7 +477,7 @@
       "site": "Harvey Mudd College",
       "location": "Hoch-Shanahan Dining Commons",
       "time_type": "Full time",
-      "posted_on": "Posted 2 Days Ago"
+      "posted_on": "Posted 8 Days Ago"
     },
     {
       "title": "Dining Services Utility Attendant",
@@ -486,7 +486,7 @@
       "site": "Harvey Mudd College",
       "location": "Claremont",
       "time_type": "Full time",
-      "posted_on": "Posted 2 Days Ago"
+      "posted_on": "Posted 8 Days Ago"
     },
     {
       "title": "Engineering Program Coordinator",
@@ -495,7 +495,7 @@
       "site": "Harvey Mudd College",
       "location": "Parsons Hall",
       "time_type": "Full time",
-      "posted_on": "Posted 5 Days Ago"
+      "posted_on": "Posted 11 Days Ago"
     },
     {
       "title": "Graduate Assistant in the Office of Study Abroad",
@@ -504,7 +504,7 @@
       "site": "Harvey Mudd College",
       "location": "Platt Campus Center",
       "time_type": "Part time",
-      "posted_on": "Posted 13 Days Ago"
+      "posted_on": "Posted 19 Days Ago"
     },
     {
       "title": "Core 99 Teaching Assistant (Temporary)",
@@ -513,16 +513,7 @@
       "site": "Harvey Mudd College",
       "location": "Shanahan Center",
       "time_type": "Part time",
-      "posted_on": "Posted 16 Days Ago"
-    },
-    {
-      "title": "Maintenance Technician 2",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Maintenance-Technician-2_REQ-8444",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Full time",
-      "posted_on": "Posted 23 Days Ago"
+      "posted_on": "Posted 22 Days Ago"
     },
     {
       "title": "Philanthropic Advisor for Parent Engagement",
@@ -588,15 +579,6 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Building Attendant",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Building-Attendant_REQ-8004",
-      "site_id": "HMC_Careers",
-      "site": "Harvey Mudd College",
-      "location": "Platt Campus Center",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
       "title": "Graduate Assistant \u2013 Civic Coordinator",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/HMC_Careers/job/Platt-Campus-Center/Graduate-Assistant-and-Civic-Coordinator_REQ-8081-1",
       "site_id": "HMC_Careers",
@@ -606,13 +588,22 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Temporary Admissions Marketing Campaign Specialist",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Pitzer-Hall/Temporary-Admissions-Marketing-Campaign-Specialist_REQ-8568",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "Pitzer Hall",
+      "time_type": "Part time",
+      "posted_on": "Posted 3 Days Ago"
+    },
+    {
       "title": "Sous Chef",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center-Dining-Hall/Sous-Chef_REQ-8533",
       "site_id": "PIT_Staff",
       "site": "Pitzer College",
       "location": "McConnell Center-Dining Hall",
       "time_type": "Full time",
-      "posted_on": "Posted 2 Days Ago"
+      "posted_on": "Posted 8 Days Ago"
     },
     {
       "title": "Communications and Marketing Project Coordinator",
@@ -621,16 +612,7 @@
       "site": "Pitzer College",
       "location": "Broad Center",
       "time_type": "Full time",
-      "posted_on": "Posted 4 Days Ago"
-    },
-    {
-      "title": "Cook I (Part-Time)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center-Dining-Hall/Cook-I--Part-Time-_REQ-8549-1",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "McConnell Center-Dining Hall",
-      "time_type": "Part time",
-      "posted_on": "Posted 8 Days Ago"
+      "posted_on": "Posted 10 Days Ago"
     },
     {
       "title": "Maintenance Technician II",
@@ -639,7 +621,7 @@
       "site": "Pitzer College",
       "location": "McConnell Center",
       "time_type": "Full time",
-      "posted_on": "Posted 11 Days Ago"
+      "posted_on": "Posted 17 Days Ago"
     },
     {
       "title": "Director of Facilities",
@@ -648,7 +630,7 @@
       "site": "Pitzer College",
       "location": "McConnell Center",
       "time_type": "Full time",
-      "posted_on": "Posted 13 Days Ago"
+      "posted_on": "Posted 19 Days Ago"
     },
     {
       "title": "Senior Project Manager",
@@ -657,16 +639,7 @@
       "site": "Pitzer College",
       "location": "McConnell Center",
       "time_type": "Full time",
-      "posted_on": "Posted 16 Days Ago"
-    },
-    {
-      "title": "Interim Project Manager for Design and Construction",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Temporary-Facilities-Project-Manager_REQ-8503",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "McConnell Center",
-      "time_type": "Full time",
-      "posted_on": "Posted 24 Days Ago"
+      "posted_on": "Posted 22 Days Ago"
     },
     {
       "title": "Finance and Budget Analyst",
@@ -678,22 +651,13 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
-      "title": "Admission Operations & Systems Analyst",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Pitzer-Hall/Admission-Operations---Systems-Analyst_REQ-8499-1",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "Pitzer Hall",
+      "title": "Research, Innovation, and Strategic Engagements (RISE) Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers/job/555-Arrow-Building---LC73000/Research--Innovation--and-Strategic-Engagements--RISE--Manager_REQ-8565",
+      "site_id": "KGI_Careers",
+      "site": "Keck Graduate Institute",
+      "location": "555 Arrow Building - LC73000",
       "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Executive Operations and Projects Administrator",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Executive-Operations-and-Projects-Administrator_REQ-8334-1",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "McConnell Center",
-      "time_type": "Full time",
-      "posted_on": "Posted 30+ Days Ago"
+      "posted_on": "Posted 2 Days Ago"
     },
     {
       "title": "Assistant Dean of Pharmacy Faculty Affairs and Faculty Member (Assistant/Associate/Full Professor), School of Pharmacy",
@@ -702,7 +666,7 @@
       "site": "Keck Graduate Institute",
       "location": "215 York Building - LC72000",
       "time_type": "Full time",
-      "posted_on": "Posted 5 Days Ago"
+      "posted_on": "Posted 11 Days Ago"
     },
     {
       "title": "Occupational Therapist Professor (Assistant, Associate, or Full)",
@@ -711,7 +675,7 @@
       "site": "Keck Graduate Institute",
       "location": "Building: 517",
       "time_type": "Full time",
-      "posted_on": "Posted 6 Days Ago"
+      "posted_on": "Posted 12 Days Ago"
     },
     {
       "title": "Vice President of Advancement",
