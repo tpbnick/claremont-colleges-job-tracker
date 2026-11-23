@@ -1,7 +1,18 @@
 {
-  "previous_scraped_at": "2026-11-21T09:14:51-08:00",
-  "current_scraped_at": "2026-11-21T14:57:08-08:00",
-  "new_count": 0,
-  "removed_count": 0,
-  "new_jobs": []
+  "previous_scraped_at": "2026-11-21T14:57:08-08:00",
+  "current_scraped_at": "2026-11-23T11:18:42-08:00",
+  "new_count": 1,
+  "removed_count": 1,
+  "new_jobs": [
+    {
+      "title": "CGU - Student Records Analyst",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CGU_Careers/job/Harper-Hall---LC20601/CGU---Student-Records-Analyst_REQ-8572",
+      "site_id": "CGU_Careers",
+      "site": "Claremont Graduate University",
+      "location": "Harper Hall - LC20601",
+      "time_type": "Full time",
+      "posted_on": "Posted Today",
+      "first_seen": "2026-11-23T11:18:42-08:00"
+    }
+  ]
 }
