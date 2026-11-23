@@ -123,8 +123,14 @@
     (function () {
       try {
         var t = localStorage.getItem('claremontCollegeJobsTrackerTheme');
-        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        if (t === 'dark' || t === 'light') {
+          document.documentElement.setAttribute('data-theme', t);
+          return;
+        }
       } catch (e) {}
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
     })();
   </script>
 </head>
@@ -138,7 +144,7 @@
   <p>
     <strong>Claremont College Jobs</strong> is a free, independent tool that pulls together
     open job listings from every institution in The Claremont Colleges consortium into a
-    single searchable page. It is updated daily and is not affiliated with or endorsed by
+    single searchable page. It is updated every 8 hours and is not affiliated with or endorsed by
     any of the colleges.
   </p>
   <p>
@@ -285,13 +291,13 @@
     </li>
     <li>
       <span class="icon">&#x1F4C5;</span>
-      <span><strong>Updated daily.</strong> A scheduled script fetches the latest listings from
-      every Workday portal each day, so you always see current openings.</span>
+      <span><strong>Updated every 8 hours.</strong> A scheduled script fetches the latest listings from
+      every Workday portal three times a day, so you always see current openings.</span>
     </li>
     <li>
       <span class="icon">&#x1F514;</span>
-      <span><strong>New listings highlighted.</strong> Jobs posted since the last update are
-      marked as new so you can spot fresh opportunities at a glance.</span>
+      <span><strong>New listings highlighted.</strong> Freshly posted jobs are badged as
+      <strong>New</strong> so you can spot recent opportunities at a glance.</span>
     </li>
     <li>
       <span class="icon">&#x2197;&#xFE0F;</span>

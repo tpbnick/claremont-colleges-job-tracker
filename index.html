@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Claremont College Jobs | All 7C Job Listings in One Place</title>
-  <meta name="description" content="Browse every open job at all seven Claremont Colleges — Pomona, Claremont McKenna, Harvey Mudd, Scripps, Pitzer, Claremont Graduate University, and Keck Graduate Institute — updated daily from each college's Workday career site.">
+  <meta name="description" content="Browse every open job at all seven Claremont Colleges — Pomona, Claremont McKenna, Harvey Mudd, Scripps, Pitzer, Claremont Graduate University, and Keck Graduate Institute — updated every 8 hours from each college's Workday career site.">
   <link rel="canonical" href="https://claremontcollegejobs.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://claremontcollegejobs.com/">
   <meta property="og:title" content="Claremont College Jobs | All 7C Job Listings in One Place">
-  <meta property="og:description" content="Browse every open job at all seven Claremont Colleges, updated daily from each college's Workday career site.">
+  <meta property="og:description" content="Browse every open job at all seven Claremont Colleges, updated every 8 hours from each college's Workday career site.">
   <meta property="og:site_name" content="Claremont College Jobs">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Claremont College Jobs | All 7C Job Listings in One Place">
-  <meta name="twitter:description" content="Browse every open job at all seven Claremont Colleges, updated daily from each college's Workday career site.">
+  <meta name="twitter:description" content="Browse every open job at all seven Claremont Colleges, updated every 8 hours from each college's Workday career site.">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -27,7 +27,7 @@
     "@type": "WebSite",
     "name": "Claremont College Jobs",
     "url": "https://claremontcollegejobs.com/",
-    "description": "Aggregated job listings from all seven Claremont Colleges, updated daily.",
+    "description": "Aggregated job listings from all seven Claremont Colleges, updated every 8 hours.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
@@ -40,8 +40,20 @@
   </script>
 
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2574041106325612" crossorigin="anonymous"></script>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('claremontCollegeJobsTrackerTheme');
+        if (t === 'dark' || t === 'light') {
+          document.documentElement.setAttribute('data-theme', t);
+          return;
+        }
+      } catch (e) {}
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
   <style>
     :root {
       font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
@@ -54,17 +66,7 @@
       --surface: #ffffff;
       --border: #d4d4d8;
       --border-input: #ccc;
-      --shadow: rgba(0, 0, 0, 0.06);
       --shadow-strong: rgba(0, 0, 0, 0.08);
-      --tracker-heading: #334155;
-      --tracker-tile-border: #eef0f3;
-      --tracker-tile-bg: #fafbfc;
-      --step-pending-border: #d1d5db;
-      --step-pending-bg: #fafafa;
-      --step-running-bg: #ffffff;
-      --step-meta: #64748b;
-      --banner-bg: #e8ecf8;
-      --banner-border: #c7d2fe;
       --hint-text: #555;
       --hint-border: #ddd;
       --hint-code-bg: #eee;
@@ -74,7 +76,8 @@
       --td-border: #e5e5e5;
       --row-hover: #f8f9ff;
       --link: #1c4ed8;
-      --error: #b91c1c;
+      --badge-new-bg: #dbeafe;
+      --badge-new-text: #1d4ed8;
     }
     html[data-theme="dark"] {
       color-scheme: dark;
@@ -85,17 +88,7 @@
       --surface: #1a1d26;
       --border: #2d3340;
       --border-input: #3d4554;
-      --shadow: rgba(0, 0, 0, 0.35);
       --shadow-strong: rgba(0, 0, 0, 0.45);
-      --tracker-heading: #cbd5e1;
-      --tracker-tile-border: #2d3340;
-      --tracker-tile-bg: #14171f;
-      --step-pending-border: #4b5563;
-      --step-pending-bg: #1f232d;
-      --step-running-bg: #1a1d26;
-      --step-meta: #94a3b8;
-      --banner-bg: #1e2436;
-      --banner-border: #3b4c7a;
       --hint-text: #b8bcc4;
       --hint-border: #3d4554;
       --hint-code-bg: #2a2f3d;
@@ -105,7 +98,8 @@
       --td-border: #2d3340;
       --row-hover: #222836;
       --link: #7ca8ff;
-      --error: #f87171;
+      --badge-new-bg: #1e3a5f;
+      --badge-new-text: #93c5fd;
     }
     body {
       max-width: 1200px;
@@ -140,7 +134,7 @@
       align-items: center;
       margin: 1rem 0 1.25rem;
     }
-    .toolbar label[for="search"] {
+    .toolbar label {
       font-size: 0.9rem;
       color: var(--text-soft);
     }
@@ -158,14 +152,11 @@
       outline: 2px solid #3b5bdb;
       outline-offset: 1px;
     }
-    .toolbar label[for="schoolFilter"] {
-      font-size: 0.9rem;
-      color: var(--text-soft);
-    }
-    #schoolFilter {
-      flex: 0 1 220px;
-      min-width: 140px;
-      max-width: 280px;
+    #schoolFilter,
+    #timeTypeFilter {
+      flex: 0 1 200px;
+      min-width: 130px;
+      max-width: 260px;
       padding: 0.5rem 0.65rem;
       border: 1px solid var(--border-input);
       border-radius: 6px;
@@ -174,11 +165,13 @@
       color: var(--text);
       cursor: pointer;
     }
-    #schoolFilter:disabled {
+    #schoolFilter:disabled,
+    #timeTypeFilter:disabled {
       opacity: 0.65;
       cursor: not-allowed;
     }
-    #schoolFilter:focus {
+    #schoolFilter:focus,
+    #timeTypeFilter:focus {
       outline: 2px solid #3b5bdb;
       outline-offset: 1px;
     }
@@ -238,6 +231,18 @@
     }
     a.job-title:hover {
       text-decoration: underline;
+    }
+    .badge-new {
+      display: inline-block;
+      margin-left: 0.45rem;
+      padding: 0.08rem 0.4rem;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      line-height: 1.4;
+      vertical-align: middle;
+      background: var(--badge-new-bg);
+      color: var(--badge-new-text);
     }
     .muted {
       color: var(--text-muted);
@@ -348,61 +353,6 @@
     }
     @media (prefers-reduced-motion: reduce) {
       .scroll-top-btn { transition: none; }
-    }
-
-    /* ── Toast notification ───────────────────────────────────────────────────── */
-    .toast {
-      position: fixed;
-      bottom: 1.75rem;
-      left: 50%;
-      transform: translateX(-50%) translateY(0);
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      box-shadow: 0 4px 20px var(--shadow-strong);
-      padding: 0.8rem 1rem 0.8rem 1.1rem;
-      max-width: min(440px, calc(100vw - 2rem));
-      font-size: 0.91rem;
-      color: var(--text);
-      z-index: 400;
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      animation: toast-in 0.22s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-    }
-    .toast.toast-hiding {
-      animation: toast-out 0.2s ease forwards;
-    }
-    @keyframes toast-in {
-      from { opacity: 0; transform: translateX(-50%) translateY(16px); }
-      to   { opacity: 1; transform: translateX(-50%) translateY(0);    }
-    }
-    @keyframes toast-out {
-      from { opacity: 1; transform: translateX(-50%) translateY(0);    }
-      to   { opacity: 0; transform: translateX(-50%) translateY(12px); }
-    }
-    .toast-msg { flex: 1 1 0; line-height: 1.5; }
-    .toast-close {
-      flex-shrink: 0;
-      width: 1.6rem;
-      height: 1.6rem;
-      padding: 0;
-      margin-top: -0.1rem;
-      border: none;
-      background: transparent;
-      color: var(--text-muted);
-      cursor: pointer;
-      font-size: 1.1rem;
-      line-height: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-    }
-    .toast-close:hover { color: var(--text); background: var(--row-hover); }
-    .toast-close:focus-visible { outline: 2px solid #3b5bdb; outline-offset: 1px; }
-    @media (prefers-reduced-motion: reduce) {
-      .toast, .toast.toast-hiding { animation: none; }
     }
 
     /* ── Mobile table zoom-out ────────────────────────────────────────────────── */
@@ -528,58 +478,6 @@
       border-top: 1px solid var(--border);
       margin: 0;
     }
-    .modal-toggle-row {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 1.25rem;
-    }
-    .modal-toggle-text { flex: 1 1 0; }
-    .modal-toggle-label {
-      font-size: 0.93rem;
-      font-weight: 600;
-      color: var(--text);
-      display: block;
-      margin-bottom: 0.2rem;
-    }
-    .modal-toggle-desc {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.45;
-    }
-    /* Toggle switch */
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 2.75rem;
-      height: 1.55rem;
-      flex-shrink: 0;
-      margin-top: 0.05rem;
-    }
-    .switch input { opacity: 0; width: 0; height: 0; position: absolute; }
-    .switch-track {
-      position: absolute;
-      inset: 0;
-      background: var(--step-pending-border);
-      border-radius: 9999px;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .switch input:checked + .switch-track { background: #2563eb; }
-    .switch-track::after {
-      content: '';
-      position: absolute;
-      left: 3px;
-      top: 3px;
-      width: 1.0rem;
-      height: 1.0rem;
-      border-radius: 50%;
-      background: #fff;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
-      transition: transform 0.2s;
-    }
-    .switch input:checked + .switch-track::after { transform: translateX(1.2rem); }
-    .switch:focus-within .switch-track { outline: 2px solid #3b5bdb; outline-offset: 2px; }
     .modal-commit-info {
       font-size: 0.8rem;
       color: var(--text-muted);
@@ -601,34 +499,6 @@
       border-radius: 3px;
     }
 
-    /* ── Ad containers ───────────────────────────────────────────────────────── */
-    #adLeft, #adRight {
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 160px;
-      min-height: 600px;
-      display: none;
-      z-index: 10;
-      align-items: center;
-      justify-content: center;
-    }
-    #adLeft  { left:  8px; }
-    #adRight { right: 8px; }
-    #adBottom {
-      display: none;
-      margin: 1.5rem 0 0;
-      text-align: center;
-      min-height: 250px;
-    }
-    @media (min-width: 1560px) {
-      body.ads-enabled #adLeft,
-      body.ads-enabled #adRight  { display: flex; }
-      body.ads-enabled #adBottom { display: none; }
-    }
-    @media (max-width: 1559px) {
-      body.ads-enabled #adBottom { display: block; }
-    }
     .sortable-th {
       cursor: pointer;
       user-select: none;
@@ -687,8 +557,12 @@
     <select id="schoolFilter" aria-label="Filter by school" disabled>
       <option value="">All schools</option>
     </select>
-    <label for="search">Filter by title</label>
-    <input type="search" id="search" placeholder="Type to filter job titles…" autocomplete="off" disabled>
+    <label for="timeTypeFilter">Type</label>
+    <select id="timeTypeFilter" aria-label="Filter by time type" disabled>
+      <option value="">All types</option>
+    </select>
+    <label for="search">Search</label>
+    <input type="search" id="search" placeholder="Filter by title or location…" autocomplete="off" disabled>
   </div>
 
 
@@ -697,41 +571,15 @@
     <caption>Postings</caption>
     <thead>
       <tr>
-        <th class="sortable-th" data-sort-key="title" tabindex="0" role="button" aria-label="Sort by title">Title <span class="sort-arrow" aria-hidden="true"></span></th>
-        <th class="sortable-th" data-sort-key="site" tabindex="0" role="button" aria-label="Sort by site">Site <span class="sort-arrow" aria-hidden="true"></span></th>
-        <th class="sortable-th" data-sort-key="location" tabindex="0" role="button" aria-label="Sort by location">Location <span class="sort-arrow" aria-hidden="true"></span></th>
-        <th class="sortable-th" data-sort-key="time_type" tabindex="0" role="button" aria-label="Sort by time type">Time type <span class="sort-arrow" aria-hidden="true"></span></th>
-        <th class="sortable-th" data-sort-key="posted_on" tabindex="0" role="button" aria-label="Sort by posted date">Posted <span class="sort-arrow" aria-hidden="true"></span></th>
+        <th class="sortable-th" data-sort-key="title" tabindex="0" role="button" aria-sort="none" aria-label="Sort by title">Title <span class="sort-arrow" aria-hidden="true"></span></th>
+        <th class="sortable-th" data-sort-key="site" tabindex="0" role="button" aria-sort="none" aria-label="Sort by site">Site <span class="sort-arrow" aria-hidden="true"></span></th>
+        <th class="sortable-th" data-sort-key="location" tabindex="0" role="button" aria-sort="none" aria-label="Sort by location">Location <span class="sort-arrow" aria-hidden="true"></span></th>
+        <th class="sortable-th" data-sort-key="time_type" tabindex="0" role="button" aria-sort="none" aria-label="Sort by time type">Time type <span class="sort-arrow" aria-hidden="true"></span></th>
+        <th class="sortable-th" data-sort-key="posted_on" tabindex="0" role="button" aria-sort="none" aria-label="Sort by posted date">Posted <span class="sort-arrow" aria-hidden="true"></span></th>
       </tr>
     </thead>
     <tbody id="jobsBody"></tbody>
   </table>
-  </div>
-
-  <!-- Bottom ad: visible on screens narrower than 1560px when ads are enabled -->
-  <div id="adBottom" aria-hidden="true">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2574041106325612"
-         data-ad-slot="YOUR_BOTTOM_SLOT_ID"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-  <!-- Sidebar ads: visible on screens 1560px+ when ads are enabled -->
-  <div id="adLeft" aria-hidden="true">
-    <ins class="adsbygoogle"
-         style="display:block;width:160px;height:600px;"
-         data-ad-client="ca-pub-2574041106325612"
-         data-ad-slot="YOUR_LEFT_SLOT_ID"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-  <div id="adRight" aria-hidden="true">
-    <ins class="adsbygoogle"
-         style="display:block;width:160px;height:600px;"
-         data-ad-client="ca-pub-2574041106325612"
-         data-ad-slot="YOUR_RIGHT_SLOT_ID"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
   <!-- About / Help modal -->
@@ -769,17 +617,6 @@
           </a>
         </div>
         <hr class="modal-divider">
-        <div class="modal-toggle-row">
-          <div class="modal-toggle-text">
-            <span class="modal-toggle-label">Show ads</span>
-            <span class="modal-toggle-desc">Ads help keep this tool free.</span>
-          </div>
-          <label class="switch" title="Toggle ads">
-            <input type="checkbox" id="adsToggle" aria-label="Show ads">
-            <span class="switch-track"></span>
-          </label>
-        </div>
-        <hr class="modal-divider">
         <p id="lastCommitInfo" class="modal-commit-info">Loading…</p>
       </div>
     </div>
@@ -811,19 +648,13 @@
 
     // LocalStorage keys
     STORAGE_KEYS: {
-      THEME: 'claremontCollegeJobsTrackerTheme',
-      ADS_ENABLED: 'claremontCollegeJobsTrackerAdsEnabled'
-    },
-
-    // Time constants (in milliseconds)
-    TIMING: {
-      TOAST_DURATION: 7000,
-      TOAST_HIDE_ANIMATION: 250
+      THEME: 'claremontCollegeJobsTrackerTheme'
     },
 
     // UI thresholds
     UI: {
-      SCROLL_TOP_THRESHOLD: 300  // Show scroll-to-top button after scrolling 300px
+      SCROLL_TOP_THRESHOLD: 300,      // Show scroll-to-top button after scrolling 300px
+      NEW_BADGE_WINDOW_MS: 24 * 60 * 60 * 1000  // Highlight newly seen jobs for 24 hours
     },
 
     // Data file names — use production URL when opening the file locally
@@ -844,6 +675,7 @@
   var elements = {
     search: document.getElementById('search'),
     schoolFilter: document.getElementById('schoolFilter'),
+    timeTypeFilter: document.getElementById('timeTypeFilter'),
     jobsTable: {
       body: document.getElementById('jobsBody'),
       table: document.getElementById('jobsTable')
@@ -852,8 +684,7 @@
       loadHint: document.getElementById('loadHint'),
       metaLine: document.getElementById('metaLine'),
       themeToggle: document.getElementById('themeToggle'),
-      scrollTopBtn: document.getElementById('scrollTopBtn'),
-      adsToggle: document.getElementById('adsToggle')
+      scrollTopBtn: document.getElementById('scrollTopBtn')
     },
     modals: {
       info: {
@@ -884,10 +715,7 @@
       column: null,  // null = original order; string = active sort column
       direction: 1   // 1 = ascending, -1 = descending
     },
-    toast: {
-      element: null,
-      timer: null
-    }
+    lastCommitLoaded: false
   };
 
   // ══════════════════════════════════════════════════════════════════════════
@@ -895,11 +723,11 @@
   // ══════════════════════════════════════════════════════════════════════════
 
   /**
-   * Formats an ISO timestamp to PST with readable date and time.
+   * Formats an ISO timestamp in Pacific Time with automatic PST/PDT label.
    * @param {string} isoStr - ISO 8601 timestamp
-   * @returns {string} Formatted string like "4/28/2026 3:45 PM"
+   * @returns {string} Formatted string like "4/28/2026 3:45 PM PDT"
    */
-  function formatTimePST(isoStr) {
+  function formatTimePT(isoStr) {
     if (!isoStr) return '';
     var date = new Date(isoStr);
     if (isNaN(date.getTime())) return isoStr;
@@ -915,7 +743,8 @@
       timeZone: timezone,
       hour: 'numeric',
       minute: '2-digit',
-      hour12: true
+      hour12: true,
+      timeZoneName: 'short'
     });
 
     return datePart + ' ' + timePart;
@@ -938,6 +767,21 @@
     if (daysMatch) return parseInt(daysMatch[1], 10);
 
     return Infinity;
+  }
+
+  /**
+   * Returns true if a job should display the "New" badge:
+   * listed in delta.json, first seen within the last 24h, or posted today.
+   */
+  function isNewJob(job) {
+    if (job.url && state.delta.newJobUrls[job.url]) return true;
+    if (job.first_seen) {
+      var seenMs = Date.parse(job.first_seen);
+      if (!isNaN(seenMs) && (Date.now() - seenMs) <= CONFIG.UI.NEW_BADGE_WINDOW_MS) {
+        return true;
+      }
+    }
+    return parsePostedDaysAgo(job.posted_on) === 0;
   }
 
   /**
@@ -973,72 +817,6 @@
     }
     return formatted;
   }
-
-  // ══════════════════════════════════════════════════════════════════════════
-  // TOAST NOTIFICATION SYSTEM
-  // ══════════════════════════════════════════════════════════════════════════
-
-  var toast = {
-    /**
-     * Shows a toast notification at the bottom of the screen.
-     * Auto-dismisses previous toast if one is active.
-     */
-    show: function(message, durationMs) {
-      if (durationMs === undefined) durationMs = CONFIG.TIMING.TOAST_DURATION;
-
-      // Dismiss existing toast first
-      this.dismiss();
-
-      // Create toast elements
-      var container = document.createElement('div');
-      container.className = 'toast';
-      container.setAttribute('role', 'alert');
-
-      var messageEl = document.createElement('span');
-      messageEl.className = 'toast-msg';
-      messageEl.textContent = message;
-
-      var closeBtn = document.createElement('button');
-      closeBtn.className = 'toast-close';
-      closeBtn.setAttribute('aria-label', 'Dismiss');
-      closeBtn.textContent = '×';
-      closeBtn.addEventListener('click', this.dismiss.bind(this));
-
-      container.appendChild(messageEl);
-      container.appendChild(closeBtn);
-      document.body.appendChild(container);
-
-      // Store reference and set auto-dismiss timer
-      state.toast.element = container;
-      state.toast.timer = window.setTimeout(
-        this.dismiss.bind(this),
-        durationMs
-      );
-    },
-
-    /**
-     * Dismisses the current toast with fade-out animation.
-     */
-    dismiss: function() {
-      if (!state.toast.element) return;
-
-      // Clear auto-dismiss timer
-      if (state.toast.timer) {
-        window.clearTimeout(state.toast.timer);
-        state.toast.timer = null;
-      }
-
-      // Trigger fade-out animation
-      var element = state.toast.element;
-      state.toast.element = null;
-      element.classList.add('toast-hiding');
-
-      // Remove from DOM after animation completes
-      window.setTimeout(function() {
-        element.remove();
-      }, CONFIG.TIMING.TOAST_HIDE_ANIMATION);
-    }
-  };
 
   // ══════════════════════════════════════════════════════════════════════════
   // MODAL CONTROLLER FACTORY
@@ -1111,9 +889,9 @@
 
   var theme = {
     /**
-     * Applies and persists the theme (light or dark).
+     * Applies the theme to DOM and toggle button; optionally persists to localStorage.
      */
-    apply: function(themeValue) {
+    apply: function(themeValue, persist) {
       var normalizedTheme = themeValue === 'dark' ? 'dark' : 'light';
       var isDark = normalizedTheme === 'dark';
 
@@ -1128,40 +906,40 @@
       );
       elements.ui.themeToggle.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
 
-      // Persist to localStorage
-      try {
-        localStorage.setItem(CONFIG.STORAGE_KEYS.THEME, normalizedTheme);
-      } catch (err) {
-        // Silently fail if localStorage unavailable
+      if (persist) {
+        try {
+          localStorage.setItem(CONFIG.STORAGE_KEYS.THEME, normalizedTheme);
+        } catch (err) {
+          // Silently fail if localStorage unavailable
+        }
       }
     },
 
     /**
-     * Initializes theme from localStorage or defaults to light.
+     * Initializes theme from localStorage or falls back to system preference.
      */
     initialize: function() {
       try {
         var savedTheme = localStorage.getItem(CONFIG.STORAGE_KEYS.THEME);
         if (savedTheme === 'dark' || savedTheme === 'light') {
-          this.apply(savedTheme);
+          this.apply(savedTheme, false);
           return;
         }
       } catch (err) {
-        // Fall through to default
+        // Fall through to system preference
       }
 
-      // Default to current HTML attribute or light
-      var defaultTheme = document.documentElement.getAttribute('data-theme') || 'light';
-      this.apply(defaultTheme);
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      this.apply(prefersDark ? 'dark' : 'light', false);
     },
 
     /**
-     * Toggles between light and dark themes.
+     * Toggles between light and dark themes and saves the user's choice.
      */
     toggle: function() {
       var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
       var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      this.apply(newTheme);
+      this.apply(newTheme, true);
     }
   };
 
@@ -1172,7 +950,7 @@
   var ERROR_MESSAGES = {
     NO_SNAPSHOT:
       'No job data found. The listing file (data/claremont_jobs_latest.json) has not been generated yet. ' +
-      'Listings are checked hourly and the file is created on the first run. Try again shortly.',
+      'Listings are checked every 8 hours and the file is created on the first run. Try again shortly.',
 
     LOAD_FAILED:
       'Could not load job data. The listing file may be temporarily unavailable. Try reloading the page.'
@@ -1276,9 +1054,9 @@
     },
 
     /**
-     * Creates a job title cell with a link.
+     * Creates a job title cell with a link and optional "New" badge.
      */
-    createTitleCell: function(job) {
+    createTitleCell: function(job, jobIsNew) {
       var cell = document.createElement('td');
       var link = document.createElement('a');
       link.className = 'job-title';
@@ -1288,6 +1066,14 @@
       link.rel = 'noopener noreferrer';
       link.textContent = job.title || '(no title)';
       cell.appendChild(link);
+
+      if (jobIsNew) {
+        var badge = document.createElement('span');
+        badge.className = 'badge-new';
+        badge.textContent = 'New';
+        cell.appendChild(badge);
+      }
+
       return cell;
     },
 
@@ -1296,14 +1082,17 @@
      */
     createRow: function(job) {
       var row = document.createElement('tr');
+      var jobIsNew = isNewJob(job);
 
       // Store searchable/filterable data as data attributes
       row.dataset.title = (job.title || '').toLowerCase();
+      row.dataset.location = (job.location || '').toLowerCase();
       row.dataset.siteId = job.site_id || '';
-      row.dataset.isNew = state.delta.newJobUrls[job.url] ? '1' : '0';
+      row.dataset.timeType = job.time_type || '';
+      row.dataset.isNew = jobIsNew ? '1' : '0';
 
       // Build row cells
-      row.appendChild(this.createTitleCell(job));
+      row.appendChild(this.createTitleCell(job, jobIsNew));
       row.appendChild(this.createCell(getSchoolDisplayName(job.site_id) || job.site));
       row.appendChild(this.createCell(job.location));
       row.appendChild(this.createCell(job.time_type));
@@ -1384,12 +1173,108 @@
     },
 
     /**
-     * Applies search and school filters to table rows.
-     * Updates the meta line with filter status.
+     * Populates the time type dropdown with unique values from the jobs array.
      */
-    apply: function() {
-      var searchQuery = (elements.search.value || '').trim().toLowerCase();
+    populateTimeTypeFilter: function(jobs) {
+      var previousValue = elements.timeTypeFilter.value;
+
+      elements.timeTypeFilter.textContent = '';
+      var allOption = document.createElement('option');
+      allOption.value = '';
+      allOption.textContent = 'All types';
+      elements.timeTypeFilter.appendChild(allOption);
+
+      var typesMap = {};
+      for (var i = 0; i < jobs.length; i++) {
+        var tt = (jobs[i].time_type || '').trim();
+        if (tt) typesMap[tt] = true;
+      }
+
+      var types = Object.keys(typesMap).sort(function(a, b) {
+        return a.localeCompare(b, undefined, { sensitivity: 'base' });
+      });
+
+      for (var k = 0; k < types.length; k++) {
+        var option = document.createElement('option');
+        option.value = types[k];
+        option.textContent = types[k];
+        elements.timeTypeFilter.appendChild(option);
+      }
+
+      if (previousValue && Object.prototype.hasOwnProperty.call(typesMap, previousValue)) {
+        elements.timeTypeFilter.value = previousValue;
+      } else {
+        elements.timeTypeFilter.value = '';
+      }
+
+      elements.timeTypeFilter.disabled = false;
+    },
+
+    /**
+     * Restores ?q=, ?school=, and ?type= filter params from the URL.
+     */
+    restoreFromUrl: function() {
+      if (typeof URLSearchParams === 'undefined') return;
+      var params = new URLSearchParams(window.location.search);
+
+      var q = params.get('q');
+      if (q) elements.search.value = q;
+
+      var school = params.get('school');
+      if (school) {
+        var schoolLower = school.toLowerCase();
+        for (var i = 0; i < elements.schoolFilter.options.length; i++) {
+          var opt = elements.schoolFilter.options[i];
+          if (opt.value.toLowerCase() === schoolLower || opt.textContent.toLowerCase() === schoolLower) {
+            elements.schoolFilter.value = opt.value;
+            break;
+          }
+        }
+      }
+
+      var type = params.get('type');
+      if (type) {
+        var typeLower = type.toLowerCase();
+        for (var j = 0; j < elements.timeTypeFilter.options.length; j++) {
+          var tOpt = elements.timeTypeFilter.options[j];
+          if (tOpt.value.toLowerCase() === typeLower) {
+            elements.timeTypeFilter.value = tOpt.value;
+            break;
+          }
+        }
+      }
+    },
+
+    /**
+     * Syncs active filters to URL query parameters without adding history entries.
+     */
+    syncToUrl: function(rawSearch, selectedSchool, selectedTimeType) {
+      if (window.location.protocol === 'file:' || !window.history || !window.history.replaceState) {
+        return;
+      }
+      var params = new URLSearchParams();
+      if (rawSearch) params.set('q', rawSearch);
+      if (selectedSchool) params.set('school', selectedSchool);
+      if (selectedTimeType) params.set('type', selectedTimeType);
+
+      var qs = params.toString();
+      var nextUrl = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
+      try {
+        window.history.replaceState(null, '', nextUrl);
+      } catch (err) {
+        // Ignore if replaceState is restricted
+      }
+    },
+
+    /**
+     * Applies search, school, and time-type filters to table rows.
+     * Updates the meta line and URL query params.
+     */
+    apply: function(syncUrl) {
+      var rawSearch = (elements.search.value || '').trim();
+      var searchQuery = rawSearch.toLowerCase();
       var selectedSchool = (elements.schoolFilter.value || '').trim();
+      var selectedTimeType = (elements.timeTypeFilter.value || '').trim();
       var allRows = elements.jobsTable.body.querySelectorAll('tr');
       var visibleCount = 0;
 
@@ -1397,24 +1282,33 @@
       for (var i = 0; i < allRows.length; i++) {
         var row = allRows[i];
         var titleText = row.dataset.title || '';
+        var locationText = row.dataset.location || '';
         var rowSchool = row.dataset.siteId || '';
+        var rowTimeType = row.dataset.timeType || '';
 
-        var matchesTitle = !searchQuery || titleText.indexOf(searchQuery) !== -1;
+        var matchesSearch = !searchQuery ||
+          titleText.indexOf(searchQuery) !== -1 ||
+          locationText.indexOf(searchQuery) !== -1;
         var matchesSchool = !selectedSchool || rowSchool === selectedSchool;
-        var isVisible = matchesTitle && matchesSchool;
+        var matchesTimeType = !selectedTimeType || rowTimeType === selectedTimeType;
+        var isVisible = matchesSearch && matchesSchool && matchesTimeType;
 
         row.classList.toggle('hidden', !isVisible);
         if (isVisible) visibleCount++;
       }
 
+      if (syncUrl !== false) {
+        this.syncToUrl(rawSearch, selectedSchool, selectedTimeType);
+      }
+
       // Update meta line
-      this.updateMetaLine(visibleCount, allRows.length, searchQuery, selectedSchool);
+      this.updateMetaLine(visibleCount, allRows.length, searchQuery, selectedSchool, selectedTimeType);
     },
 
     /**
      * Updates the metadata line showing filter status and timestamp.
      */
-    updateMetaLine: function(visibleCount, totalCount, searchQuery, selectedSchool) {
+    updateMetaLine: function(visibleCount, totalCount, searchQuery, selectedSchool, selectedTimeType) {
       var filterParts = [];
 
       if (selectedSchool) {
@@ -1425,17 +1319,21 @@
         filterParts.push('school: ' + schoolLabel);
       }
 
+      if (selectedTimeType) {
+        filterParts.push('type: ' + selectedTimeType);
+      }
+
       if (searchQuery) {
-        filterParts.push('title contains "' + elements.search.value.trim() + '"');
+        filterParts.push('search: "' + elements.search.value.trim() + '"');
       }
 
       if (filterParts.length === 0) {
-        // No filters active: show all jobs with timestamp and auto-update note
+        // No filters active: show all jobs with timestamp and update cadence
         var timestamp = state.jobs.lastScrapedAt
-          ? ' · last updated ' + formatTimePST(state.jobs.lastScrapedAt) + ' PST'
+          ? ' · last updated ' + formatTimePT(state.jobs.lastScrapedAt)
           : '';
         elements.ui.metaLine.textContent =
-          'Showing all ' + totalCount + ' postings' + timestamp + ' · updated hourly.';
+          'Showing all ' + totalCount + ' postings' + timestamp + ' · updated every 8 hours.';
       } else {
         // Filters active: show filtered count
         var filterSummary = filterParts.join('; ');
@@ -1449,18 +1347,18 @@
     /**
      * Sorts the jobs array and re-renders the table.
      */
-    apply: function() {
-      // Update sort arrow indicators
+    apply: function(syncUrl) {
+      // Update sort arrow indicators and aria-sort
       document.querySelectorAll('.sortable-th').forEach(function(th) {
         var arrow = th.querySelector('.sort-arrow');
-        if (!arrow) return;
-
         var columnKey = th.dataset.sortKey;
         if (columnKey === state.sorting.column) {
-          var direction = state.sorting.direction === 1 ? ' asc' : ' desc';
-          arrow.className = 'sort-arrow' + direction;
+          var isAsc = state.sorting.direction === 1;
+          th.setAttribute('aria-sort', isAsc ? 'ascending' : 'descending');
+          if (arrow) arrow.className = 'sort-arrow' + (isAsc ? ' asc' : ' desc');
         } else {
-          arrow.className = 'sort-arrow';
+          th.setAttribute('aria-sort', 'none');
+          if (arrow) arrow.className = 'sort-arrow';
         }
       });
 
@@ -1469,7 +1367,7 @@
 
       // Re-render table and apply filters
       tableRenderer.render(sortedJobs);
-      filtering.apply();
+      filtering.apply(syncUrl);
     },
 
     /**
@@ -1522,17 +1420,6 @@
         state.sorting.direction = 1;
       }
       this.apply();
-    },
-
-    /**
-     * Resets sorting to original order.
-     */
-    reset: function() {
-      state.sorting.column = null;
-      state.sorting.direction = 1;
-      document.querySelectorAll('.sortable-th .sort-arrow').forEach(function(el) {
-        el.className = 'sort-arrow';
-      });
     }
   };
 
@@ -1550,62 +1437,21 @@
       return;
     }
 
-    // Hide loading hint
+    // Hide loading hint and enable search input
     elements.ui.loadHint.style.display = 'none';
-
-    // Enable search input
     elements.search.disabled = false;
 
-    // Default sort: newest first
+    // Populate filter dropdowns and restore any URL query filters (?q=, ?school=, ?type=)
+    state.jobs.all = data.jobs.slice();
+    filtering.populateSchoolFilter(data.jobs);
+    filtering.populateTimeTypeFilter(data.jobs);
+    filtering.restoreFromUrl();
+
+    // Default sort: newest first (renders table once and applies filters)
     state.sorting.column = 'posted_on';
     state.sorting.direction = 1;
-
-    // Render jobs and populate filters, then apply default sort
-    tableRenderer.render(data.jobs);
-    filtering.populateSchoolFilter(data.jobs);
-    sorting.apply();
+    sorting.apply(false);
   }
-
-
-  // ══════════════════════════════════════════════════════════════════════════
-  // ADS MANAGEMENT
-  // ══════════════════════════════════════════════════════════════════════════
-
-  var adsManager = {
-    /**
-     * Checks if ads are enabled (defaults to true).
-     */
-    isEnabled: function() {
-      try {
-        var value = localStorage.getItem(CONFIG.STORAGE_KEYS.ADS_ENABLED);
-        return value === null ? true : value === '1';  // Default: enabled
-      } catch (err) {
-        return true;
-      }
-    },
-
-    /**
-     * Enables or disables ads and persists the preference.
-     */
-    setEnabled: function(enabled) {
-      try {
-        localStorage.setItem(CONFIG.STORAGE_KEYS.ADS_ENABLED, enabled ? '1' : '0');
-      } catch (err) {
-        // Silently fail if localStorage unavailable
-      }
-
-      // Update UI
-      document.body.classList.toggle('ads-enabled', enabled);
-      elements.ui.adsToggle.checked = enabled;
-    },
-
-    /**
-     * Initializes ads state from localStorage.
-     */
-    initialize: function() {
-      this.setEnabled(this.isEnabled());
-    }
-  };
 
   // ══════════════════════════════════════════════════════════════════════════
   // UI HELPERS
@@ -1632,10 +1478,13 @@
   };
 
   // ══════════════════════════════════════════════════════════════════════════
-  // LAST COMMIT INFO
+  // LAST COMMIT INFO (lazy-loaded when About modal opens)
   // ══════════════════════════════════════════════════════════════════════════
 
   function loadLastCommit() {
+    if (state.lastCommitLoaded) return;
+    state.lastCommitLoaded = true;
+
     var repoPath = CONFIG.REPO_URL.replace('https://github.com/', '');
     fetch('https://api.github.com/repos/' + repoPath + '/commits?per_page=1', {
       credentials: 'omit'
@@ -1698,6 +1547,10 @@
       filtering.apply();
     });
 
+    elements.timeTypeFilter.addEventListener('change', function() {
+      filtering.apply();
+    });
+
     // Theme toggle
     elements.ui.themeToggle.addEventListener('click', function() {
       theme.toggle();
@@ -1706,12 +1559,6 @@
     // Scroll-to-top button
     window.addEventListener('scroll', ui.updateScrollTopButton, { passive: true });
     elements.ui.scrollTopBtn.addEventListener('click', ui.scrollToTop);
-
-
-    // Ads toggle
-    elements.ui.adsToggle.addEventListener('change', function() {
-      adsManager.setEnabled(elements.ui.adsToggle.checked);
-    });
 
     // Sortable table headers
     document.querySelectorAll('.sortable-th').forEach(function(header) {
@@ -1737,6 +1584,7 @@
 
     // Modal button handlers
     elements.modals.info.btn.addEventListener('click', function() {
+      loadLastCommit();
       infoModalController.open();
     });
 
@@ -1760,17 +1608,11 @@
     // Initialize theme
     theme.initialize();
 
-    // Initialize ads
-    adsManager.initialize();
-
     // Set up event listeners
     setupEventListeners();
 
     // Initialize scroll-to-top button visibility
     ui.updateScrollTopButton();
-
-    // Load last commit info for the about modal
-    loadLastCommit();
 
     // Load initial data
     dataManager.load()
@@ -1786,14 +1628,22 @@
 
         elements.ui.metaLine.textContent = 'No listings loaded yet.';
 
-        // Set up empty school filter
+        // Reset filter dropdowns
         elements.schoolFilter.textContent = '';
-        var defaultOption = document.createElement('option');
-        defaultOption.value = '';
-        defaultOption.textContent = 'All schools';
-        elements.schoolFilter.appendChild(defaultOption);
+        var defaultSchool = document.createElement('option');
+        defaultSchool.value = '';
+        defaultSchool.textContent = 'All schools';
+        elements.schoolFilter.appendChild(defaultSchool);
         elements.schoolFilter.value = '';
         elements.schoolFilter.disabled = true;
+
+        elements.timeTypeFilter.textContent = '';
+        var defaultType = document.createElement('option');
+        defaultType.value = '';
+        defaultType.textContent = 'All types';
+        elements.timeTypeFilter.appendChild(defaultType);
+        elements.timeTypeFilter.value = '';
+        elements.timeTypeFilter.disabled = true;
       });
   }
 

@@ -2,8 +2,12 @@ name: Scrape jobs
 
 on:
   schedule:
-    - cron: '0 * * * *'   # every hour
+    - cron: '0 0,8,16 * * *'   # every 8 hours (00:00, 08:00, 16:00 UTC / PST; 01:00, 09:00, 17:00 PDT)
   workflow_dispatch:           # allow manual run from GitHub Actions UI
+
+concurrency:
+  group: scrape-jobs
+  cancel-in-progress: false
 
 jobs:
   scrape:
@@ -12,9 +16,9 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4.2.2
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-python@v5.6.0
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.13'
 

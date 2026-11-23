@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import random
 import sys
 import time
 from datetime import datetime
@@ -33,13 +34,14 @@ from urllib.parse import urlparse
 
 _DEBUG = os.environ.get("CLAREMONT_COLLEGE_JOBS_TRACKER_DEBUG", "").strip() == "1"
 
-import requests
+from curl_cffi import requests
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
 TENANT = "theclaremontcolleges"
 ORIGIN = "https://theclaremontcolleges.wd1.myworkdayjobs.com"
 LOCALE_PREFIX = "en-US"
+IMPERSONATE = "chrome"
 
 # Career site home URLs (used as Referer; site id is the last path segment).
 CAREER_SITE_HOMES = [
@@ -53,14 +55,12 @@ CAREER_SITE_HOMES = [
     "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/KGI_Careers",
 ]
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/120.0.0.0 Safari/537.36"
-    ),
+# Omit User-Agent so curl_cffi uses the exact header matching its TLS impersonation.
+API_HEADERS = {
     "Accept": "application/json",
+    "Accept-Language": "en-US,en;q=0.9",
     "Content-Type": "application/json",
+    "Origin": ORIGIN,
 }
 
 SAVE_FILE = Path(__file__).parent.parent / "data" / "claremont_jobs_latest.json"
@@ -68,6 +68,12 @@ DELTA_FILE = Path(__file__).parent.parent / "data" / "claremont_jobs_delta.json"
 # Workday CXS returns HTTP 400 for limit > 20 on this tenant.
 PAGE_SIZE = 20
 REQUEST_DELAY = 0.35  # seconds between paginated / multi-site calls
+MAX_RETRIES = 4
+RETRY_BACKOFF_BASE = 2.0  # seconds (exponential: 2s, 4s, 8s + jitter)
+RETRY_STATUS_CODES = {403, 429, 500, 502, 503, 504}
+# Allow carrying over cached listings from the previous snapshot if at most this
+# many individual sites fail transiently; fail the run if more fail.
+MAX_TOLERATED_SITE_FAILURES = 2
 
 
 # ── Site helpers ──────────────────────────────────────────────────────────────
@@ -130,8 +136,132 @@ def _location_from_external_path(ext: str) -> str:
     return ""
 
 
+class _WorkdayClient:
+    """curl_cffi session with browser TLS impersonation and cookie warm-up."""
+
+    def __init__(self) -> None:
+        self.session = self._make_session()
+        self._warmed_up = False
+
+    @staticmethod
+    def _make_session() -> requests.Session:
+        return requests.Session(impersonate=IMPERSONATE)
+
+    def warmup(self, home_url: str) -> None:
+        """GET a career site home page so Cloudflare/Workday set session cookies."""
+        try:
+            resp = self.session.get(
+                home_url,
+                headers={"Accept-Language": "en-US,en;q=0.9"},
+                timeout=30,
+            )
+            self._warmed_up = True
+            if _DEBUG or resp.status_code >= 400:
+                cf_ray = resp.headers.get("cf-ray", "")
+                ray_info = f" cf-ray={cf_ray}" if cf_ray else ""
+                print(
+                    f"\n  [warmup] GET {home_url} -> HTTP {resp.status_code}{ray_info}",
+                    file=sys.stderr,
+                    flush=True,
+                )
+        except requests.RequestsError as exc:
+            print(
+                f"\n  [warmup] GET {home_url} failed: {type(exc).__name__}: {exc}",
+                file=sys.stderr,
+                flush=True,
+            )
+
+    def ensure_warmed_up(self, home_url: str) -> None:
+        if not self._warmed_up:
+            self.warmup(home_url)
+
+    def reset(self, home_url: str) -> None:
+        """Recreate the session (fresh TLS connection & cookies) and re-warm."""
+        try:
+            self.session.close()
+        except Exception:
+            pass
+        self.session = self._make_session()
+        self._warmed_up = False
+        self.warmup(home_url)
+
+    def close(self) -> None:
+        try:
+            self.session.close()
+        except Exception:
+            pass
+
+
+def _response_snippet(resp: requests.Response, limit: int = 200) -> str:
+    body = " ".join((resp.text or "").split())
+    if len(body) > limit:
+        body = body[:limit] + "…"
+    return body
+
+
+def _post_jobs_page(
+    client: _WorkdayClient,
+    site_id: str,
+    referer: str,
+    payload: dict[str, Any],
+) -> dict[str, Any]:
+    """POST one CXS jobs page with retry, exponential backoff, and session reset."""
+    url = jobs_api_url(site_id)
+    headers = {**API_HEADERS, "Referer": referer}
+    last_error: Exception | None = None
+
+    for attempt in range(1, MAX_RETRIES + 1):
+        client.ensure_warmed_up(referer)
+        try:
+            resp = client.session.post(
+                url,
+                headers=headers,
+                json=payload,
+                timeout=45,
+            )
+        except requests.RequestsError as exc:
+            last_error = exc
+            if attempt < MAX_RETRIES:
+                delay = RETRY_BACKOFF_BASE * (2 ** (attempt - 1)) + random.uniform(0.2, 1.0)
+                print(
+                    f"\n  [retry {attempt}/{MAX_RETRIES - 1}] {site_id} offset={payload['offset']}: "
+                    f"{type(exc).__name__}: {exc} (waiting {delay:.1f}s)",
+                    file=sys.stderr,
+                    flush=True,
+                )
+                time.sleep(delay)
+                client.reset(referer)
+                continue
+            raise
+
+        if resp.status_code == 200:
+            return resp.json()
+
+        cf_ray = resp.headers.get("cf-ray", "")
+        ray_info = f", cf-ray={cf_ray}" if cf_ray else ""
+        snippet = _response_snippet(resp)
+        detail = f"HTTP {resp.status_code}{ray_info} from {url}: {snippet or '(empty body)'}"
+
+        if resp.status_code in RETRY_STATUS_CODES and attempt < MAX_RETRIES:
+            delay = RETRY_BACKOFF_BASE * (2 ** (attempt - 1)) + random.uniform(0.2, 1.0)
+            print(
+                f"\n  [retry {attempt}/{MAX_RETRIES - 1}] {site_id} offset={payload['offset']}: "
+                f"{detail} (waiting {delay:.1f}s)",
+                file=sys.stderr,
+                flush=True,
+            )
+            time.sleep(delay)
+            client.reset(referer)
+            continue
+
+        raise requests.exceptions.HTTPError(detail, response=resp)
+
+    assert last_error is not None
+    raise last_error
+
+
 def _fetch_job_detail_fields(
-    session: requests.Session,
+    client: _WorkdayClient,
     site_id: str,
     ext: str,
     referer: str,
@@ -141,10 +271,16 @@ def _fetch_job_detail_fields(
     The Workday SPA calls this same endpoint; returns {} on any failure.
     """
     url = f"{ORIGIN}/wday/cxs/{TENANT}/{site_id}{ext}"
+    headers = {
+        "Accept": "application/json",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Origin": ORIGIN,
+        "Referer": referer,
+    }
     try:
-        resp = session.get(
+        resp = client.session.get(
             url,
-            headers={**HEADERS, "Referer": referer},
+            headers=headers,
             timeout=20,
         )
         resp.raise_for_status()
@@ -168,7 +304,7 @@ def _fetch_job_detail_fields(
 
 
 def _enrich_missing_fields(
-    session: requests.Session,
+    client: _WorkdayClient,
     jobs: list[dict[str, Any]],
     site_id: str,
     referer: str,
@@ -190,7 +326,7 @@ def _enrich_missing_fields(
         if idx == -1:
             continue
         ext_path = ext[idx:]
-        found = _fetch_job_detail_fields(session, site_id, ext_path, referer)
+        found = _fetch_job_detail_fields(client, site_id, ext_path, referer)
         for field, value in found.items():
             if not job.get(field) and value:
                 job[field] = value
@@ -202,7 +338,7 @@ def _enrich_missing_fields(
 
 
 def fetch_site_jobs(
-    session: requests.Session,
+    client: _WorkdayClient,
     site_id: str,
     referer: str,
 ) -> tuple[list[dict[str, Any]], int]:
@@ -218,15 +354,7 @@ def fetch_site_jobs(
             "offset": offset,
             "searchText": "",
         }
-        headers = {**HEADERS, "Referer": referer}
-        resp = session.post(
-            jobs_api_url(site_id),
-            headers=headers,
-            json=payload,
-            timeout=45,
-        )
-        resp.raise_for_status()
-        data = resp.json()
+        data = _post_jobs_page(client, site_id, referer, payload)
 
         if total is None:
             total = int(data.get("total", 0))
@@ -257,27 +385,65 @@ def fetch_site_jobs(
             break
         time.sleep(REQUEST_DELAY)
 
-    _enrich_missing_fields(session, jobs, site_id, referer)
+    _enrich_missing_fields(client, jobs, site_id, referer)
     return jobs, total if total is not None else len(jobs)
 
 
 def iter_scrape_sites() -> Iterator[tuple[str, list[dict[str, Any]], int]]:
     """Yield (site_id, jobs, api_reported_total) for each configured career home."""
-    session = requests.Session()
-    for i, home in enumerate(CAREER_SITE_HOMES):
-        site_id = site_id_from_home_url(home)
-        jobs, total = fetch_site_jobs(session, site_id, referer=home)
-        yield site_id, jobs, total
-        if i + 1 < len(CAREER_SITE_HOMES):
-            time.sleep(REQUEST_DELAY)
+    client = _WorkdayClient()
+    try:
+        for i, home in enumerate(CAREER_SITE_HOMES):
+            site_id = site_id_from_home_url(home)
+            jobs, total = fetch_site_jobs(client, site_id, referer=home)
+            yield site_id, jobs, total
+            if i + 1 < len(CAREER_SITE_HOMES):
+                time.sleep(REQUEST_DELAY)
+    finally:
+        client.close()
 
 
-def scrape_all_sites() -> list[dict[str, Any]]:
+def scrape_all_sites(
+    previous_jobs: list[dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
+    prev_by_site: dict[str, list[dict[str, Any]]] = {}
+    for job in previous_jobs or []:
+        sid = job.get("site_id", "")
+        if sid:
+            prev_by_site.setdefault(sid, []).append(job)
+
     all_jobs: list[dict[str, Any]] = []
-    for site_id, jobs, total in iter_scrape_sites():
-        print(f"  {site_id} ...", end=" ", flush=True)
-        print(f"{len(jobs)} postings (total={total}).")
-        all_jobs.extend(jobs)
+    failed_sites: list[tuple[str, Exception]] = []
+    client = _WorkdayClient()
+    try:
+        for i, home in enumerate(CAREER_SITE_HOMES):
+            site_id = site_id_from_home_url(home)
+            print(f"  {site_id} ...", end=" ", flush=True)
+            try:
+                jobs, total = fetch_site_jobs(client, site_id, referer=home)
+            except requests.RequestsError as exc:
+                failed_sites.append((site_id, exc))
+                cached = prev_by_site.get(site_id)
+                if cached and len(failed_sites) <= MAX_TOLERATED_SITE_FAILURES:
+                    print(f"FAILED (kept {len(cached)} cached).", flush=True)
+                    print(
+                        f"  [warn] {site_id} failed ({exc}); carrying over "
+                        f"{len(cached)} cached postings from previous snapshot.",
+                        file=sys.stderr,
+                        flush=True,
+                    )
+                    all_jobs.extend(cached)
+                else:
+                    print("FAILED.", flush=True)
+                    raise
+            else:
+                print(f"{len(jobs)} postings (total={total}).", flush=True)
+                all_jobs.extend(jobs)
+
+            if i + 1 < len(CAREER_SITE_HOMES):
+                time.sleep(REQUEST_DELAY)
+    finally:
+        client.close()
     return all_jobs
 
 
@@ -291,9 +457,27 @@ def load_previous() -> dict | None:
     return None
 
 
-def save_current(jobs: list[dict]) -> dict:
+def annotate_first_seen(
+    current_jobs: list[dict[str, Any]],
+    previous_data: dict | None,
+    scraped_at: str,
+) -> None:
+    """Stamp first_seen on newly discovered jobs and preserve it on existing ones."""
+    if not previous_data:
+        return
+    prev_by_key = {job_key(j): j for j in previous_data.get("jobs", [])}
+    for job in current_jobs:
+        prev = prev_by_key.get(job_key(job))
+        if prev is None:
+            job["first_seen"] = scraped_at
+        elif prev.get("first_seen"):
+            job["first_seen"] = prev["first_seen"]
+
+
+def save_current(jobs: list[dict], scraped_at: str | None = None) -> dict:
+    ts = scraped_at or datetime.now(ZoneInfo("America/Los_Angeles")).isoformat(timespec="seconds")
     data = {
-        "scraped_at": datetime.now(ZoneInfo("America/Los_Angeles")).isoformat(timespec="seconds"),
+        "scraped_at": ts,
         "total": len(jobs),
         "jobs": jobs,
     }
@@ -398,9 +582,13 @@ def main() -> int:
     print(f"{'=' * 60}\n")
     print("Fetching postings (CXS API)...\n")
 
+    previous_data = load_previous()
+
     try:
-        current_jobs = scrape_all_sites()
-    except requests.RequestException as e:
+        current_jobs = scrape_all_sites(
+            previous_jobs=previous_data["jobs"] if previous_data else None
+        )
+    except requests.RequestsError as e:
         print(f"\nFailed to fetch jobs: {e}", file=sys.stderr)
         return 1
 
@@ -408,7 +596,9 @@ def main() -> int:
         print("\nNo postings found. Sites may be down or credentials changed.")
         return 0
 
-    previous_data = load_previous()
+    scraped_at = datetime.now(ZoneInfo("America/Los_Angeles")).isoformat(timespec="seconds")
+    annotate_first_seen(current_jobs, previous_data, scraped_at)
+
     diff = (
         diff_jobs(previous_data["jobs"], current_jobs)
         if previous_data
@@ -419,7 +609,7 @@ def main() -> int:
 
     # Always save so that Workday's relative posted_on strings (e.g. "Today",
     # "Yesterday") stay current even when the job set hasn't changed.
-    current_data = save_current(current_jobs)
+    current_data = save_current(current_jobs, scraped_at=scraped_at)
     write_delta(previous_data, current_data, diff)
     print(f"\nTotal postings scraped: {len(current_jobs)}")
     print(f"Results saved to:        {SAVE_FILE}")
