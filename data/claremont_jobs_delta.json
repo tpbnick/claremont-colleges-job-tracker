@@ -1,18 +1,38 @@
 {
-  "previous_scraped_at": "2026-11-23T11:18:42-08:00",
-  "current_scraped_at": "2026-11-24T01:39:07-08:00",
-  "new_count": 1,
-  "removed_count": 1,
+  "previous_scraped_at": "2026-11-24T01:39:07-08:00",
+  "current_scraped_at": "2026-11-24T16:33:28-08:00",
+  "new_count": 3,
+  "removed_count": 3,
   "new_jobs": [
     {
-      "title": "Senior Director of Legacy Giving",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/POM_Careers/job/Claremont/Senior-Director-of-Legacy-Giving_REQ-8580-1",
-      "site_id": "POM_Careers",
-      "site": "Pomona College",
-      "location": "Claremont",
+      "title": "Temporary Events Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Temporary-Events-Coordinator_REQ-8527",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
       "time_type": "Full time",
-      "posted_on": "Posted Yesterday",
-      "first_seen": "2026-11-24T01:39:07-08:00"
+      "posted_on": "Posted Today",
+      "first_seen": "2026-11-24T16:33:28-08:00"
+    },
+    {
+      "title": "Volunteer Experience Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Volunteer-Experience-Manager_REQ-8578",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today",
+      "first_seen": "2026-11-24T16:33:28-08:00"
+    },
+    {
+      "title": "Assistant Director of Alumnae Engagement",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Assistant-Director-of-Alumnae-Engagement_REQ-8579",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today",
+      "first_seen": "2026-11-24T16:33:28-08:00"
     }
   ]
 }

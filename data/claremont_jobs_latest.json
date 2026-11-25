@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-24T01:39:07-08:00",
+  "scraped_at": "2026-11-24T16:33:28-08:00",
   "total": 117,
   "jobs": [
     {
@@ -37,15 +37,6 @@
       "location": "Claremont",
       "time_type": "Full time",
       "posted_on": "Posted 11 Days Ago"
-    },
-    {
-      "title": "Facilities Operations and Compliance Manager",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/TCCS_Careers/job/Claremont/Facilities-Operations-and-Compliance-Manager_REQ-8529-1",
-      "site_id": "TCCS_Careers",
-      "site": "The Claremont Colleges Services",
-      "location": "Claremont",
-      "time_type": "Full time",
-      "posted_on": "Posted 28 Days Ago"
     },
     {
       "title": "Campus Safety Officer",
@@ -338,6 +329,36 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Temporary Events Coordinator",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Temporary-Events-Coordinator_REQ-8527",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today",
+      "first_seen": "2026-11-24T16:33:28-08:00"
+    },
+    {
+      "title": "Volunteer Experience Manager",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Volunteer-Experience-Manager_REQ-8578",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today",
+      "first_seen": "2026-11-24T16:33:28-08:00"
+    },
+    {
+      "title": "Assistant Director of Alumnae Engagement",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Assistant-Director-of-Alumnae-Engagement_REQ-8579",
+      "site_id": "SCR_Career_Staff",
+      "site": "Scripps College",
+      "location": "Scripps College - Claremont, CA",
+      "time_type": "Full time",
+      "posted_on": "Posted Today",
+      "first_seen": "2026-11-24T16:33:28-08:00"
+    },
+    {
       "title": "Major Gifts Officer",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/SCR_Career_Staff/job/Scripps-College---Claremont-CA/Major-Gifts-Officer_REQ-8062",
       "site_id": "SCR_Career_Staff",
@@ -439,24 +460,6 @@
     {
       "title": "Assistant Men's Soccer Coach, Goalkeepers",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Assistant-Men-s-Soccer-Coach--Goalkeepers_REQ-8376",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Post-Doctoral Research Fellow (Part-Time)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Post-Doctoral-Research-Fellow--Part-Time-_REQ-8308",
-      "site_id": "CMC_Staff",
-      "site": "Claremont McKenna College",
-      "location": "Claremont",
-      "time_type": "Part time",
-      "posted_on": "Posted 30+ Days Ago"
-    },
-    {
-      "title": "Staff Psychologist (Part Time)",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/CMC_Staff/job/Claremont/Staff-Psychologist--Part-Time-_REQ-8307",
       "site_id": "CMC_Staff",
       "site": "Claremont McKenna College",
       "location": "Claremont",
@@ -590,6 +593,15 @@
       "posted_on": "Posted 30+ Days Ago"
     },
     {
+      "title": "Maintenance Technician II",
+      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Maintenance-Technician-II_REQ-8401-1",
+      "site_id": "PIT_Staff",
+      "site": "Pitzer College",
+      "location": "McConnell Center",
+      "time_type": "Full time",
+      "posted_on": "Posted Today"
+    },
+    {
       "title": "Temporary Admissions Marketing Campaign Specialist",
       "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/Pitzer-Hall/Temporary-Admissions-Marketing-Campaign-Specialist_REQ-8568",
       "site_id": "PIT_Staff",
@@ -615,15 +627,6 @@
       "location": "Broad Center",
       "time_type": "Full time",
       "posted_on": "Posted 13 Days Ago"
-    },
-    {
-      "title": "Maintenance Technician II",
-      "url": "https://theclaremontcolleges.wd1.myworkdayjobs.com/en-US/PIT_Staff/job/McConnell-Center/Maintenance-Technician-II_REQ-8401-1",
-      "site_id": "PIT_Staff",
-      "site": "Pitzer College",
-      "location": "McConnell Center",
-      "time_type": "Full time",
-      "posted_on": "Posted 20 Days Ago"
     },
     {
       "title": "Director of Facilities",
